@@ -3,6 +3,7 @@ from data.base_dataset import BaseDataset, get_transform
 from data.image_folder import make_dataset
 from PIL import Image
 import random
+import numpy as np
 
 
 class UnalignedDataset(BaseDataset):
@@ -69,16 +70,16 @@ class UnalignedDataset(BaseDataset):
             A_img = self.A_imgs[index % self.A_size]
             B_img = self.B_imgs[index_B]
         else:
-            A_img = Image.open(A_path).convert('RGB')
-            B_img = Image.open(B_path).convert('RGB')
-            # A_img = np.load(A_path)
-            # B_img = np.load(B_path)
-            # A_img = (A_img - A_img.min()) / (A_img.max() - A_img.min())
-            # B_img = (B_img - B_img.min()) / (B_img.max() - B_img.min())
-            # # img = np.expand_dims(img, 0)
-            # # print(img.shape)
-            # A_img = Image.fromarray(A_img)
-            # B_img = Image.fromarray(B_img)
+            # A_img = Image.open(A_path).convert('RGB')
+            # B_img = Image.open(B_path).convert('RGB')
+            A_img = np.load(A_path)
+            B_img = np.load(B_path)
+            A_img = (A_img - A_img.min()) / (A_img.max() - A_img.min())
+            B_img = (B_img - B_img.min()) / (B_img.max() - B_img.min())
+            # img = np.expand_dims(img, 0)
+            # print(img.shape)
+            A_img = Image.fromarray(A_img)
+            B_img = Image.fromarray(B_img)
             # if self.transform is not None:
             #     img = self.transform(img)
         # apply image transformation
