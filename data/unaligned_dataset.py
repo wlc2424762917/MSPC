@@ -71,6 +71,16 @@ class UnalignedDataset(BaseDataset):
         else:
             A_img = Image.open(A_path).convert('RGB')
             B_img = Image.open(B_path).convert('RGB')
+            # A_img = np.load(A_path)
+            # B_img = np.load(B_path)
+            # A_img = (A_img - A_img.min()) / (A_img.max() - A_img.min())
+            # B_img = (B_img - B_img.min()) / (B_img.max() - B_img.min())
+            # # img = np.expand_dims(img, 0)
+            # # print(img.shape)
+            # A_img = Image.fromarray(A_img)
+            # B_img = Image.fromarray(B_img)
+            # if self.transform is not None:
+            #     img = self.transform(img)
         # apply image transformation
         A = self.transform_A(A_img)
         B = self.transform_B(B_img)
