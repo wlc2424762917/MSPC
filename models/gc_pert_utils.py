@@ -175,7 +175,7 @@ def grid_sample(input, grid, canvas = None, mode='bilinear'):
         return padded_output
 
 class CNN(nn.Module):
-    def __init__(self, num_output,in_c=3):
+    def __init__(self, num_output, in_c=1):
         super(CNN, self).__init__()
         self.net = \
             nn.Sequential(
@@ -208,7 +208,7 @@ class CNN(nn.Module):
 
 class BoundedGridLocNet(nn.Module):
 
-    def __init__(self, grid_height, grid_width, target_control_point,in_c=3):
+    def __init__(self, grid_height, grid_width, target_control_point,in_c=1):
         super(BoundedGridLocNet, self).__init__()
         self.cnn = CNN(grid_height * grid_width * 2, in_c=in_c)
 
@@ -227,7 +227,7 @@ class BoundedGridLocNet(nn.Module):
 
 class UnBoundedGridLocNet(nn.Module):
 
-    def __init__(self, grid_height, grid_width, target_control_point, in_c=3):
+    def __init__(self, grid_height, grid_width, target_control_point, in_c=1):
         super(UnBoundedGridLocNet, self).__init__()
 
         self.cnn = CNN(grid_height * grid_width * 2, in_c=in_c)

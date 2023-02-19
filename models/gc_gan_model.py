@@ -55,6 +55,7 @@ class GcGANModel(BaseModel):
     def __init__(self, opt):
         BaseModel.__init__(self, opt)
         self.name = opt.name
+        print(opt.input_nc)
         self.netG_AB = networks.define_G(opt.input_nc, opt.output_nc, opt.ngf, opt.netG, opt.norm,
                                         not opt.no_dropout, opt.init_type, opt.init_gain, self.gpu_ids)
         # self.netG_AB = DDP(self.netG_AB, broadcast_buffers=False)
