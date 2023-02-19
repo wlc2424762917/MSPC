@@ -74,8 +74,9 @@ class UnalignedDataset(BaseDataset):
             # B_img = Image.open(B_path).convert('RGB')
             A_img = np.load(A_path)
             B_img = np.load(B_path)
-            A_img = (A_img - A_img.min()) / (A_img.max() - A_img.min())
-            B_img = (B_img - B_img.min()) / (B_img.max() - B_img.min())
+            if A_img.max() - A_img.min() != 0:
+                A_img = (A_img - A_img.min()) / (A_img.max() - A_img.min())
+                B_img = (B_img - B_img.min()) / (B_img.max() - B_img.min())
             # img = np.expand_dims(img, 0)
             # print(img.shape)
             A_img = Image.fromarray(A_img)
