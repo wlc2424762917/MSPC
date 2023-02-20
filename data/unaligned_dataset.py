@@ -76,7 +76,8 @@ class UnalignedDataset(BaseDataset):
             B_img = np.load(B_path)
             A_img = (A_img - A_img.min()) / (A_img.max() - A_img.min() + 1e-6)
             B_img = (B_img - B_img.min()) / (B_img.max() - B_img.min() + 1e-6)
-            # img = np.expand_dims(img, 0)
+            # print(B_img.max())
+            # print(A_img.max())
             # print(img.shape)
             A_img = Image.fromarray(A_img)
             B_img = Image.fromarray(B_img)
@@ -85,7 +86,7 @@ class UnalignedDataset(BaseDataset):
         # apply image transformation
         A = self.transform_A(A_img)
         B = self.transform_B(B_img)
-
+        # print("A:", A.max())
         return {'A': A, 'B': B, 'A_paths': A_path, 'B_paths': B_path}
 
     def __len__(self):

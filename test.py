@@ -40,9 +40,15 @@ import torch.distributed as dist
 import torch
 from cal_fid import get_fid
 import torchvision
-from evaluation.evaluate_maps import eval_maps
-from evaluation.evaluate_city2parsing import eval_city2parsing
-from evaluation.parsing2city.evaluate import eval_parsing2city
+
+def mkdir(path):
+    """create a single empty directory if it didn't exist
+
+    Parameters:
+        path (str) -- a single directory path
+    """
+    if not os.path.exists(path):
+        os.makedirs(path)
 
 def cleanup():
     dist.destroy_process_group()
@@ -100,57 +106,64 @@ if __name__ == '__main__':
                 else:
                     if opt.model == 'cycle_gan':
                         saved_img = ((((visuals['fake_B'].cpu()[k]) + 1.0) / 2.0))
+
                         torchvision.utils.save_image(saved_img, os.path.join(save_path_B, name + '.png'))
+                        np.save(os.path.join(save_path_B+'npy', name), saved_img)
                         saved_img = ((((visuals['fake_A'].cpu()[k]) + 1.0) / 2.0))
                         torchvision.utils.save_image(saved_img, os.path.join(save_path_A, name + '.png'))
+                        np.save(os.path.join(save_path_B + 'npy', name), saved_img)
                     else:
+                        mkdir(os.path.join(save_path + 'npy', name))
                         saved_img = ((((visuals['fake_B'].cpu()[k]) + 1.0) / 2.0))
+                        # print(saved_img.shape)
+                        # print(saved_img.max())
                         torchvision.utils.save_image(saved_img, os.path.join(save_path, name + '.png'))
+                        np.save(os.path.join(save_path + 'npy', name), saved_img)
                     # util.save_image(saved_img, os.path.join(save_path, name, 'png'))
         webpage.save()  # save the HTML
-    if opt.dataroot.strip('../data/') == 'cityscapes':
-        if opt.model == 'cycle_gan':
-            real_root = os.path.join(opt.dataroot, 'testB')
-            metric = eval_city2parsing(real_root, save_path_B)
-            real_root = os.path.join(opt.dataroot, 'testB')
-            metric += '\n' + eval_parsing2city(real_root, save_path_A)
-        else:
-            if opt.direction == 'AtoB':
-                real_root = os.path.join(opt.dataroot, 'testB')
-                metric = eval_city2parsing(real_root, save_path)
-            elif opt.direction == 'BtoA':
-                real_root = os.path.join(opt.dataroot, 'testB')
-                metric = eval_parsing2city(real_root, save_path)
-
-    elif opt.dataroot.strip('../data/') == 'maps':
-        if opt.model == 'cycle_gan':
-            real_root = os.path.join(opt.dataroot, 'testB')
-            metric = eval_maps(real_root, save_path_B)
-            real_root = os.path.join(opt.dataroot,  'testA')
-            metric += '\n' + eval_maps(real_root, save_path_A)
-        else:
-            real_root = os.path.join(opt.dataroot, ('testB' if opt.direction == 'AtoB' else 'testA'))
-            metric = eval_maps(real_root, save_path)
-    else:
-        if opt.phase == 'test':
-            if opt.model == 'cycle_gan':
-                real_root_A = os.path.join(opt.dataroot, 'testA')
-                real_root_B = os.path.join(opt.dataroot, 'testB')
-            else:
-                real_root = os.path.join(opt.dataroot, ('testB' if opt.direction == 'AtoB' else 'testA'))
-        elif opt.phase == 'train':
-            if opt.model == 'cycle_gan':
-                real_root_A = os.path.join(opt.dataroot, 'trainA')
-                real_root_B = os.path.join(opt.dataroot, 'trainB')
-            else:
-                real_root = os.path.join(opt.dataroot, ('trainB' if opt.direction == 'AtoB' else 'trainA'))
-        if opt.model == 'cycle_gan':
-            fid = get_fid([real_root_A, save_path_A], 50, 2048, 8)
-            metric = 'fid: ' + str(fid)
-            fid = get_fid([real_root_B, save_path_B], 50, 2048, 8)
-            metric += '\n' + 'fid: ' + str(fid)
-        else:
-            fid = get_fid([real_root, save_path], 50, 2048, 8)
-            metric = 'fid: ' + str(fid)
-    file = open(os.path.join(text_path, 'eval_result.txt'), 'w')
-    file.writelines(metric)
+    # if opt.dataroot.strip('../data/') == 'cityscapes':
+    #     if opt.model == 'cycle_gan':
+    #         real_root = os.path.join(opt.dataroot, 'testB')
+    #         metric = eval_city2parsing(real_root, save_path_B)
+    #         real_root = os.path.join(opt.dataroot, 'testB')
+    #         metric += '\n' + eval_parsing2city(real_root, save_path_A)
+    #     else:
+    #         if opt.direction == 'AtoB':
+    #             real_root = os.path.join(opt.dataroot, 'testB')
+    #             metric = eval_city2parsing(real_root, save_path)
+    #         elif opt.direction == 'BtoA':
+    #             real_root = os.path.join(opt.dataroot, 'testB')
+    #             metric = eval_parsing2city(real_root, save_path)
+    #
+    # elif opt.dataroot.strip('../data/') == 'maps':
+    #     if opt.model == 'cycle_gan':
+    #         real_root = os.path.join(opt.dataroot, 'testB')
+    #         metric = eval_maps(real_root, save_path_B)
+    #         real_root = os.path.join(opt.dataroot,  'testA')
+    #         metric += '\n' + eval_maps(real_root, save_path_A)
+    #     else:
+    #         real_root = os.path.join(opt.dataroot, ('testB' if opt.direction == 'AtoB' else 'testA'))
+    #         metric = eval_maps(real_root, save_path)
+    # else:
+    #     if opt.phase == 'test':
+    #         if opt.model == 'cycle_gan':
+    #             real_root_A = os.path.join(opt.dataroot, 'testA')
+    #             real_root_B = os.path.join(opt.dataroot, 'testB')
+    #         else:
+    #             real_root = os.path.join(opt.dataroot, ('testB' if opt.direction == 'AtoB' else 'testA'))
+    #     elif opt.phase == 'train':
+    #         if opt.model == 'cycle_gan':
+    #             real_root_A = os.path.join(opt.dataroot, 'trainA')
+    #             real_root_B = os.path.join(opt.dataroot, 'trainB')
+    #         else:
+    #             real_root = os.path.join(opt.dataroot, ('trainB' if opt.direction == 'AtoB' else 'trainA'))
+    #     if opt.model == 'cycle_gan':
+    #         fid = get_fid([real_root_A, save_path_A], 50, 2048, 8)
+    #         metric = 'fid: ' + str(fid)
+    #         fid = get_fid([real_root_B, save_path_B], 50, 2048, 8)
+    #         metric += '\n' + 'fid: ' + str(fid)
+    #     else:
+    #         fid = get_fid([real_root, save_path], 50, 2048, 8)
+    #         metric = 'fid: ' + str(fid)
+    # file = open(os.path.join(text_path, 'eval_result.txt'), 'w')
+    # file.writelines(metric)
