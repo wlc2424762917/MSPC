@@ -203,9 +203,11 @@ class Maxgcpert3GANModel(BaseModel):
             self.flipped_for_equivariance = self.opt.isTrain and (np.random.random() < 0.5)
             if self.flipped_for_equivariance:
                 self.real = torch.flip(self.real, [3])
-
+        # print("real: ", self.real.max())
         self.fake = self.netG(self.real)
         self.fake_B = self.fake[:self.real_A.size(0)]
+        # print("fk: ", self.fake.max())
+        # print("fkB: ", self.fake_B.max())
         if self.opt.idt:
             self.idt_B = self.fake[self.real_A.size(0):]
 

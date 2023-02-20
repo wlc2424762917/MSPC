@@ -106,7 +106,7 @@ if __name__ == '__main__':
                 else:
                     if opt.model == 'cycle_gan':
                         saved_img = ((((visuals['fake_B'].cpu()[k]) + 1.0) / 2.0))
-
+                        
                         torchvision.utils.save_image(saved_img, os.path.join(save_path_B, name + '.png'))
                         np.save(os.path.join(save_path_B+'npy', name), saved_img)
                         saved_img = ((((visuals['fake_A'].cpu()[k]) + 1.0) / 2.0))

@@ -1,0 +1,3 @@
+python test.py --dataroot '/media/ssd/lc/BraTS2020/pix2pix_cycle/style_transfer_divided_unpaired/' --model maxgcpert3_gan --eval --bounded unbounded --no_dropout --load_size 256 --crop_size 256 --netG resnet_6blocks --netD basic --batch_size 4 --identity 0.5 --direction 'AtoB' --results_dir '/media/NAS02/lc/braTS_transfer/MSPC'
+
+CUDA_VISIBLE_DEVICES=3 python train.py --dataroot '/media/ssd/lc/BraTS2020/pix2pix_cycle/style_transfer_divided_unpaired/' --model maxgcpert3_gan --gan_mode lsgan --bounded unbounded --pool_size 50 --no_dropout --load_size 256 --crop_size 256 --netG resnet_6blocks --netD basic --batch_size 1 --identity 0.5 --direction 'AtoB' --input_nc 1 --output_nc 1
