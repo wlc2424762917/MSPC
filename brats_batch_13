@@ -1,0 +1,1107 @@
+/home/lichao/miniconda3/envs/MRI_Seg/lib/python3.6/site-packages/torch/nn/_reduction.py:42: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Setting up a new session...
+----------------- Options ---------------
+               batch_size: 13                            	[default: 1]
+                    beta1: 0.5                           
+                  bounded: unbounded                     	[default: bounded]
+          checkpoints_dir: ./checkpoints                 
+           continue_train: False                         
+                crop_size: 256                           
+                 dataroot: /media/ssd/lc/BraTS2020/pix2pix_cycle/style_transfer_divided_unpaired/	[default: None]
+             dataset_mode: unaligned                     
+                direction: AtoB                          
+              display_env: main                          
+             display_freq: 400                           
+               display_id: 1                             
+            display_ncols: 4                             
+             display_port: 8097                          
+           display_server: http://localhost              
+          display_winsize: 256                           
+                    epoch: latest                        
+              epoch_count: 1                             
+        flip_equivariance: False                         
+                 gan_mode: lsgan                         
+                  gpu_ids: 0                             
+                grid_size: 2                             
+                 identity: 0.5                           	[default: 0.3]
+                      idt: True                          
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 1                             
+                  isTrain: True                          	[default: None]
+                lambda_AB: 10.0                          
+               lambda_GAN: 1.0                           
+             lambda_blank: 1.0                           
+                load_iter: 0                             	[default: 0]
+                 load_mem: False                         
+                load_size: 256                           	[default: 286]
+                       lr: 0.0002                        
+           lr_decay_iters: 50                            
+                lr_policy: linear                        
+         max_dataset_size: inf                           
+                    model: maxgcpert3_gan                	[default: cycle_gan]
+                 n_epochs: 100                           
+           n_epochs_decay: 100                           
+               n_layers_D: 3                             
+                     name: experiment_name               
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: resnet_9blocks                
+                      ngf: 64                            
+               no_dropout: True                          	[default: False]
+                  no_flip: False                         
+                  no_html: False                         
+                     norm: instance                      
+              num_threads: 16                            
+                output_nc: 1                             
+           pert_threshold: 0.1                           
+                    phase: train                         
+                pool_size: 50                            	[default: 0]
+               preprocess: resize_and_crop               
+               print_freq: 100                           
+             save_by_iter: False                         
+          save_epoch_freq: 1                             
+         save_latest_freq: 500                           
+           serial_batches: False                         
+               span_range: 0.9                           
+                   suffix:                               
+         update_html_freq: 1000                          
+                use_wandb: False                         
+                  verbose: False                         
+----------------- End -------------------
+dataset [UnalignedDataset] was created
+The number of training images = 45570
+model [Maxgcpert3GANModel] was created
+model [Maxgcpert3GANModel] was created
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 11.366 M
+[Network D] Total number of parameters : 2.763 M
+[Network D_perturbation] Total number of parameters : 2.763 M
+[Network LOC] Total number of parameters : 0.556 M
+[Network TPS] Total number of parameters : 0.000 M
+-----------------------------------------------
+create web directory ./checkpoints/media/ssd/lc/BraTS2020/pix2pix_cycle/style_transfer_divided_unpaire/maxgcpert3_gan/13_256_AtoB_resnet_9blocks_basic_2_0.1_1.0_unbounded_0.5/web...
+learning rate 0.0002000 -> 0.0002000
+/home/lichao/miniconda3/envs/MRI_Seg/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:134: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  "https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate", UserWarning)
+/home/lichao/miniconda3/envs/MRI_Seg/lib/python3.6/site-packages/torch/nn/_reduction.py:42: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Setting up a new session...
+----------------- Options ---------------
+               batch_size: 13                            	[default: 1]
+                    beta1: 0.5                           
+                  bounded: unbounded                     	[default: bounded]
+          checkpoints_dir: ./checkpoints                 
+           continue_train: False                         
+                crop_size: 256                           
+                 dataroot: /media/ssd/lc/BraTS2020/pix2pix_cycle/style_transfer_divided_unpaired/	[default: None]
+             dataset_mode: unaligned                     
+                direction: AtoB                          
+              display_env: main                          
+             display_freq: 400                           
+               display_id: 1                             
+            display_ncols: 4                             
+             display_port: 8097                          
+           display_server: http://localhost              
+          display_winsize: 256                           
+                    epoch: latest                        
+              epoch_count: 1                             
+        flip_equivariance: False                         
+                 gan_mode: lsgan                         
+                  gpu_ids: 0                             
+                grid_size: 2                             
+                 identity: 0.5                           	[default: 0.3]
+                      idt: True                          
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 1                             
+                  isTrain: True                          	[default: None]
+                lambda_AB: 10.0                          
+               lambda_GAN: 1.0                           
+             lambda_blank: 1.0                           
+                load_iter: 0                             	[default: 0]
+                 load_mem: False                         
+                load_size: 256                           	[default: 286]
+                       lr: 0.0002                        
+           lr_decay_iters: 50                            
+                lr_policy: linear                        
+         max_dataset_size: inf                           
+                    model: maxgcpert3_gan                	[default: cycle_gan]
+                 n_epochs: 100                           
+           n_epochs_decay: 100                           
+               n_layers_D: 3                             
+                     name: experiment_name               
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: resnet_9blocks                
+                      ngf: 64                            
+               no_dropout: True                          	[default: False]
+                  no_flip: False                         
+                  no_html: False                         
+                     norm: instance                      
+              num_threads: 16                            
+                output_nc: 1                             
+           pert_threshold: 0.1                           
+                    phase: train                         
+                pool_size: 50                            	[default: 0]
+               preprocess: resize_and_crop               
+               print_freq: 100                           
+             save_by_iter: False                         
+          save_epoch_freq: 1                             
+         save_latest_freq: 500                           
+           serial_batches: False                         
+               span_range: 0.9                           
+                   suffix:                               
+         update_html_freq: 1000                          
+                use_wandb: False                         
+                  verbose: False                         
+----------------- End -------------------
+dataset [UnalignedDataset] was created
+The number of training images = 45570
+model [Maxgcpert3GANModel] was created
+model [Maxgcpert3GANModel] was created
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 11.366 M
+[Network D] Total number of parameters : 2.763 M
+[Network D_perturbation] Total number of parameters : 2.763 M
+[Network LOC] Total number of parameters : 0.556 M
+[Network TPS] Total number of parameters : 0.000 M
+-----------------------------------------------
+create web directory ./checkpoints/media/ssd/lc/BraTS2020/pix2pix_cycle/style_transfer_divided_unpaire/maxgcpert3_gan/13_256_AtoB_resnet_9blocks_basic_2_0.1_1.0_unbounded_0.5/web...
+learning rate 0.0002000 -> 0.0002000
+/home/lichao/miniconda3/envs/MRI_Seg/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:134: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  "https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate", UserWarning)
+Traceback (most recent call last):
+  File "train.py", line 61, in <module>
+    model.optimize_parameters()   # calculate loss functions, get gradients, update network weights
+  File "/home/lichao/MSPC/models/maxgcpert3_gan_model.py", line 159, in optimize_parameters
+    self.forward()
+  File "/home/lichao/MSPC/models/maxgcpert3_gan_model.py", line 207, in forward
+    self.fake = self.netG(self.real)
+  File "/home/lichao/miniconda3/envs/MRI_Seg/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/lichao/miniconda3/envs/MRI_Seg/lib/python3.6/site-packages/torch/nn/parallel/data_parallel.py", line 166, in forward
+    return self.module(*inputs[0], **kwargs[0])
+  File "/home/lichao/miniconda3/envs/MRI_Seg/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/lichao/miniconda3/envs/MRI_Seg/lib/python3.6/site-packages/torch/nn/parallel/data_parallel.py", line 166, in forward
+    return self.module(*inputs[0], **kwargs[0])
+  File "/home/lichao/miniconda3/envs/MRI_Seg/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/lichao/MSPC/models/networks.py", line 375, in forward
+    return self.model(input)
+  File "/home/lichao/miniconda3/envs/MRI_Seg/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/lichao/miniconda3/envs/MRI_Seg/lib/python3.6/site-packages/torch/nn/modules/container.py", line 139, in forward
+    input = module(input)
+  File "/home/lichao/miniconda3/envs/MRI_Seg/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/lichao/miniconda3/envs/MRI_Seg/lib/python3.6/site-packages/torch/nn/modules/instancenorm.py", line 59, in forward
+    self.training or not self.track_running_stats, self.momentum, self.eps)
+  File "/home/lichao/miniconda3/envs/MRI_Seg/lib/python3.6/site-packages/torch/nn/functional.py", line 2327, in instance_norm
+    input, weight, bias, running_mean, running_var, use_input_stats, momentum, eps, torch.backends.cudnn.enabled
+RuntimeError: CUDA out of memory. Tried to allocate 208.00 MiB (GPU 0; 23.70 GiB total capacity; 1.10 GiB already allocated; 83.56 MiB free; 1.12 GiB reserved in total by PyTorch)
+(epoch: 1, iters: 1300, time: 0.074, data: 0.881) D_real: 0.329 D_fake: 0.213 D_real_perturbation: 0.309 D_fake_perturbation: 0.240 max_pert: 0.251 pert_constraint_D: 4.066 idt: 0.129 idt_perturbation: 0.028 
+(epoch: 1, iters: 2600, time: 0.073, data: 0.002) D_real: 0.336 D_fake: 0.245 D_real_perturbation: 0.296 D_fake_perturbation: 0.230 max_pert: 0.160 pert_constraint_D: 2.781 idt: 0.335 idt_perturbation: 0.009 
+(epoch: 1, iters: 3900, time: 0.073, data: 0.002) D_real: 0.244 D_fake: 0.197 D_real_perturbation: 0.259 D_fake_perturbation: 0.265 max_pert: 0.080 pert_constraint_D: 2.317 idt: 0.249 idt_perturbation: 0.006 
+(epoch: 1, iters: 5200, time: 0.085, data: 0.001) D_real: 0.250 D_fake: 0.256 D_real_perturbation: 0.338 D_fake_perturbation: 0.425 max_pert: 0.155 pert_constraint_D: 2.604 idt: 0.248 idt_perturbation: 0.010 
+(epoch: 1, iters: 6500, time: 0.074, data: 0.001) D_real: 0.337 D_fake: 0.268 D_real_perturbation: 0.298 D_fake_perturbation: 0.229 max_pert: 0.080 pert_constraint_D: 2.098 idt: 0.185 idt_perturbation: 0.009 
+saving the latest model (epoch 1, total_iters 6500)
+(epoch: 1, iters: 7800, time: 0.074, data: 0.002) D_real: 0.205 D_fake: 0.271 D_real_perturbation: 0.664 D_fake_perturbation: 0.458 max_pert: 0.150 pert_constraint_D: 2.306 idt: 0.104 idt_perturbation: 0.008 
+(epoch: 1, iters: 9100, time: 0.074, data: 0.002) D_real: 0.372 D_fake: 0.154 D_real_perturbation: 0.288 D_fake_perturbation: 0.242 max_pert: 0.077 pert_constraint_D: 2.222 idt: 0.117 idt_perturbation: 0.006 
+(epoch: 1, iters: 10400, time: 0.080, data: 0.002) D_real: 0.182 D_fake: 0.286 D_real_perturbation: 0.266 D_fake_perturbation: 0.219 max_pert: 0.076 pert_constraint_D: 2.184 idt: 0.171 idt_perturbation: 0.005 
+(epoch: 1, iters: 11700, time: 0.075, data: 0.002) D_real: 0.221 D_fake: 0.255 D_real_perturbation: 0.380 D_fake_perturbation: 0.274 max_pert: 0.008 pert_constraint_D: 2.045 idt: 0.242 idt_perturbation: 0.007 
+(epoch: 1, iters: 13000, time: 0.074, data: 0.002) D_real: 0.198 D_fake: 0.227 D_real_perturbation: 0.249 D_fake_perturbation: 0.233 max_pert: 0.216 pert_constraint_D: 2.685 idt: 0.248 idt_perturbation: 0.005 
+saving the latest model (epoch 1, total_iters 13000)
+(epoch: 1, iters: 14300, time: 0.074, data: 0.002) D_real: 0.257 D_fake: 0.191 D_real_perturbation: 0.246 D_fake_perturbation: 0.244 max_pert: 0.143 pert_constraint_D: 2.266 idt: 0.232 idt_perturbation: 0.004 
+(epoch: 1, iters: 15600, time: 0.080, data: 0.002) D_real: 0.349 D_fake: 0.184 D_real_perturbation: 0.251 D_fake_perturbation: 0.219 max_pert: 0.092 pert_constraint_D: 2.005 idt: 0.110 idt_perturbation: 0.028 
+(epoch: 1, iters: 16900, time: 0.074, data: 0.001) D_real: 0.283 D_fake: 0.192 D_real_perturbation: 0.239 D_fake_perturbation: 0.240 max_pert: 0.077 pert_constraint_D: 1.972 idt: 0.033 idt_perturbation: 0.010 
+(epoch: 1, iters: 18200, time: 0.074, data: 0.002) D_real: 0.213 D_fake: 0.322 D_real_perturbation: 0.301 D_fake_perturbation: 0.229 max_pert: 0.141 pert_constraint_D: 2.002 idt: 0.033 idt_perturbation: 0.009 
+(epoch: 1, iters: 19500, time: 0.074, data: 0.001) D_real: 0.210 D_fake: 0.241 D_real_perturbation: 0.244 D_fake_perturbation: 0.287 max_pert: 0.140 pert_constraint_D: 2.258 idt: 0.106 idt_perturbation: 0.009 
+saving the latest model (epoch 1, total_iters 19500)
+(epoch: 1, iters: 20800, time: 0.081, data: 0.002) D_real: 0.334 D_fake: 0.233 D_real_perturbation: 0.261 D_fake_perturbation: 0.240 max_pert: 0.074 pert_constraint_D: 1.929 idt: 0.112 idt_perturbation: 0.009 
+(epoch: 1, iters: 22100, time: 0.074, data: 0.001) D_real: 0.206 D_fake: 0.238 D_real_perturbation: 0.202 D_fake_perturbation: 0.273 max_pert: 0.072 pert_constraint_D: 2.137 idt: 0.117 idt_perturbation: 0.008 
+(epoch: 1, iters: 23400, time: 0.074, data: 0.002) D_real: 0.238 D_fake: 0.247 D_real_perturbation: 0.606 D_fake_perturbation: 0.438 max_pert: 0.008 pert_constraint_D: 2.148 idt: 0.090 idt_perturbation: 0.010 
+(epoch: 1, iters: 24700, time: 0.073, data: 0.001) D_real: 0.199 D_fake: 0.245 D_real_perturbation: 0.358 D_fake_perturbation: 0.269 max_pert: 0.267 pert_constraint_D: 2.686 idt: 0.104 idt_perturbation: 0.009 
+(epoch: 1, iters: 26000, time: 0.085, data: 0.001) D_real: 0.360 D_fake: 0.222 D_real_perturbation: 0.268 D_fake_perturbation: 0.233 max_pert: 0.004 pert_constraint_D: 1.796 idt: 0.064 idt_perturbation: 0.005 
+saving the latest model (epoch 1, total_iters 26000)
+(epoch: 1, iters: 27300, time: 0.074, data: 0.002) D_real: 0.204 D_fake: 0.279 D_real_perturbation: 0.253 D_fake_perturbation: 0.244 max_pert: 0.005 pert_constraint_D: 1.794 idt: 0.101 idt_perturbation: 0.006 
+(epoch: 1, iters: 28600, time: 0.073, data: 0.002) D_real: 0.243 D_fake: 0.341 D_real_perturbation: 0.235 D_fake_perturbation: 0.243 max_pert: 0.199 pert_constraint_D: 2.401 idt: 0.234 idt_perturbation: 0.006 
+(epoch: 1, iters: 29900, time: 0.074, data: 0.001) D_real: 0.190 D_fake: 0.244 D_real_perturbation: 0.280 D_fake_perturbation: 0.208 max_pert: 0.262 pert_constraint_D: 2.773 idt: 0.185 idt_perturbation: 0.008 
+(epoch: 1, iters: 31200, time: 0.080, data: 0.002) D_real: 0.286 D_fake: 0.235 D_real_perturbation: 0.252 D_fake_perturbation: 0.286 max_pert: 0.132 pert_constraint_D: 2.105 idt: 0.104 idt_perturbation: 0.004 
+(epoch: 1, iters: 32500, time: 0.074, data: 0.002) D_real: 0.190 D_fake: 0.259 D_real_perturbation: 0.296 D_fake_perturbation: 0.356 max_pert: 0.133 pert_constraint_D: 2.403 idt: 0.171 idt_perturbation: 0.007 
+saving the latest model (epoch 1, total_iters 32500)
+(epoch: 1, iters: 33800, time: 0.073, data: 0.002) D_real: 0.160 D_fake: 0.294 D_real_perturbation: 0.287 D_fake_perturbation: 0.204 max_pert: 0.193 pert_constraint_D: 2.467 idt: 0.094 idt_perturbation: 0.004 
+(epoch: 1, iters: 35100, time: 0.073, data: 0.001) D_real: 0.325 D_fake: 0.160 D_real_perturbation: 0.257 D_fake_perturbation: 0.254 max_pert: 0.132 pert_constraint_D: 2.445 idt: 0.176 idt_perturbation: 0.007 
+(epoch: 1, iters: 36400, time: 0.079, data: 0.002) D_real: 0.211 D_fake: 0.257 D_real_perturbation: 0.393 D_fake_perturbation: 0.260 max_pert: 0.084 pert_constraint_D: 1.988 idt: 0.091 idt_perturbation: 0.023 
+(epoch: 1, iters: 37700, time: 0.074, data: 0.002) D_real: 0.311 D_fake: 0.217 D_real_perturbation: 0.236 D_fake_perturbation: 0.156 max_pert: 0.082 pert_constraint_D: 2.244 idt: 0.139 idt_perturbation: 0.016 
+(epoch: 1, iters: 39000, time: 0.074, data: 0.002) D_real: 0.369 D_fake: 0.330 D_real_perturbation: 0.237 D_fake_perturbation: 0.232 max_pert: 0.072 pert_constraint_D: 2.460 idt: 0.244 idt_perturbation: 0.010 
+saving the latest model (epoch 1, total_iters 39000)
+(epoch: 1, iters: 40300, time: 0.073, data: 0.002) D_real: 0.176 D_fake: 0.309 D_real_perturbation: 0.275 D_fake_perturbation: 0.200 max_pert: 0.075 pert_constraint_D: 2.092 idt: 0.106 idt_perturbation: 0.015 
+(epoch: 1, iters: 41600, time: 0.079, data: 0.001) D_real: 0.171 D_fake: 0.410 D_real_perturbation: 0.233 D_fake_perturbation: 0.258 max_pert: 0.130 pert_constraint_D: 2.306 idt: 0.100 idt_perturbation: 0.010 
+(epoch: 1, iters: 42900, time: 0.074, data: 0.002) D_real: 0.229 D_fake: 0.239 D_real_perturbation: 0.244 D_fake_perturbation: 0.229 max_pert: 0.125 pert_constraint_D: 2.410 idt: 0.100 idt_perturbation: 0.008 
+(epoch: 1, iters: 44200, time: 0.074, data: 0.002) D_real: 0.199 D_fake: 0.245 D_real_perturbation: 0.395 D_fake_perturbation: 0.236 max_pert: 0.069 pert_constraint_D: 2.260 idt: 0.151 idt_perturbation: 0.009 
+(epoch: 1, iters: 45500, time: 0.074, data: 0.002) D_real: 0.242 D_fake: 0.300 D_real_perturbation: 0.252 D_fake_perturbation: 0.278 max_pert: 0.181 pert_constraint_D: 2.211 idt: 0.087 idt_perturbation: 0.006 
+saving the latest model (epoch 1, total_iters 45500)
+saving the model at the end of epoch 1, iters 45578
+End of epoch 1 / 200 	 Time Taken: 3362 sec
+learning rate 0.0002000 -> 0.0002000
+/home/lichao/miniconda3/envs/MRI_Seg/lib/python3.6/site-packages/torch/nn/functional.py:718: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  /pytorch/c10/core/TensorImpl.h:1156.)
+  return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+(epoch: 2, iters: 1222, time: 0.084, data: 0.001) D_real: 0.317 D_fake: 0.193 D_real_perturbation: 0.256 D_fake_perturbation: 0.241 max_pert: 0.065 pert_constraint_D: 2.161 idt: 0.102 idt_perturbation: 0.010 
+(epoch: 2, iters: 2522, time: 0.074, data: 0.002) D_real: 0.290 D_fake: 0.168 D_real_perturbation: 0.219 D_fake_perturbation: 0.225 max_pert: 0.066 pert_constraint_D: 2.033 idt: 0.091 idt_perturbation: 0.006 
+(epoch: 2, iters: 3822, time: 0.074, data: 0.001) D_real: 0.280 D_fake: 0.208 D_real_perturbation: 0.272 D_fake_perturbation: 0.236 max_pert: 0.008 pert_constraint_D: 2.130 idt: 0.211 idt_perturbation: 0.007 
+(epoch: 2, iters: 5122, time: 0.073, data: 0.002) D_real: 0.179 D_fake: 0.190 D_real_perturbation: 0.355 D_fake_perturbation: 0.321 max_pert: 0.126 pert_constraint_D: 1.997 idt: 0.109 idt_perturbation: 0.015 
+(epoch: 2, iters: 6422, time: 0.085, data: 0.001) D_real: 0.304 D_fake: 0.236 D_real_perturbation: 0.205 D_fake_perturbation: 0.316 max_pert: 0.133 pert_constraint_D: 2.370 idt: 0.155 idt_perturbation: 0.010 
+saving the latest model (epoch 2, total_iters 52000)
+(epoch: 2, iters: 7722, time: 0.074, data: 0.002) D_real: 0.330 D_fake: 0.137 D_real_perturbation: 0.295 D_fake_perturbation: 0.223 max_pert: 0.176 pert_constraint_D: 2.357 idt: 0.109 idt_perturbation: 0.009 
+(epoch: 2, iters: 9022, time: 0.074, data: 0.001) D_real: 0.168 D_fake: 0.257 D_real_perturbation: 0.236 D_fake_perturbation: 0.344 max_pert: 0.172 pert_constraint_D: 2.483 idt: 0.154 idt_perturbation: 0.011 
+(epoch: 2, iters: 10322, time: 0.073, data: 0.001) D_real: 0.248 D_fake: 0.183 D_real_perturbation: 0.215 D_fake_perturbation: 0.261 max_pert: 0.229 pert_constraint_D: 2.570 idt: 0.155 idt_perturbation: 0.008 
+(epoch: 2, iters: 11622, time: 0.080, data: 0.001) D_real: 0.288 D_fake: 0.158 D_real_perturbation: 0.271 D_fake_perturbation: 0.188 max_pert: 0.067 pert_constraint_D: 2.185 idt: 0.098 idt_perturbation: 0.010 
+(epoch: 2, iters: 12922, time: 0.074, data: 0.001) D_real: 0.164 D_fake: 0.252 D_real_perturbation: 0.273 D_fake_perturbation: 0.253 max_pert: 0.117 pert_constraint_D: 2.908 idt: 0.312 idt_perturbation: 0.010 
+saving the latest model (epoch 2, total_iters 58500)
+(epoch: 2, iters: 14222, time: 0.074, data: 0.002) D_real: 0.219 D_fake: 0.276 D_real_perturbation: 0.274 D_fake_perturbation: 0.245 max_pert: 0.006 pert_constraint_D: 1.946 idt: 0.155 idt_perturbation: 0.004 
+(epoch: 2, iters: 15522, time: 0.074, data: 0.002) D_real: 0.270 D_fake: 0.194 D_real_perturbation: 0.279 D_fake_perturbation: 0.257 max_pert: 0.059 pert_constraint_D: 2.213 idt: 0.086 idt_perturbation: 0.006 
+(epoch: 2, iters: 16822, time: 0.081, data: 0.002) D_real: 0.370 D_fake: 0.193 D_real_perturbation: 0.262 D_fake_perturbation: 0.281 max_pert: 0.111 pert_constraint_D: 2.371 idt: 0.084 idt_perturbation: 0.005 
+(epoch: 2, iters: 18122, time: 0.074, data: 0.002) D_real: 0.152 D_fake: 0.359 D_real_perturbation: 0.274 D_fake_perturbation: 0.246 max_pert: 0.006 pert_constraint_D: 2.018 idt: 0.135 idt_perturbation: 0.005 
+(epoch: 2, iters: 19422, time: 0.074, data: 0.002) D_real: 0.362 D_fake: 0.158 D_real_perturbation: 0.262 D_fake_perturbation: 0.265 max_pert: 0.008 pert_constraint_D: 2.075 idt: 0.144 idt_perturbation: 0.007 
+saving the latest model (epoch 2, total_iters 65000)
+(epoch: 2, iters: 20722, time: 0.074, data: 0.002) D_real: 0.195 D_fake: 0.304 D_real_perturbation: 0.268 D_fake_perturbation: 0.221 max_pert: 0.007 pert_constraint_D: 1.843 idt: 0.090 idt_perturbation: 0.005 
+(epoch: 2, iters: 22022, time: 0.080, data: 0.002) D_real: 0.181 D_fake: 0.332 D_real_perturbation: 0.266 D_fake_perturbation: 0.243 max_pert: 0.056 pert_constraint_D: 1.947 idt: 0.037 idt_perturbation: 0.004 
+(epoch: 2, iters: 23322, time: 0.073, data: 0.002) D_real: 0.191 D_fake: 0.282 D_real_perturbation: 0.267 D_fake_perturbation: 0.262 max_pert: 0.009 pert_constraint_D: 2.112 idt: 0.143 idt_perturbation: 0.008 
+(epoch: 2, iters: 24622, time: 0.073, data: 0.002) D_real: 0.266 D_fake: 0.218 D_real_perturbation: 0.294 D_fake_perturbation: 0.232 max_pert: 0.109 pert_constraint_D: 2.077 idt: 0.031 idt_perturbation: 0.007 
+(epoch: 2, iters: 25922, time: 0.073, data: 0.002) D_real: 0.291 D_fake: 0.168 D_real_perturbation: 0.276 D_fake_perturbation: 0.231 max_pert: 0.056 pert_constraint_D: 2.037 idt: 0.135 idt_perturbation: 0.003 
+saving the latest model (epoch 2, total_iters 71500)
+(epoch: 2, iters: 27222, time: 0.080, data: 0.002) D_real: 0.188 D_fake: 0.244 D_real_perturbation: 0.240 D_fake_perturbation: 0.263 max_pert: 0.156 pert_constraint_D: 2.417 idt: 0.080 idt_perturbation: 0.005 
+(epoch: 2, iters: 28522, time: 0.073, data: 0.002) D_real: 0.309 D_fake: 0.145 D_real_perturbation: 0.272 D_fake_perturbation: 0.237 max_pert: 0.104 pert_constraint_D: 2.151 idt: 0.083 idt_perturbation: 0.004 
+(epoch: 2, iters: 29822, time: 0.073, data: 0.002) D_real: 0.210 D_fake: 0.277 D_real_perturbation: 0.329 D_fake_perturbation: 0.276 max_pert: 0.156 pert_constraint_D: 2.355 idt: 0.159 idt_perturbation: 0.005 
+(epoch: 2, iters: 31122, time: 0.073, data: 0.001) D_real: 0.193 D_fake: 0.326 D_real_perturbation: 0.296 D_fake_perturbation: 0.295 max_pert: 0.057 pert_constraint_D: 2.138 idt: 0.077 idt_perturbation: 0.007 
+(epoch: 2, iters: 32422, time: 0.086, data: 0.001) D_real: 0.183 D_fake: 0.338 D_real_perturbation: 0.309 D_fake_perturbation: 0.324 max_pert: 0.056 pert_constraint_D: 2.271 idt: 0.084 idt_perturbation: 0.006 
+saving the latest model (epoch 2, total_iters 78000)
+(epoch: 2, iters: 33722, time: 0.073, data: 0.001) D_real: 0.135 D_fake: 0.328 D_real_perturbation: 0.261 D_fake_perturbation: 0.258 max_pert: 0.103 pert_constraint_D: 2.806 idt: 0.346 idt_perturbation: 0.005 
+(epoch: 2, iters: 35022, time: 0.073, data: 0.002) D_real: 0.248 D_fake: 0.210 D_real_perturbation: 0.253 D_fake_perturbation: 0.242 max_pert: 0.150 pert_constraint_D: 2.282 idt: 0.036 idt_perturbation: 0.005 
+(epoch: 2, iters: 36322, time: 0.073, data: 0.002) D_real: 0.155 D_fake: 0.267 D_real_perturbation: 0.242 D_fake_perturbation: 0.232 max_pert: 0.198 pert_constraint_D: 2.621 idt: 0.078 idt_perturbation: 0.005 
+(epoch: 2, iters: 37622, time: 0.080, data: 0.001) D_real: 0.179 D_fake: 0.332 D_real_perturbation: 0.380 D_fake_perturbation: 0.365 max_pert: 0.007 pert_constraint_D: 2.109 idt: 0.139 idt_perturbation: 0.006 
+(epoch: 2, iters: 38922, time: 0.074, data: 0.001) D_real: 0.261 D_fake: 0.195 D_real_perturbation: 0.239 D_fake_perturbation: 0.250 max_pert: 0.053 pert_constraint_D: 2.130 idt: 0.036 idt_perturbation: 0.005 
+saving the latest model (epoch 2, total_iters 84500)
+(epoch: 2, iters: 40222, time: 0.073, data: 0.002) D_real: 0.109 D_fake: 0.391 D_real_perturbation: 0.238 D_fake_perturbation: 0.251 max_pert: 0.103 pert_constraint_D: 2.259 idt: 0.105 idt_perturbation: 0.009 
+(epoch: 2, iters: 41522, time: 0.080, data: 0.002) D_real: 0.252 D_fake: 0.163 D_real_perturbation: 0.277 D_fake_perturbation: 0.238 max_pert: 0.146 pert_constraint_D: 2.498 idt: 0.138 idt_perturbation: 0.010 
+(epoch: 2, iters: 42822, time: 0.082, data: 0.014) D_real: 0.273 D_fake: 0.164 D_real_perturbation: 0.192 D_fake_perturbation: 0.303 max_pert: 0.056 pert_constraint_D: 1.930 idt: 0.102 idt_perturbation: 0.009 
+(epoch: 2, iters: 44122, time: 0.073, data: 0.002) D_real: 0.132 D_fake: 0.370 D_real_perturbation: 0.263 D_fake_perturbation: 0.260 max_pert: 0.056 pert_constraint_D: 2.260 idt: 0.193 idt_perturbation: 0.008 
+(epoch: 2, iters: 45422, time: 0.074, data: 0.002) D_real: 0.321 D_fake: 0.193 D_real_perturbation: 0.210 D_fake_perturbation: 0.231 max_pert: 0.054 pert_constraint_D: 1.975 idt: 0.081 idt_perturbation: 0.006 
+saving the latest model (epoch 2, total_iters 91000)
+saving the model at the end of epoch 2, iters 91156
+End of epoch 2 / 200 	 Time Taken: 3370 sec
+learning rate 0.0002000 -> 0.0002000
+(epoch: 3, iters: 1144, time: 0.074, data: 0.002) D_real: 0.283 D_fake: 0.216 D_real_perturbation: 0.156 D_fake_perturbation: 0.317 max_pert: 0.100 pert_constraint_D: 2.566 idt: 0.177 idt_perturbation: 0.011 
+(epoch: 3, iters: 2444, time: 0.086, data: 0.002) D_real: 0.244 D_fake: 0.187 D_real_perturbation: 0.179 D_fake_perturbation: 0.313 max_pert: 0.187 pert_constraint_D: 2.573 idt: 0.134 idt_perturbation: 0.007 
+(epoch: 3, iters: 3744, time: 0.073, data: 0.002) D_real: 0.132 D_fake: 0.362 D_real_perturbation: 0.116 D_fake_perturbation: 0.115 max_pert: 0.028 pert_constraint_D: 1.803 idt: 0.055 idt_perturbation: 0.022 
+(epoch: 3, iters: 5044, time: 0.073, data: 0.001) D_real: 0.233 D_fake: 0.379 D_real_perturbation: 0.147 D_fake_perturbation: 0.227 max_pert: 0.098 pert_constraint_D: 2.521 idt: 0.231 idt_perturbation: 0.008 
+(epoch: 3, iters: 6344, time: 0.074, data: 0.002) D_real: 0.351 D_fake: 0.159 D_real_perturbation: 0.100 D_fake_perturbation: 0.327 max_pert: 0.146 pert_constraint_D: 2.471 idt: 0.081 idt_perturbation: 0.011 
+saving the latest model (epoch 3, total_iters 97500)
+(epoch: 3, iters: 7644, time: 0.080, data: 0.002) D_real: 0.218 D_fake: 0.238 D_real_perturbation: 0.100 D_fake_perturbation: 0.550 max_pert: 0.054 pert_constraint_D: 2.233 idt: 0.182 idt_perturbation: 0.013 
+(epoch: 3, iters: 8944, time: 0.074, data: 0.001) D_real: 0.233 D_fake: 0.199 D_real_perturbation: 0.127 D_fake_perturbation: 0.139 max_pert: 0.055 pert_constraint_D: 2.205 idt: 0.183 idt_perturbation: 0.008 
+(epoch: 3, iters: 10244, time: 0.073, data: 0.002) D_real: 0.185 D_fake: 0.278 D_real_perturbation: 0.277 D_fake_perturbation: 0.100 max_pert: 0.055 pert_constraint_D: 2.449 idt: 0.176 idt_perturbation: 0.008 
+(epoch: 3, iters: 11544, time: 0.073, data: 0.002) D_real: 0.285 D_fake: 0.224 D_real_perturbation: 0.281 D_fake_perturbation: 0.205 max_pert: 0.004 pert_constraint_D: 1.957 idt: 0.029 idt_perturbation: 0.005 
+(epoch: 3, iters: 12844, time: 0.086, data: 0.002) D_real: 0.233 D_fake: 0.231 D_real_perturbation: 0.255 D_fake_perturbation: 0.222 max_pert: 0.137 pert_constraint_D: 2.346 idt: 0.089 idt_perturbation: 0.004 
+saving the latest model (epoch 3, total_iters 104000)
+(epoch: 3, iters: 14144, time: 0.073, data: 0.002) D_real: 0.240 D_fake: 0.237 D_real_perturbation: 0.276 D_fake_perturbation: 0.233 max_pert: 0.048 pert_constraint_D: 1.978 idt: 0.080 idt_perturbation: 0.003 
+(epoch: 3, iters: 15444, time: 0.074, data: 0.001) D_real: 0.148 D_fake: 0.339 D_real_perturbation: 0.255 D_fake_perturbation: 0.226 max_pert: 0.048 pert_constraint_D: 2.145 idt: 0.078 idt_perturbation: 0.004 
+(epoch: 3, iters: 16744, time: 0.073, data: 0.002) D_real: 0.246 D_fake: 0.197 D_real_perturbation: 0.254 D_fake_perturbation: 0.248 max_pert: 0.047 pert_constraint_D: 2.024 idt: 0.139 idt_perturbation: 0.004 
+(epoch: 3, iters: 18044, time: 0.080, data: 0.002) D_real: 0.289 D_fake: 0.505 D_real_perturbation: 0.314 D_fake_perturbation: 0.259 max_pert: 0.003 pert_constraint_D: 1.875 idt: 0.087 idt_perturbation: 0.004 
+(epoch: 3, iters: 19344, time: 0.073, data: 0.001) D_real: 0.206 D_fake: 0.206 D_real_perturbation: 0.240 D_fake_perturbation: 0.268 max_pert: 0.091 pert_constraint_D: 2.713 idt: 0.229 idt_perturbation: 0.004 
+saving the latest model (epoch 3, total_iters 110500)
+(epoch: 3, iters: 20644, time: 0.073, data: 0.002) D_real: 0.151 D_fake: 0.309 D_real_perturbation: 0.323 D_fake_perturbation: 0.259 max_pert: 0.047 pert_constraint_D: 2.012 idt: 0.076 idt_perturbation: 0.003 
+(epoch: 3, iters: 21944, time: 0.074, data: 0.001) D_real: 0.228 D_fake: 0.357 D_real_perturbation: 0.273 D_fake_perturbation: 0.339 max_pert: 0.047 pert_constraint_D: 1.889 idt: 0.067 idt_perturbation: 0.003 
+(epoch: 3, iters: 23244, time: 0.080, data: 0.002) D_real: 0.247 D_fake: 0.216 D_real_perturbation: 0.271 D_fake_perturbation: 0.260 max_pert: 0.175 pert_constraint_D: 2.542 idt: 0.084 idt_perturbation: 0.004 
+(epoch: 3, iters: 24544, time: 0.074, data: 0.001) D_real: 0.210 D_fake: 0.259 D_real_perturbation: 0.251 D_fake_perturbation: 0.273 max_pert: 0.131 pert_constraint_D: 2.467 idt: 0.124 idt_perturbation: 0.004 
+(epoch: 3, iters: 25844, time: 0.074, data: 0.002) D_real: 0.320 D_fake: 0.194 D_real_perturbation: 0.246 D_fake_perturbation: 0.253 max_pert: 0.045 pert_constraint_D: 1.792 idt: 0.041 idt_perturbation: 0.003 
+saving the latest model (epoch 3, total_iters 117000)
+(epoch: 3, iters: 27144, time: 0.074, data: 0.002) D_real: 0.285 D_fake: 0.167 D_real_perturbation: 0.285 D_fake_perturbation: 0.312 max_pert: 0.087 pert_constraint_D: 2.239 idt: 0.116 idt_perturbation: 0.002 
+(epoch: 3, iters: 28444, time: 0.080, data: 0.001) D_real: 0.239 D_fake: 0.205 D_real_perturbation: 0.247 D_fake_perturbation: 0.303 max_pert: 0.216 pert_constraint_D: 2.536 idt: 0.089 idt_perturbation: 0.004 
+(epoch: 3, iters: 29744, time: 0.073, data: 0.002) D_real: 0.216 D_fake: 0.272 D_real_perturbation: 0.268 D_fake_perturbation: 0.260 max_pert: 0.045 pert_constraint_D: 1.867 idt: 0.047 idt_perturbation: 0.003 
+(epoch: 3, iters: 31044, time: 0.073, data: 0.002) D_real: 0.274 D_fake: 0.145 D_real_perturbation: 0.269 D_fake_perturbation: 0.235 max_pert: 0.087 pert_constraint_D: 2.287 idt: 0.135 idt_perturbation: 0.004 
+(epoch: 3, iters: 32344, time: 0.073, data: 0.002) D_real: 0.126 D_fake: 0.306 D_real_perturbation: 0.283 D_fake_perturbation: 0.215 max_pert: 0.086 pert_constraint_D: 2.233 idt: 0.131 idt_perturbation: 0.003 
+saving the latest model (epoch 3, total_iters 123500)
+(epoch: 3, iters: 33644, time: 0.079, data: 0.002) D_real: 0.282 D_fake: 0.175 D_real_perturbation: 0.274 D_fake_perturbation: 0.234 max_pert: 0.169 pert_constraint_D: 2.137 idt: 0.021 idt_perturbation: 0.004 
+(epoch: 3, iters: 34944, time: 0.074, data: 0.001) D_real: 0.189 D_fake: 0.274 D_real_perturbation: 0.316 D_fake_perturbation: 0.222 max_pert: 0.087 pert_constraint_D: 2.158 idt: 0.035 idt_perturbation: 0.004 
+(epoch: 3, iters: 36244, time: 0.074, data: 0.002) D_real: 0.232 D_fake: 0.257 D_real_perturbation: 0.276 D_fake_perturbation: 0.308 max_pert: 0.045 pert_constraint_D: 1.954 idt: 0.085 idt_perturbation: 0.003 
+(epoch: 3, iters: 37544, time: 0.073, data: 0.002) D_real: 0.235 D_fake: 0.209 D_real_perturbation: 0.249 D_fake_perturbation: 0.303 max_pert: 0.166 pert_constraint_D: 2.495 idt: 0.110 idt_perturbation: 0.003 
+(epoch: 3, iters: 38844, time: 0.085, data: 0.001) D_real: 0.280 D_fake: 0.186 D_real_perturbation: 0.252 D_fake_perturbation: 0.313 max_pert: 0.004 pert_constraint_D: 1.912 idt: 0.024 idt_perturbation: 0.003 
+saving the latest model (epoch 3, total_iters 130000)
+(epoch: 3, iters: 40144, time: 0.074, data: 0.002) D_real: 0.339 D_fake: 0.224 D_real_perturbation: 0.249 D_fake_perturbation: 0.272 max_pert: 0.004 pert_constraint_D: 1.645 idt: 0.039 idt_perturbation: 0.004 
+(epoch: 3, iters: 41444, time: 0.074, data: 0.001) D_real: 0.335 D_fake: 0.169 D_real_perturbation: 0.247 D_fake_perturbation: 0.270 max_pert: 0.084 pert_constraint_D: 2.294 idt: 0.081 idt_perturbation: 0.005 
+(epoch: 3, iters: 42744, time: 0.073, data: 0.002) D_real: 0.417 D_fake: 0.146 D_real_perturbation: 0.240 D_fake_perturbation: 0.263 max_pert: 0.082 pert_constraint_D: 1.913 idt: 0.081 idt_perturbation: 0.004 
+(epoch: 3, iters: 44044, time: 0.080, data: 0.002) D_real: 0.166 D_fake: 0.337 D_real_perturbation: 0.229 D_fake_perturbation: 0.253 max_pert: 0.004 pert_constraint_D: 2.221 idt: 0.228 idt_perturbation: 0.005 
+(epoch: 3, iters: 45344, time: 0.074, data: 0.002) D_real: 0.139 D_fake: 0.311 D_real_perturbation: 0.282 D_fake_perturbation: 0.225 max_pert: 0.120 pert_constraint_D: 2.208 idt: 0.032 idt_perturbation: 0.003 
+saving the latest model (epoch 3, total_iters 136500)
+saving the model at the end of epoch 3, iters 136734
+End of epoch 3 / 200 	 Time Taken: 3370 sec
+learning rate 0.0002000 -> 0.0002000
+(epoch: 4, iters: 1066, time: 0.074, data: 0.002) D_real: 0.209 D_fake: 0.272 D_real_perturbation: 0.279 D_fake_perturbation: 0.314 max_pert: 0.081 pert_constraint_D: 2.272 idt: 0.076 idt_perturbation: 0.005 
+(epoch: 4, iters: 2366, time: 0.074, data: 0.002) D_real: 0.201 D_fake: 0.287 D_real_perturbation: 0.299 D_fake_perturbation: 0.141 max_pert: 0.009 pert_constraint_D: 2.230 idt: 0.220 idt_perturbation: 0.007 
+(epoch: 4, iters: 3666, time: 0.087, data: 0.002) D_real: 0.238 D_fake: 0.304 D_real_perturbation: 0.234 D_fake_perturbation: 0.238 max_pert: 0.006 pert_constraint_D: 1.967 idt: 0.071 idt_perturbation: 0.005 
+(epoch: 4, iters: 4966, time: 0.074, data: 0.002) D_real: 0.380 D_fake: 0.162 D_real_perturbation: 0.222 D_fake_perturbation: 0.193 max_pert: 0.083 pert_constraint_D: 2.223 idt: 0.081 idt_perturbation: 0.009 
+(epoch: 4, iters: 6266, time: 0.073, data: 0.002) D_real: 0.288 D_fake: 0.205 D_real_perturbation: 0.225 D_fake_perturbation: 0.162 max_pert: 0.010 pert_constraint_D: 1.787 idt: 0.045 idt_perturbation: 0.008 
+saving the latest model (epoch 4, total_iters 143000)
+(epoch: 4, iters: 7566, time: 0.073, data: 0.002) D_real: 0.238 D_fake: 0.243 D_real_perturbation: 0.225 D_fake_perturbation: 0.166 max_pert: 0.083 pert_constraint_D: 2.705 idt: 0.164 idt_perturbation: 0.010 
+(epoch: 4, iters: 8866, time: 0.081, data: 0.002) D_real: 0.225 D_fake: 0.240 D_real_perturbation: 0.207 D_fake_perturbation: 0.163 max_pert: 0.120 pert_constraint_D: 2.296 idt: 0.081 idt_perturbation: 0.008 
+(epoch: 4, iters: 10166, time: 0.073, data: 0.001) D_real: 0.336 D_fake: 0.166 D_real_perturbation: 0.432 D_fake_perturbation: 0.100 max_pert: 0.009 pert_constraint_D: 1.890 idt: 0.126 idt_perturbation: 0.012 
+(epoch: 4, iters: 11466, time: 0.074, data: 0.002) D_real: 0.305 D_fake: 0.171 D_real_perturbation: 0.100 D_fake_perturbation: 0.528 max_pert: 0.113 pert_constraint_D: 2.459 idt: 0.089 idt_perturbation: 0.008 
+(epoch: 4, iters: 12766, time: 0.074, data: 0.002) D_real: 0.225 D_fake: 0.289 D_real_perturbation: 0.414 D_fake_perturbation: 0.264 max_pert: 0.051 pert_constraint_D: 2.216 idt: 0.174 idt_perturbation: 0.015 
+saving the latest model (epoch 4, total_iters 149500)
+(epoch: 4, iters: 14066, time: 0.079, data: 0.002) D_real: 0.245 D_fake: 0.173 D_real_perturbation: 0.178 D_fake_perturbation: 0.115 max_pert: 0.113 pert_constraint_D: 2.624 idt: 0.130 idt_perturbation: 0.013 
+(epoch: 4, iters: 15366, time: 0.074, data: 0.002) D_real: 0.311 D_fake: 0.177 D_real_perturbation: 0.121 D_fake_perturbation: 0.384 max_pert: 0.075 pert_constraint_D: 2.420 idt: 0.168 idt_perturbation: 0.012 
+(epoch: 4, iters: 16666, time: 0.074, data: 0.002) D_real: 0.255 D_fake: 0.221 D_real_perturbation: 0.129 D_fake_perturbation: 0.114 max_pert: 0.078 pert_constraint_D: 2.488 idt: 0.116 idt_perturbation: 0.013 
+(epoch: 4, iters: 17966, time: 0.074, data: 0.002) D_real: 0.209 D_fake: 0.319 D_real_perturbation: 0.101 D_fake_perturbation: 0.138 max_pert: 0.009 pert_constraint_D: 1.713 idt: 0.028 idt_perturbation: 0.006 
+(epoch: 4, iters: 19266, time: 0.085, data: 0.002) D_real: 0.325 D_fake: 0.182 D_real_perturbation: 0.131 D_fake_perturbation: 0.112 max_pert: 0.073 pert_constraint_D: 2.321 idt: 0.126 idt_perturbation: 0.009 
+saving the latest model (epoch 4, total_iters 156000)
+(epoch: 4, iters: 20566, time: 0.074, data: 0.002) D_real: 0.207 D_fake: 0.257 D_real_perturbation: 0.101 D_fake_perturbation: 0.201 max_pert: 0.072 pert_constraint_D: 2.251 idt: 0.079 idt_perturbation: 0.007 
+(epoch: 4, iters: 21866, time: 0.073, data: 0.002) D_real: 0.269 D_fake: 0.231 D_real_perturbation: 0.113 D_fake_perturbation: 0.108 max_pert: 0.044 pert_constraint_D: 1.888 idt: 0.032 idt_perturbation: 0.008 
+(epoch: 4, iters: 23166, time: 0.074, data: 0.001) D_real: 0.304 D_fake: 0.211 D_real_perturbation: 0.143 D_fake_perturbation: 0.100 max_pert: 0.137 pert_constraint_D: 2.499 idt: 0.086 idt_perturbation: 0.014 
+(epoch: 4, iters: 24466, time: 0.079, data: 0.002) D_real: 0.270 D_fake: 0.238 D_real_perturbation: 0.234 D_fake_perturbation: 0.218 max_pert: 0.097 pert_constraint_D: 2.224 idt: 0.067 idt_perturbation: 0.004 
+(epoch: 4, iters: 25766, time: 0.073, data: 0.002) D_real: 0.253 D_fake: 0.226 D_real_perturbation: 0.130 D_fake_perturbation: 0.182 max_pert: 0.069 pert_constraint_D: 2.239 idt: 0.080 idt_perturbation: 0.008 
+saving the latest model (epoch 4, total_iters 162500)
+(epoch: 4, iters: 27066, time: 0.074, data: 0.002) D_real: 0.289 D_fake: 0.190 D_real_perturbation: 0.116 D_fake_perturbation: 0.166 max_pert: 0.160 pert_constraint_D: 2.762 idt: 0.132 idt_perturbation: 0.008 
+(epoch: 4, iters: 28366, time: 0.074, data: 0.002) D_real: 0.235 D_fake: 0.244 D_real_perturbation: 0.105 D_fake_perturbation: 0.125 max_pert: 0.067 pert_constraint_D: 1.944 idt: 0.039 idt_perturbation: 0.008 
+(epoch: 4, iters: 29666, time: 0.080, data: 0.002) D_real: 0.211 D_fake: 0.307 D_real_perturbation: 0.100 D_fake_perturbation: 0.186 max_pert: 0.065 pert_constraint_D: 2.114 idt: 0.048 idt_perturbation: 0.008 
+(epoch: 4, iters: 30966, time: 0.074, data: 0.001) D_real: 0.215 D_fake: 0.222 D_real_perturbation: 0.159 D_fake_perturbation: 0.113 max_pert: 0.148 pert_constraint_D: 2.540 idt: 0.082 idt_perturbation: 0.008 
+(epoch: 4, iters: 32266, time: 0.074, data: 0.002) D_real: 0.222 D_fake: 0.257 D_real_perturbation: 0.102 D_fake_perturbation: 0.372 max_pert: 0.034 pert_constraint_D: 2.088 idt: 0.078 idt_perturbation: 0.005 
+saving the latest model (epoch 4, total_iters 169000)
+(epoch: 4, iters: 33566, time: 0.074, data: 0.002) D_real: 0.216 D_fake: 0.240 D_real_perturbation: 0.101 D_fake_perturbation: 0.194 max_pert: 0.036 pert_constraint_D: 2.085 idt: 0.085 idt_perturbation: 0.008 
+(epoch: 4, iters: 34866, time: 0.079, data: 0.002) D_real: 0.266 D_fake: 0.221 D_real_perturbation: 0.102 D_fake_perturbation: 0.135 max_pert: 0.036 pert_constraint_D: 2.119 idt: 0.127 idt_perturbation: 0.008 
+(epoch: 4, iters: 36166, time: 0.073, data: 0.002) D_real: 0.273 D_fake: 0.232 D_real_perturbation: 0.318 D_fake_perturbation: 0.105 max_pert: 0.005 pert_constraint_D: 1.827 idt: 0.087 idt_perturbation: 0.006 
+(epoch: 4, iters: 37466, time: 0.073, data: 0.002) D_real: 0.159 D_fake: 0.331 D_real_perturbation: 0.101 D_fake_perturbation: 0.340 max_pert: 0.059 pert_constraint_D: 2.127 idt: 0.132 idt_perturbation: 0.007 
+(epoch: 4, iters: 38766, time: 0.073, data: 0.002) D_real: 0.266 D_fake: 0.274 D_real_perturbation: 0.441 D_fake_perturbation: 0.100 max_pert: 0.032 pert_constraint_D: 1.989 idt: 0.077 idt_perturbation: 0.007 
+saving the latest model (epoch 4, total_iters 175500)
+(epoch: 4, iters: 40066, time: 0.079, data: 0.002) D_real: 0.265 D_fake: 0.196 D_real_perturbation: 0.102 D_fake_perturbation: 0.247 max_pert: 0.081 pert_constraint_D: 2.564 idt: 0.164 idt_perturbation: 0.006 
+(epoch: 4, iters: 41366, time: 0.073, data: 0.001) D_real: 0.225 D_fake: 0.272 D_real_perturbation: 0.102 D_fake_perturbation: 0.416 max_pert: 0.057 pert_constraint_D: 1.918 idt: 0.027 idt_perturbation: 0.004 
+(epoch: 4, iters: 42666, time: 0.073, data: 0.001) D_real: 0.236 D_fake: 0.194 D_real_perturbation: 0.225 D_fake_perturbation: 0.100 max_pert: 0.136 pert_constraint_D: 2.480 idt: 0.078 idt_perturbation: 0.008 
+(epoch: 4, iters: 43966, time: 0.073, data: 0.001) D_real: 0.194 D_fake: 0.198 D_real_perturbation: 0.101 D_fake_perturbation: 0.105 max_pert: 0.110 pert_constraint_D: 2.428 idt: 0.080 idt_perturbation: 0.013 
+(epoch: 4, iters: 45266, time: 0.085, data: 0.002) D_real: 0.247 D_fake: 0.217 D_real_perturbation: 0.107 D_fake_perturbation: 0.235 max_pert: 0.078 pert_constraint_D: 2.251 idt: 0.084 idt_perturbation: 0.005 
+saving the latest model (epoch 4, total_iters 182000)
+saving the model at the end of epoch 4, iters 182312
+End of epoch 4 / 200 	 Time Taken: 3357 sec
+learning rate 0.0002000 -> 0.0002000
+(epoch: 5, iters: 988, time: 0.073, data: 0.002) D_real: 0.241 D_fake: 0.279 D_real_perturbation: 0.115 D_fake_perturbation: 0.274 max_pert: 0.030 pert_constraint_D: 1.994 idt: 0.028 idt_perturbation: 0.004 
+(epoch: 5, iters: 2288, time: 0.073, data: 0.002) D_real: 0.238 D_fake: 0.244 D_real_perturbation: 0.454 D_fake_perturbation: 0.124 max_pert: 0.033 pert_constraint_D: 1.805 idt: 0.024 idt_perturbation: 0.007 
+(epoch: 5, iters: 3588, time: 0.073, data: 0.001) D_real: 0.145 D_fake: 0.344 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.084 pert_constraint_D: 2.196 idt: 0.071 idt_perturbation: 0.013 
+(epoch: 5, iters: 4888, time: 0.085, data: 0.002) D_real: 0.211 D_fake: 0.298 D_real_perturbation: 0.121 D_fake_perturbation: 0.254 max_pert: 0.005 pert_constraint_D: 1.803 idt: 0.069 idt_perturbation: 0.005 
+(epoch: 5, iters: 6188, time: 0.073, data: 0.001) D_real: 0.268 D_fake: 0.240 D_real_perturbation: 0.104 D_fake_perturbation: 0.130 max_pert: 0.049 pert_constraint_D: 2.254 idt: 0.067 idt_perturbation: 0.005 
+saving the latest model (epoch 5, total_iters 188500)
+(epoch: 5, iters: 7488, time: 0.073, data: 0.002) D_real: 0.438 D_fake: 0.100 D_real_perturbation: 0.116 D_fake_perturbation: 0.116 max_pert: 0.071 pert_constraint_D: 2.046 idt: 0.026 idt_perturbation: 0.006 
+(epoch: 5, iters: 8788, time: 0.073, data: 0.002) D_real: 0.212 D_fake: 0.250 D_real_perturbation: 0.364 D_fake_perturbation: 0.106 max_pert: 0.051 pert_constraint_D: 2.212 idt: 0.077 idt_perturbation: 0.008 
+(epoch: 5, iters: 10088, time: 0.083, data: 0.002) D_real: 0.303 D_fake: 0.166 D_real_perturbation: 0.106 D_fake_perturbation: 0.189 max_pert: 0.049 pert_constraint_D: 2.303 idt: 0.119 idt_perturbation: 0.009 
+(epoch: 5, iters: 11388, time: 0.073, data: 0.002) D_real: 0.231 D_fake: 0.311 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.009 pert_constraint_D: 1.772 idt: 0.071 idt_perturbation: 0.008 
+(epoch: 5, iters: 12688, time: 0.073, data: 0.002) D_real: 0.255 D_fake: 0.226 D_real_perturbation: 0.100 D_fake_perturbation: 0.104 max_pert: 0.071 pert_constraint_D: 2.116 idt: 0.123 idt_perturbation: 0.009 
+saving the latest model (epoch 5, total_iters 195000)
+(epoch: 5, iters: 13988, time: 0.073, data: 0.001) D_real: 0.314 D_fake: 0.225 D_real_perturbation: 0.179 D_fake_perturbation: 0.221 max_pert: 0.048 pert_constraint_D: 1.940 idt: 0.073 idt_perturbation: 0.004 
+(epoch: 5, iters: 15288, time: 0.079, data: 0.002) D_real: 0.166 D_fake: 0.379 D_real_perturbation: 0.101 D_fake_perturbation: 0.196 max_pert: 0.026 pert_constraint_D: 1.971 idt: 0.084 idt_perturbation: 0.006 
+(epoch: 5, iters: 16588, time: 0.073, data: 0.002) D_real: 0.245 D_fake: 0.222 D_real_perturbation: 0.100 D_fake_perturbation: 0.280 max_pert: 0.024 pert_constraint_D: 1.861 idt: 0.079 idt_perturbation: 0.006 
+(epoch: 5, iters: 17888, time: 0.073, data: 0.001) D_real: 0.226 D_fake: 0.278 D_real_perturbation: 0.101 D_fake_perturbation: 0.103 max_pert: 0.032 pert_constraint_D: 2.184 idt: 0.117 idt_perturbation: 0.009 
+(epoch: 5, iters: 19188, time: 0.073, data: 0.002) D_real: 0.179 D_fake: 0.323 D_real_perturbation: 0.124 D_fake_perturbation: 0.170 max_pert: 0.005 pert_constraint_D: 2.083 idt: 0.171 idt_perturbation: 0.006 
+saving the latest model (epoch 5, total_iters 201500)
+(epoch: 5, iters: 20488, time: 0.083, data: 0.002) D_real: 0.208 D_fake: 0.269 D_real_perturbation: 0.103 D_fake_perturbation: 0.162 max_pert: 0.031 pert_constraint_D: 2.066 idt: 0.134 idt_perturbation: 0.014 
+(epoch: 5, iters: 21788, time: 0.073, data: 0.001) D_real: 0.245 D_fake: 0.248 D_real_perturbation: 0.195 D_fake_perturbation: 0.117 max_pert: 0.007 pert_constraint_D: 1.917 idt: 0.067 idt_perturbation: 0.006 
+(epoch: 5, iters: 23088, time: 0.073, data: 0.002) D_real: 0.288 D_fake: 0.302 D_real_perturbation: 0.118 D_fake_perturbation: 0.129 max_pert: 0.005 pert_constraint_D: 1.848 idt: 0.077 idt_perturbation: 0.007 
+(epoch: 5, iters: 24388, time: 0.073, data: 0.002) D_real: 0.184 D_fake: 0.274 D_real_perturbation: 0.100 D_fake_perturbation: 0.104 max_pert: 0.044 pert_constraint_D: 2.472 idt: 0.079 idt_perturbation: 0.014 
+(epoch: 5, iters: 25688, time: 0.086, data: 0.002) D_real: 0.248 D_fake: 0.253 D_real_perturbation: 0.100 D_fake_perturbation: 0.342 max_pert: 0.005 pert_constraint_D: 1.935 idt: 0.131 idt_perturbation: 0.007 
+saving the latest model (epoch 5, total_iters 208000)
+(epoch: 5, iters: 26988, time: 0.073, data: 0.002) D_real: 0.194 D_fake: 0.263 D_real_perturbation: 0.100 D_fake_perturbation: 0.101 max_pert: 0.044 pert_constraint_D: 2.064 idt: 0.117 idt_perturbation: 0.014 
+(epoch: 5, iters: 28288, time: 0.073, data: 0.002) D_real: 0.246 D_fake: 0.232 D_real_perturbation: 0.256 D_fake_perturbation: 0.254 max_pert: 0.020 pert_constraint_D: 1.909 idt: 0.087 idt_perturbation: 0.004 
+(epoch: 5, iters: 29588, time: 0.073, data: 0.002) D_real: 0.224 D_fake: 0.281 D_real_perturbation: 0.235 D_fake_perturbation: 0.193 max_pert: 0.019 pert_constraint_D: 2.164 idt: 0.208 idt_perturbation: 0.004 
+(epoch: 5, iters: 30888, time: 0.079, data: 0.002) D_real: 0.245 D_fake: 0.263 D_real_perturbation: 0.124 D_fake_perturbation: 0.121 max_pert: 0.037 pert_constraint_D: 2.086 idt: 0.093 idt_perturbation: 0.006 
+(epoch: 5, iters: 32188, time: 0.073, data: 0.002) D_real: 0.162 D_fake: 0.357 D_real_perturbation: 0.278 D_fake_perturbation: 0.121 max_pert: 0.004 pert_constraint_D: 2.111 idt: 0.159 idt_perturbation: 0.007 
+saving the latest model (epoch 5, total_iters 214500)
+(epoch: 5, iters: 33488, time: 0.073, data: 0.002) D_real: 0.142 D_fake: 0.289 D_real_perturbation: 0.103 D_fake_perturbation: 0.145 max_pert: 0.088 pert_constraint_D: 2.286 idt: 0.114 idt_perturbation: 0.006 
+(epoch: 5, iters: 34788, time: 0.073, data: 0.002) D_real: 0.230 D_fake: 0.268 D_real_perturbation: 0.100 D_fake_perturbation: 0.284 max_pert: 0.021 pert_constraint_D: 2.102 idt: 0.126 idt_perturbation: 0.007 
+(epoch: 5, iters: 36088, time: 0.081, data: 0.002) D_real: 0.215 D_fake: 0.205 D_real_perturbation: 0.113 D_fake_perturbation: 0.100 max_pert: 0.089 pert_constraint_D: 2.324 idt: 0.116 idt_perturbation: 0.010 
+(epoch: 5, iters: 37388, time: 0.073, data: 0.002) D_real: 0.186 D_fake: 0.305 D_real_perturbation: 0.358 D_fake_perturbation: 0.118 max_pert: 0.035 pert_constraint_D: 1.850 idt: 0.030 idt_perturbation: 0.007 
+(epoch: 5, iters: 38688, time: 0.073, data: 0.002) D_real: 0.256 D_fake: 0.244 D_real_perturbation: 0.100 D_fake_perturbation: 0.342 max_pert: 0.023 pert_constraint_D: 1.756 idt: 0.029 idt_perturbation: 0.006 
+saving the latest model (epoch 5, total_iters 221000)
+(epoch: 5, iters: 39988, time: 0.073, data: 0.002) D_real: 0.204 D_fake: 0.254 D_real_perturbation: 0.109 D_fake_perturbation: 0.245 max_pert: 0.037 pert_constraint_D: 1.812 idt: 0.051 idt_perturbation: 0.006 
+(epoch: 5, iters: 41288, time: 0.081, data: 0.002) D_real: 0.302 D_fake: 0.247 D_real_perturbation: 0.207 D_fake_perturbation: 0.217 max_pert: 0.019 pert_constraint_D: 1.929 idt: 0.039 idt_perturbation: 0.005 
+(epoch: 5, iters: 42588, time: 0.073, data: 0.002) D_real: 0.188 D_fake: 0.268 D_real_perturbation: 0.117 D_fake_perturbation: 0.117 max_pert: 0.048 pert_constraint_D: 2.013 idt: 0.087 idt_perturbation: 0.006 
+(epoch: 5, iters: 43888, time: 0.073, data: 0.002) D_real: 0.203 D_fake: 0.269 D_real_perturbation: 0.102 D_fake_perturbation: 0.112 max_pert: 0.020 pert_constraint_D: 1.726 idt: 0.028 idt_perturbation: 0.005 
+(epoch: 5, iters: 45188, time: 0.073, data: 0.002) D_real: 0.171 D_fake: 0.310 D_real_perturbation: 0.100 D_fake_perturbation: 0.130 max_pert: 0.020 pert_constraint_D: 2.125 idt: 0.124 idt_perturbation: 0.007 
+saving the latest model (epoch 5, total_iters 227500)
+saving the model at the end of epoch 5, iters 227890
+End of epoch 5 / 200 	 Time Taken: 3348 sec
+learning rate 0.0002000 -> 0.0002000
+(epoch: 6, iters: 910, time: 0.085, data: 0.002) D_real: 0.202 D_fake: 0.282 D_real_perturbation: 0.100 D_fake_perturbation: 0.131 max_pert: 0.019 pert_constraint_D: 2.040 idt: 0.160 idt_perturbation: 0.009 
+(epoch: 6, iters: 2210, time: 0.073, data: 0.002) D_real: 0.253 D_fake: 0.233 D_real_perturbation: 0.144 D_fake_perturbation: 0.206 max_pert: 0.005 pert_constraint_D: 1.851 idt: 0.073 idt_perturbation: 0.006 
+(epoch: 6, iters: 3510, time: 0.073, data: 0.002) D_real: 0.259 D_fake: 0.234 D_real_perturbation: 0.104 D_fake_perturbation: 0.138 max_pert: 0.016 pert_constraint_D: 1.848 idt: 0.080 idt_perturbation: 0.005 
+(epoch: 6, iters: 4810, time: 0.073, data: 0.002) D_real: 0.211 D_fake: 0.282 D_real_perturbation: 0.101 D_fake_perturbation: 0.196 max_pert: 0.018 pert_constraint_D: 1.830 idt: 0.034 idt_perturbation: 0.004 
+(epoch: 6, iters: 6110, time: 0.085, data: 0.002) D_real: 0.337 D_fake: 0.159 D_real_perturbation: 0.162 D_fake_perturbation: 0.100 max_pert: 0.045 pert_constraint_D: 1.919 idt: 0.076 idt_perturbation: 0.006 
+saving the latest model (epoch 6, total_iters 234000)
+(epoch: 6, iters: 7410, time: 0.073, data: 0.002) D_real: 0.156 D_fake: 0.371 D_real_perturbation: 0.104 D_fake_perturbation: 0.101 max_pert: 0.021 pert_constraint_D: 1.946 idt: 0.121 idt_perturbation: 0.011 
+(epoch: 6, iters: 8710, time: 0.073, data: 0.002) D_real: 0.224 D_fake: 0.258 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.041 pert_constraint_D: 1.806 idt: 0.120 idt_perturbation: 0.046 
+(epoch: 6, iters: 10010, time: 0.073, data: 0.002) D_real: 0.255 D_fake: 0.252 D_real_perturbation: 0.110 D_fake_perturbation: 0.100 max_pert: 0.034 pert_constraint_D: 1.926 idt: 0.077 idt_perturbation: 0.009 
+(epoch: 6, iters: 11310, time: 0.082, data: 0.002) D_real: 0.261 D_fake: 0.238 D_real_perturbation: 0.106 D_fake_perturbation: 0.102 max_pert: 0.018 pert_constraint_D: 1.820 idt: 0.069 idt_perturbation: 0.007 
+(epoch: 6, iters: 12610, time: 0.073, data: 0.002) D_real: 0.252 D_fake: 0.219 D_real_perturbation: 0.278 D_fake_perturbation: 0.100 max_pert: 0.030 pert_constraint_D: 1.957 idt: 0.066 idt_perturbation: 0.007 
+saving the latest model (epoch 6, total_iters 240500)
+(epoch: 6, iters: 13910, time: 0.073, data: 0.002) D_real: 0.232 D_fake: 0.260 D_real_perturbation: 0.100 D_fake_perturbation: 0.136 max_pert: 0.006 pert_constraint_D: 1.961 idt: 0.124 idt_perturbation: 0.009 
+(epoch: 6, iters: 15210, time: 0.073, data: 0.001) D_real: 0.202 D_fake: 0.234 D_real_perturbation: 0.109 D_fake_perturbation: 0.102 max_pert: 0.049 pert_constraint_D: 2.058 idt: 0.071 idt_perturbation: 0.006 
+(epoch: 6, iters: 16510, time: 0.081, data: 0.002) D_real: 0.158 D_fake: 0.329 D_real_perturbation: 0.100 D_fake_perturbation: 0.107 max_pert: 0.016 pert_constraint_D: 1.678 idt: 0.033 idt_perturbation: 0.007 
+(epoch: 6, iters: 17810, time: 0.073, data: 0.002) D_real: 0.238 D_fake: 0.232 D_real_perturbation: 0.100 D_fake_perturbation: 0.161 max_pert: 0.015 pert_constraint_D: 1.806 idt: 0.121 idt_perturbation: 0.007 
+(epoch: 6, iters: 19110, time: 0.073, data: 0.002) D_real: 0.250 D_fake: 0.271 D_real_perturbation: 0.100 D_fake_perturbation: 0.129 max_pert: 0.005 pert_constraint_D: 1.776 idt: 0.078 idt_perturbation: 0.007 
+saving the latest model (epoch 6, total_iters 247000)
+(epoch: 6, iters: 20410, time: 0.073, data: 0.002) D_real: 0.221 D_fake: 0.270 D_real_perturbation: 0.838 D_fake_perturbation: 0.714 max_pert: 0.016 pert_constraint_D: 1.803 idt: 0.113 idt_perturbation: 0.007 
+(epoch: 6, iters: 21710, time: 0.080, data: 0.002) D_real: 0.162 D_fake: 0.293 D_real_perturbation: 0.143 D_fake_perturbation: 0.111 max_pert: 0.043 pert_constraint_D: 2.140 idt: 0.077 idt_perturbation: 0.006 
+(epoch: 6, iters: 23010, time: 0.074, data: 0.002) D_real: 0.214 D_fake: 0.229 D_real_perturbation: 0.100 D_fake_perturbation: 0.124 max_pert: 0.025 pert_constraint_D: 1.965 idt: 0.161 idt_perturbation: 0.011 
+(epoch: 6, iters: 24310, time: 0.074, data: 0.002) D_real: 0.401 D_fake: 0.153 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.007 pert_constraint_D: 1.973 idt: 0.222 idt_perturbation: 0.009 
+(epoch: 6, iters: 25610, time: 0.074, data: 0.002) D_real: 0.209 D_fake: 0.323 D_real_perturbation: 0.204 D_fake_perturbation: 0.100 max_pert: 0.014 pert_constraint_D: 1.739 idt: 0.084 idt_perturbation: 0.006 
+saving the latest model (epoch 6, total_iters 253500)
+(epoch: 6, iters: 26910, time: 0.080, data: 0.001) D_real: 0.181 D_fake: 0.263 D_real_perturbation: 0.100 D_fake_perturbation: 0.104 max_pert: 0.032 pert_constraint_D: 1.981 idt: 0.109 idt_perturbation: 0.006 
+(epoch: 6, iters: 28210, time: 0.073, data: 0.002) D_real: 0.270 D_fake: 0.224 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.019 pert_constraint_D: 1.870 idt: 0.074 idt_perturbation: 0.008 
+(epoch: 6, iters: 29510, time: 0.074, data: 0.001) D_real: 0.287 D_fake: 0.199 D_real_perturbation: 0.167 D_fake_perturbation: 0.266 max_pert: 0.012 pert_constraint_D: 1.822 idt: 0.114 idt_perturbation: 0.004 
+(epoch: 6, iters: 30810, time: 0.073, data: 0.002) D_real: 0.173 D_fake: 0.318 D_real_perturbation: 0.141 D_fake_perturbation: 0.100 max_pert: 0.013 pert_constraint_D: 1.708 idt: 0.066 idt_perturbation: 0.006 
+(epoch: 6, iters: 32110, time: 0.085, data: 0.002) D_real: 0.237 D_fake: 0.263 D_real_perturbation: 0.105 D_fake_perturbation: 0.125 max_pert: 0.013 pert_constraint_D: 1.942 idt: 0.120 idt_perturbation: 0.005 
+saving the latest model (epoch 6, total_iters 260000)
+(epoch: 6, iters: 33410, time: 0.073, data: 0.002) D_real: 0.283 D_fake: 0.217 D_real_perturbation: 0.101 D_fake_perturbation: 0.121 max_pert: 0.013 pert_constraint_D: 1.887 idt: 0.071 idt_perturbation: 0.007 
+(epoch: 6, iters: 34710, time: 0.073, data: 0.002) D_real: 0.153 D_fake: 0.346 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.012 pert_constraint_D: 1.619 idt: 0.068 idt_perturbation: 0.010 
+(epoch: 6, iters: 36010, time: 0.074, data: 0.002) D_real: 0.197 D_fake: 0.246 D_real_perturbation: 0.466 D_fake_perturbation: 0.254 max_pert: 0.027 pert_constraint_D: 2.017 idt: 0.163 idt_perturbation: 0.005 
+(epoch: 6, iters: 37310, time: 0.079, data: 0.002) D_real: 0.186 D_fake: 0.286 D_real_perturbation: 0.154 D_fake_perturbation: 0.132 max_pert: 0.017 pert_constraint_D: 1.576 idt: 0.044 idt_perturbation: 0.004 
+(epoch: 6, iters: 38610, time: 0.073, data: 0.002) D_real: 0.201 D_fake: 0.310 D_real_perturbation: 0.228 D_fake_perturbation: 0.108 max_pert: 0.015 pert_constraint_D: 2.019 idt: 0.125 idt_perturbation: 0.005 
+saving the latest model (epoch 6, total_iters 266500)
+(epoch: 6, iters: 39910, time: 0.074, data: 0.002) D_real: 0.273 D_fake: 0.224 D_real_perturbation: 0.117 D_fake_perturbation: 0.146 max_pert: 0.012 pert_constraint_D: 1.990 idt: 0.213 idt_perturbation: 0.004 
+(epoch: 6, iters: 41210, time: 0.074, data: 0.001) D_real: 0.272 D_fake: 0.220 D_real_perturbation: 0.502 D_fake_perturbation: 0.115 max_pert: 0.008 pert_constraint_D: 1.618 idt: 0.089 idt_perturbation: 0.008 
+(epoch: 6, iters: 42510, time: 0.080, data: 0.002) D_real: 0.456 D_fake: 0.173 D_real_perturbation: 0.103 D_fake_perturbation: 0.125 max_pert: 0.005 pert_constraint_D: 1.490 idt: 0.065 idt_perturbation: 0.005 
+(epoch: 6, iters: 43810, time: 0.073, data: 0.001) D_real: 0.258 D_fake: 0.226 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.011 pert_constraint_D: 1.681 idt: 0.120 idt_perturbation: 0.005 
+(epoch: 6, iters: 45110, time: 0.074, data: 0.002) D_real: 0.156 D_fake: 0.292 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.029 pert_constraint_D: 1.781 idt: 0.066 idt_perturbation: 0.013 
+saving the latest model (epoch 6, total_iters 273000)
+saving the model at the end of epoch 6, iters 273468
+End of epoch 6 / 200 	 Time Taken: 3353 sec
+learning rate 0.0002000 -> 0.0002000
+(epoch: 7, iters: 832, time: 0.074, data: 0.002) D_real: 0.183 D_fake: 0.318 D_real_perturbation: 0.100 D_fake_perturbation: 0.654 max_pert: 0.004 pert_constraint_D: 1.748 idt: 0.117 idt_perturbation: 0.005 
+(epoch: 7, iters: 2132, time: 0.087, data: 0.002) D_real: 0.164 D_fake: 0.323 D_real_perturbation: 0.100 D_fake_perturbation: 0.132 max_pert: 0.016 pert_constraint_D: 1.662 idt: 0.019 idt_perturbation: 0.006 
+(epoch: 7, iters: 3432, time: 0.074, data: 0.002) D_real: 0.196 D_fake: 0.287 D_real_perturbation: 0.100 D_fake_perturbation: 0.372 max_pert: 0.014 pert_constraint_D: 1.687 idt: 0.038 idt_perturbation: 0.006 
+(epoch: 7, iters: 4732, time: 0.074, data: 0.002) D_real: 0.161 D_fake: 0.319 D_real_perturbation: 0.132 D_fake_perturbation: 0.294 max_pert: 0.014 pert_constraint_D: 1.693 idt: 0.082 idt_perturbation: 0.004 
+(epoch: 7, iters: 6032, time: 0.074, data: 0.002) D_real: 0.158 D_fake: 0.269 D_real_perturbation: 0.172 D_fake_perturbation: 0.114 max_pert: 0.023 pert_constraint_D: 1.797 idt: 0.078 idt_perturbation: 0.004 
+saving the latest model (epoch 7, total_iters 279500)
+(epoch: 7, iters: 7332, time: 0.080, data: 0.002) D_real: 0.236 D_fake: 0.225 D_real_perturbation: 0.100 D_fake_perturbation: 0.574 max_pert: 0.013 pert_constraint_D: 1.735 idt: 0.116 idt_perturbation: 0.004 
+(epoch: 7, iters: 8632, time: 0.073, data: 0.002) D_real: 0.245 D_fake: 0.279 D_real_perturbation: 0.104 D_fake_perturbation: 0.274 max_pert: 0.004 pert_constraint_D: 1.639 idt: 0.166 idt_perturbation: 0.003 
+(epoch: 7, iters: 9932, time: 0.074, data: 0.001) D_real: 0.234 D_fake: 0.251 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.017 pert_constraint_D: 1.591 idt: 0.071 idt_perturbation: 0.006 
+(epoch: 7, iters: 11232, time: 0.074, data: 0.002) D_real: 0.198 D_fake: 0.304 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.010 pert_constraint_D: 1.603 idt: 0.067 idt_perturbation: 0.007 
+(epoch: 7, iters: 12532, time: 0.084, data: 0.002) D_real: 0.226 D_fake: 0.262 D_real_perturbation: 0.102 D_fake_perturbation: 0.124 max_pert: 0.016 pert_constraint_D: 1.668 idt: 0.113 idt_perturbation: 0.006 
+saving the latest model (epoch 7, total_iters 286000)
+(epoch: 7, iters: 13832, time: 0.074, data: 0.002) D_real: 0.289 D_fake: 0.198 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.012 pert_constraint_D: 1.539 idt: 0.033 idt_perturbation: 0.012 
+(epoch: 7, iters: 15132, time: 0.074, data: 0.002) D_real: 0.338 D_fake: 0.176 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.010 pert_constraint_D: 1.519 idt: 0.045 idt_perturbation: 0.007 
+(epoch: 7, iters: 16432, time: 0.074, data: 0.002) D_real: 0.189 D_fake: 0.267 D_real_perturbation: 1.015 D_fake_perturbation: 2.174 max_pert: 0.158 pert_constraint_D: 1.485 idt: 0.032 idt_perturbation: 0.150 
+(epoch: 7, iters: 17732, time: 0.084, data: 0.002) D_real: 0.402 D_fake: 0.148 D_real_perturbation: 0.112 D_fake_perturbation: 0.100 max_pert: 0.067 pert_constraint_D: 1.673 idt: 0.038 idt_perturbation: 0.057 
+(epoch: 7, iters: 19032, time: 0.074, data: 0.002) D_real: 0.216 D_fake: 0.282 D_real_perturbation: 0.193 D_fake_perturbation: 0.100 max_pert: 0.009 pert_constraint_D: 1.558 idt: 0.123 idt_perturbation: 0.007 
+saving the latest model (epoch 7, total_iters 292500)
+(epoch: 7, iters: 20332, time: 0.074, data: 0.002) D_real: 0.223 D_fake: 0.275 D_real_perturbation: 0.114 D_fake_perturbation: 0.100 max_pert: 0.011 pert_constraint_D: 1.632 idt: 0.087 idt_perturbation: 0.007 
+(epoch: 7, iters: 21632, time: 0.073, data: 0.001) D_real: 0.171 D_fake: 0.267 D_real_perturbation: 0.100 D_fake_perturbation: 0.101 max_pert: 0.012 pert_constraint_D: 1.604 idt: 0.153 idt_perturbation: 0.004 
+(epoch: 7, iters: 22932, time: 0.080, data: 0.002) D_real: 0.161 D_fake: 0.291 D_real_perturbation: 0.105 D_fake_perturbation: 0.153 max_pert: 0.011 pert_constraint_D: 1.618 idt: 0.163 idt_perturbation: 0.004 
+(epoch: 7, iters: 24232, time: 0.074, data: 0.002) D_real: 0.158 D_fake: 0.340 D_real_perturbation: 0.134 D_fake_perturbation: 0.123 max_pert: 0.007 pert_constraint_D: 1.490 idt: 0.071 idt_perturbation: 0.004 
+(epoch: 7, iters: 25532, time: 0.074, data: 0.002) D_real: 0.250 D_fake: 0.208 D_real_perturbation: 0.151 D_fake_perturbation: 0.153 max_pert: 0.014 pert_constraint_D: 1.677 idt: 0.113 idt_perturbation: 0.003 
+saving the latest model (epoch 7, total_iters 299000)
+(epoch: 7, iters: 26832, time: 0.074, data: 0.002) D_real: 0.246 D_fake: 0.215 D_real_perturbation: 0.100 D_fake_perturbation: 0.151 max_pert: 0.015 pert_constraint_D: 1.574 idt: 0.036 idt_perturbation: 0.006 
+(epoch: 7, iters: 28132, time: 0.081, data: 0.001) D_real: 0.189 D_fake: 0.328 D_real_perturbation: 0.100 D_fake_perturbation: 0.191 max_pert: 0.008 pert_constraint_D: 1.542 idt: 0.017 idt_perturbation: 0.005 
+(epoch: 7, iters: 29432, time: 0.075, data: 0.002) D_real: 0.287 D_fake: 0.200 D_real_perturbation: 0.100 D_fake_perturbation: 0.116 max_pert: 0.012 pert_constraint_D: 1.483 idt: 0.069 idt_perturbation: 0.005 
+(epoch: 7, iters: 30732, time: 0.074, data: 0.002) D_real: 0.317 D_fake: 0.192 D_real_perturbation: 0.109 D_fake_perturbation: 0.100 max_pert: 0.005 pert_constraint_D: 1.504 idt: 0.083 idt_perturbation: 0.005 
+(epoch: 7, iters: 32032, time: 0.073, data: 0.002) D_real: 0.224 D_fake: 0.189 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.019 pert_constraint_D: 1.633 idt: 0.162 idt_perturbation: 0.010 
+saving the latest model (epoch 7, total_iters 305500)
+(epoch: 7, iters: 33332, time: 0.079, data: 0.002) D_real: 0.165 D_fake: 0.346 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.010 pert_constraint_D: 1.457 idt: 0.088 idt_perturbation: 0.010 
+(epoch: 7, iters: 34632, time: 0.074, data: 0.002) D_real: 0.205 D_fake: 0.314 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.013 pert_constraint_D: 1.477 idt: 0.070 idt_perturbation: 0.010 
+(epoch: 7, iters: 35932, time: 0.074, data: 0.002) D_real: 0.223 D_fake: 0.247 D_real_perturbation: 0.383 D_fake_perturbation: 0.120 max_pert: 0.006 pert_constraint_D: 1.411 idt: 0.026 idt_perturbation: 0.003 
+(epoch: 7, iters: 37232, time: 0.074, data: 0.002) D_real: 0.162 D_fake: 0.341 D_real_perturbation: 0.325 D_fake_perturbation: 0.100 max_pert: 0.006 pert_constraint_D: 1.489 idt: 0.069 idt_perturbation: 0.005 
+(epoch: 7, iters: 38532, time: 0.085, data: 0.002) D_real: 0.202 D_fake: 0.290 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.015 pert_constraint_D: 1.488 idt: 0.116 idt_perturbation: 0.008 
+saving the latest model (epoch 7, total_iters 312000)
+(epoch: 7, iters: 39832, time: 0.073, data: 0.002) D_real: 0.306 D_fake: 0.185 D_real_perturbation: 0.100 D_fake_perturbation: 0.108 max_pert: 0.009 pert_constraint_D: 1.417 idt: 0.063 idt_perturbation: 0.005 
+(epoch: 7, iters: 41132, time: 0.073, data: 0.001) D_real: 0.254 D_fake: 0.216 D_real_perturbation: 0.359 D_fake_perturbation: 0.100 max_pert: 0.014 pert_constraint_D: 1.473 idt: 0.081 idt_perturbation: 0.004 
+(epoch: 7, iters: 42432, time: 0.074, data: 0.002) D_real: 0.152 D_fake: 0.321 D_real_perturbation: 0.116 D_fake_perturbation: 0.100 max_pert: 0.012 pert_constraint_D: 1.340 idt: 0.024 idt_perturbation: 0.007 
+(epoch: 7, iters: 43732, time: 0.080, data: 0.002) D_real: 0.289 D_fake: 0.203 D_real_perturbation: 0.304 D_fake_perturbation: 0.100 max_pert: 0.005 pert_constraint_D: 1.472 idt: 0.077 idt_perturbation: 0.004 
+(epoch: 7, iters: 45032, time: 0.073, data: 0.002) D_real: 0.157 D_fake: 0.276 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.017 pert_constraint_D: 1.415 idt: 0.130 idt_perturbation: 0.010 
+saving the latest model (epoch 7, total_iters 318500)
+saving the model at the end of epoch 7, iters 319046
+End of epoch 7 / 200 	 Time Taken: 3360 sec
+learning rate 0.0002000 -> 0.0002000
+(epoch: 8, iters: 754, time: 0.073, data: 0.002) D_real: 0.353 D_fake: 0.167 D_real_perturbation: 0.151 D_fake_perturbation: 0.100 max_pert: 0.012 pert_constraint_D: 1.424 idt: 0.115 idt_perturbation: 0.007 
+(epoch: 8, iters: 2054, time: 0.074, data: 0.002) D_real: 0.270 D_fake: 0.211 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.012 pert_constraint_D: 1.278 idt: 0.019 idt_perturbation: 0.008 
+(epoch: 8, iters: 3354, time: 0.087, data: 0.002) D_real: 0.197 D_fake: 0.279 D_real_perturbation: 0.100 D_fake_perturbation: 0.122 max_pert: 0.009 pert_constraint_D: 1.384 idt: 0.122 idt_perturbation: 0.007 
+(epoch: 8, iters: 4654, time: 0.074, data: 0.001) D_real: 0.237 D_fake: 0.226 D_real_perturbation: 0.176 D_fake_perturbation: 0.103 max_pert: 0.009 pert_constraint_D: 1.392 idt: 0.128 idt_perturbation: 0.004 
+(epoch: 8, iters: 5954, time: 0.073, data: 0.002) D_real: 0.227 D_fake: 0.235 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.020 pert_constraint_D: 1.400 idt: 0.109 idt_perturbation: 0.016 
+saving the latest model (epoch 8, total_iters 325000)
+(epoch: 8, iters: 7254, time: 0.074, data: 0.002) D_real: 0.225 D_fake: 0.245 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.014 pert_constraint_D: 1.455 idt: 0.121 idt_perturbation: 0.010 
+(epoch: 8, iters: 8554, time: 0.079, data: 0.001) D_real: 0.198 D_fake: 0.267 D_real_perturbation: 0.107 D_fake_perturbation: 0.314 max_pert: 0.008 pert_constraint_D: 1.376 idt: 0.079 idt_perturbation: 0.003 
+(epoch: 8, iters: 9854, time: 0.073, data: 0.006) D_real: 0.275 D_fake: 0.200 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.011 pert_constraint_D: 1.315 idt: 0.066 idt_perturbation: 0.005 
+(epoch: 8, iters: 11154, time: 0.074, data: 0.002) D_real: 0.350 D_fake: 0.166 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.019 pert_constraint_D: 1.403 idt: 0.066 idt_perturbation: 0.017 
+(epoch: 8, iters: 12454, time: 0.073, data: 0.002) D_real: 0.397 D_fake: 0.137 D_real_perturbation: 0.105 D_fake_perturbation: 0.281 max_pert: 0.009 pert_constraint_D: 1.503 idt: 0.029 idt_perturbation: 0.004 
+saving the latest model (epoch 8, total_iters 331500)
+(epoch: 8, iters: 13754, time: 0.079, data: 0.002) D_real: 0.204 D_fake: 0.301 D_real_perturbation: 0.100 D_fake_perturbation: 0.103 max_pert: 0.008 pert_constraint_D: 1.365 idt: 0.158 idt_perturbation: 0.005 
+(epoch: 8, iters: 15054, time: 0.074, data: 0.002) D_real: 0.339 D_fake: 0.163 D_real_perturbation: 0.100 D_fake_perturbation: 0.321 max_pert: 0.006 pert_constraint_D: 1.451 idt: 0.027 idt_perturbation: 0.004 
+(epoch: 8, iters: 16354, time: 0.074, data: 0.002) D_real: 0.218 D_fake: 0.289 D_real_perturbation: 0.111 D_fake_perturbation: 0.103 max_pert: 0.006 pert_constraint_D: 1.473 idt: 0.066 idt_perturbation: 0.004 
+(epoch: 8, iters: 17654, time: 0.073, data: 0.002) D_real: 0.255 D_fake: 0.232 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.013 pert_constraint_D: 1.484 idt: 0.163 idt_perturbation: 0.010 
+(epoch: 8, iters: 18954, time: 0.086, data: 0.002) D_real: 0.311 D_fake: 0.176 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.018 pert_constraint_D: 1.304 idt: 0.113 idt_perturbation: 0.017 
+saving the latest model (epoch 8, total_iters 338000)
+(epoch: 8, iters: 20254, time: 0.074, data: 0.002) D_real: 0.217 D_fake: 0.272 D_real_perturbation: 0.102 D_fake_perturbation: 0.100 max_pert: 0.023 pert_constraint_D: 1.526 idt: 0.166 idt_perturbation: 0.022 
+(epoch: 8, iters: 21554, time: 0.074, data: 0.002) D_real: 0.240 D_fake: 0.215 D_real_perturbation: 0.101 D_fake_perturbation: 0.232 max_pert: 0.011 pert_constraint_D: 1.416 idt: 0.078 idt_perturbation: 0.005 
+(epoch: 8, iters: 22854, time: 0.074, data: 0.002) D_real: 0.134 D_fake: 0.379 D_real_perturbation: 0.356 D_fake_perturbation: 0.100 max_pert: 0.008 pert_constraint_D: 1.404 idt: 0.070 idt_perturbation: 0.005 
+(epoch: 8, iters: 24154, time: 0.081, data: 0.001) D_real: 0.133 D_fake: 0.366 D_real_perturbation: 0.100 D_fake_perturbation: 0.131 max_pert: 0.012 pert_constraint_D: 1.428 idt: 0.042 idt_perturbation: 0.008 
+(epoch: 8, iters: 25454, time: 0.074, data: 0.001) D_real: 0.279 D_fake: 0.219 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.008 pert_constraint_D: 1.392 idt: 0.171 idt_perturbation: 0.006 
+saving the latest model (epoch 8, total_iters 344500)
+(epoch: 8, iters: 26754, time: 0.073, data: 0.002) D_real: 0.217 D_fake: 0.252 D_real_perturbation: 0.101 D_fake_perturbation: 0.100 max_pert: 0.010 pert_constraint_D: 1.323 idt: 0.079 idt_perturbation: 0.006 
+(epoch: 8, iters: 28054, time: 0.074, data: 0.001) D_real: 0.181 D_fake: 0.293 D_real_perturbation: 0.100 D_fake_perturbation: 0.103 max_pert: 0.009 pert_constraint_D: 1.420 idt: 0.069 idt_perturbation: 0.004 
+(epoch: 8, iters: 29354, time: 0.079, data: 0.002) D_real: 0.255 D_fake: 0.208 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.014 pert_constraint_D: 1.358 idt: 0.115 idt_perturbation: 0.009 
+(epoch: 8, iters: 30654, time: 0.074, data: 0.002) D_real: 0.185 D_fake: 0.274 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.015 pert_constraint_D: 1.411 idt: 0.171 idt_perturbation: 0.012 
+(epoch: 8, iters: 31954, time: 0.074, data: 0.001) D_real: 0.206 D_fake: 0.248 D_real_perturbation: 0.100 D_fake_perturbation: 0.431 max_pert: 0.003 pert_constraint_D: 1.370 idt: 0.167 idt_perturbation: 0.003 
+saving the latest model (epoch 8, total_iters 351000)
+(epoch: 8, iters: 33254, time: 0.074, data: 0.002) D_real: 0.204 D_fake: 0.244 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.013 pert_constraint_D: 1.372 idt: 0.065 idt_perturbation: 0.011 
+(epoch: 8, iters: 34554, time: 0.080, data: 0.002) D_real: 0.151 D_fake: 0.316 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.020 pert_constraint_D: 1.385 idt: 0.028 idt_perturbation: 0.016 
+(epoch: 8, iters: 35854, time: 0.073, data: 0.002) D_real: 0.205 D_fake: 0.249 D_real_perturbation: 0.100 D_fake_perturbation: 0.117 max_pert: 0.007 pert_constraint_D: 1.424 idt: 0.021 idt_perturbation: 0.003 
+(epoch: 8, iters: 37154, time: 0.074, data: 0.002) D_real: 0.266 D_fake: 0.322 D_real_perturbation: 0.104 D_fake_perturbation: 0.100 max_pert: 0.016 pert_constraint_D: 1.413 idt: 0.134 idt_perturbation: 0.013 
+(epoch: 8, iters: 38454, time: 0.073, data: 0.002) D_real: 0.251 D_fake: 0.182 D_real_perturbation: 0.100 D_fake_perturbation: 0.128 max_pert: 0.011 pert_constraint_D: 1.315 idt: 0.119 idt_perturbation: 0.005 
+saving the latest model (epoch 8, total_iters 357500)
+(epoch: 8, iters: 39754, time: 0.080, data: 0.002) D_real: 0.223 D_fake: 0.202 D_real_perturbation: 0.100 D_fake_perturbation: 0.108 max_pert: 0.009 pert_constraint_D: 1.445 idt: 0.074 idt_perturbation: 0.006 
+(epoch: 8, iters: 41054, time: 0.074, data: 0.002) D_real: 0.135 D_fake: 0.310 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.012 pert_constraint_D: 1.343 idt: 0.212 idt_perturbation: 0.011 
+(epoch: 8, iters: 42354, time: 0.073, data: 0.001) D_real: 0.331 D_fake: 0.158 D_real_perturbation: 0.100 D_fake_perturbation: 0.111 max_pert: 0.012 pert_constraint_D: 1.419 idt: 0.034 idt_perturbation: 0.006 
+(epoch: 8, iters: 43654, time: 0.073, data: 0.002) D_real: 0.245 D_fake: 0.247 D_real_perturbation: 0.100 D_fake_perturbation: 0.246 max_pert: 0.005 pert_constraint_D: 1.402 idt: 0.159 idt_perturbation: 0.002 
+(epoch: 8, iters: 44954, time: 0.086, data: 0.002) D_real: 0.170 D_fake: 0.273 D_real_perturbation: 0.141 D_fake_perturbation: 0.100 max_pert: 0.013 pert_constraint_D: 1.325 idt: 0.039 idt_perturbation: 0.007 
+saving the latest model (epoch 8, total_iters 364000)
+saving the model at the end of epoch 8, iters 364624
+End of epoch 8 / 200 	 Time Taken: 3359 sec
+learning rate 0.0002000 -> 0.0002000
+(epoch: 9, iters: 676, time: 0.074, data: 0.002) D_real: 0.263 D_fake: 0.165 D_real_perturbation: 0.102 D_fake_perturbation: 0.277 max_pert: 0.006 pert_constraint_D: 1.395 idt: 0.081 idt_perturbation: 0.004 
+(epoch: 9, iters: 1976, time: 0.073, data: 0.002) D_real: 0.209 D_fake: 0.222 D_real_perturbation: 0.100 D_fake_perturbation: 0.102 max_pert: 0.015 pert_constraint_D: 1.509 idt: 0.161 idt_perturbation: 0.009 
+(epoch: 9, iters: 3276, time: 0.073, data: 0.002) D_real: 0.201 D_fake: 0.204 D_real_perturbation: 0.100 D_fake_perturbation: 0.383 max_pert: 0.005 pert_constraint_D: 1.447 idt: 0.067 idt_perturbation: 0.003 
+(epoch: 9, iters: 4576, time: 0.085, data: 0.002) D_real: 0.130 D_fake: 0.317 D_real_perturbation: 0.100 D_fake_perturbation: 0.147 max_pert: 0.006 pert_constraint_D: 1.390 idt: 0.154 idt_perturbation: 0.004 
+(epoch: 9, iters: 5876, time: 0.073, data: 0.002) D_real: 0.233 D_fake: 0.185 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.014 pert_constraint_D: 1.437 idt: 0.030 idt_perturbation: 0.012 
+saving the latest model (epoch 9, total_iters 370500)
+(epoch: 9, iters: 7176, time: 0.074, data: 0.002) D_real: 0.201 D_fake: 0.167 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.015 pert_constraint_D: 1.455 idt: 0.066 idt_perturbation: 0.010 
+(epoch: 9, iters: 8476, time: 0.074, data: 0.002) D_real: 0.156 D_fake: 0.215 D_real_perturbation: 0.234 D_fake_perturbation: 0.102 max_pert: 0.008 pert_constraint_D: 1.413 idt: 0.110 idt_perturbation: 0.006 
+(epoch: 9, iters: 9776, time: 0.080, data: 0.002) D_real: 0.134 D_fake: 0.370 D_real_perturbation: 0.867 D_fake_perturbation: 0.104 max_pert: 0.008 pert_constraint_D: 1.382 idt: 0.079 idt_perturbation: 0.004 
+(epoch: 9, iters: 11076, time: 0.073, data: 0.002) D_real: 0.185 D_fake: 0.220 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.009 pert_constraint_D: 1.394 idt: 0.119 idt_perturbation: 0.008 
+(epoch: 9, iters: 12376, time: 0.073, data: 0.002) D_real: 0.237 D_fake: 0.115 D_real_perturbation: 0.154 D_fake_perturbation: 0.100 max_pert: 0.007 pert_constraint_D: 1.316 idt: 0.218 idt_perturbation: 0.005 
+saving the latest model (epoch 9, total_iters 377000)
+(epoch: 9, iters: 13676, time: 0.074, data: 0.002) D_real: 0.176 D_fake: 0.131 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.015 pert_constraint_D: 1.446 idt: 0.118 idt_perturbation: 0.013 
+(epoch: 9, iters: 14976, time: 0.079, data: 0.002) D_real: 0.252 D_fake: 0.155 D_real_perturbation: 0.244 D_fake_perturbation: 0.241 max_pert: 0.004 pert_constraint_D: 1.444 idt: 0.034 idt_perturbation: 0.003 
+(epoch: 9, iters: 16276, time: 0.073, data: 0.002) D_real: 0.184 D_fake: 0.194 D_real_perturbation: 0.220 D_fake_perturbation: 0.164 max_pert: 0.005 pert_constraint_D: 1.320 idt: 0.114 idt_perturbation: 0.003 
+(epoch: 9, iters: 17576, time: 0.074, data: 0.001) D_real: 0.176 D_fake: 0.221 D_real_perturbation: 0.244 D_fake_perturbation: 0.100 max_pert: 0.007 pert_constraint_D: 1.364 idt: 0.163 idt_perturbation: 0.007 
+(epoch: 9, iters: 18876, time: 0.073, data: 0.002) D_real: 0.112 D_fake: 0.224 D_real_perturbation: 0.149 D_fake_perturbation: 0.100 max_pert: 0.012 pert_constraint_D: 1.351 idt: 0.127 idt_perturbation: 0.006 
+saving the latest model (epoch 9, total_iters 383500)
+(epoch: 9, iters: 20176, time: 0.080, data: 0.002) D_real: 0.152 D_fake: 0.339 D_real_perturbation: 0.135 D_fake_perturbation: 0.326 max_pert: 0.006 pert_constraint_D: 1.365 idt: 0.069 idt_perturbation: 0.004 
+(epoch: 9, iters: 21476, time: 0.073, data: 0.002) D_real: 0.241 D_fake: 0.139 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.020 pert_constraint_D: 1.280 idt: 0.082 idt_perturbation: 0.015 
+(epoch: 9, iters: 22776, time: 0.073, data: 0.002) D_real: 0.231 D_fake: 0.177 D_real_perturbation: 0.215 D_fake_perturbation: 0.181 max_pert: 0.007 pert_constraint_D: 1.422 idt: 0.098 idt_perturbation: 0.004 
+(epoch: 9, iters: 24076, time: 0.074, data: 0.002) D_real: 0.164 D_fake: 0.161 D_real_perturbation: 0.104 D_fake_perturbation: 0.100 max_pert: 0.009 pert_constraint_D: 1.366 idt: 0.073 idt_perturbation: 0.007 
+(epoch: 9, iters: 25376, time: 0.086, data: 0.002) D_real: 0.159 D_fake: 0.256 D_real_perturbation: 0.219 D_fake_perturbation: 0.206 max_pert: 0.007 pert_constraint_D: 1.341 idt: 0.123 idt_perturbation: 0.004 
+saving the latest model (epoch 9, total_iters 390000)
+(epoch: 9, iters: 26676, time: 0.074, data: 0.002) D_real: 0.191 D_fake: 0.172 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.019 pert_constraint_D: 1.370 idt: 0.080 idt_perturbation: 0.012 
+(epoch: 9, iters: 27976, time: 0.074, data: 0.002) D_real: 0.179 D_fake: 0.158 D_real_perturbation: 0.105 D_fake_perturbation: 0.179 max_pert: 0.005 pert_constraint_D: 1.315 idt: 0.069 idt_perturbation: 0.005 
+(epoch: 9, iters: 29276, time: 0.073, data: 0.002) D_real: 0.229 D_fake: 0.135 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.016 pert_constraint_D: 1.409 idt: 0.067 idt_perturbation: 0.011 
+(epoch: 9, iters: 30576, time: 0.080, data: 0.002) D_real: 0.243 D_fake: 0.150 D_real_perturbation: 0.101 D_fake_perturbation: 0.107 max_pert: 0.005 pert_constraint_D: 1.371 idt: 0.042 idt_perturbation: 0.005 
+(epoch: 9, iters: 31876, time: 0.074, data: 0.002) D_real: 0.199 D_fake: 0.208 D_real_perturbation: 0.141 D_fake_perturbation: 0.113 max_pert: 0.013 pert_constraint_D: 1.466 idt: 0.033 idt_perturbation: 0.013 
+saving the latest model (epoch 9, total_iters 396500)
+(epoch: 9, iters: 33176, time: 0.073, data: 0.002) D_real: 0.115 D_fake: 0.280 D_real_perturbation: 0.100 D_fake_perturbation: 0.260 max_pert: 0.008 pert_constraint_D: 1.477 idt: 0.084 idt_perturbation: 0.006 
+(epoch: 9, iters: 34476, time: 0.073, data: 0.002) D_real: 0.313 D_fake: 0.131 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.010 pert_constraint_D: 1.341 idt: 0.211 idt_perturbation: 0.007 
+(epoch: 9, iters: 35776, time: 0.079, data: 0.001) D_real: 0.339 D_fake: 0.192 D_real_perturbation: 0.100 D_fake_perturbation: 0.248 max_pert: 0.006 pert_constraint_D: 1.440 idt: 0.161 idt_perturbation: 0.003 
+(epoch: 9, iters: 37076, time: 0.074, data: 0.002) D_real: 0.117 D_fake: 0.287 D_real_perturbation: 0.100 D_fake_perturbation: 0.195 max_pert: 0.006 pert_constraint_D: 1.420 idt: 0.078 idt_perturbation: 0.006 
+(epoch: 9, iters: 38376, time: 0.074, data: 0.002) D_real: 0.246 D_fake: 0.232 D_real_perturbation: 0.100 D_fake_perturbation: 0.102 max_pert: 0.009 pert_constraint_D: 1.435 idt: 0.074 idt_perturbation: 0.005 
+saving the latest model (epoch 9, total_iters 403000)
+(epoch: 9, iters: 39676, time: 0.074, data: 0.002) D_real: 0.225 D_fake: 0.261 D_real_perturbation: 0.103 D_fake_perturbation: 0.163 max_pert: 0.062 pert_constraint_D: 1.356 idt: 0.070 idt_perturbation: 0.062 
+(epoch: 9, iters: 40976, time: 0.080, data: 0.002) D_real: 0.181 D_fake: 0.274 D_real_perturbation: 0.105 D_fake_perturbation: 0.192 max_pert: 0.019 pert_constraint_D: 1.419 idt: 0.207 idt_perturbation: 0.014 
+(epoch: 9, iters: 42276, time: 0.073, data: 0.001) D_real: 0.241 D_fake: 0.215 D_real_perturbation: 0.232 D_fake_perturbation: 0.100 max_pert: 0.012 pert_constraint_D: 1.314 idt: 0.080 idt_perturbation: 0.006 
+(epoch: 9, iters: 43576, time: 0.073, data: 0.001) D_real: 0.284 D_fake: 0.222 D_real_perturbation: 0.167 D_fake_perturbation: 0.132 max_pert: 0.008 pert_constraint_D: 1.430 idt: 0.023 idt_perturbation: 0.004 
+(epoch: 9, iters: 44876, time: 0.074, data: 0.002) D_real: 0.250 D_fake: 0.211 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.015 pert_constraint_D: 1.370 idt: 0.069 idt_perturbation: 0.012 
+saving the latest model (epoch 9, total_iters 409500)
+saving the model at the end of epoch 9, iters 410202
+End of epoch 9 / 200 	 Time Taken: 3359 sec
+learning rate 0.0002000 -> 0.0002000
+(epoch: 10, iters: 598, time: 0.088, data: 0.002) D_real: 0.217 D_fake: 0.286 D_real_perturbation: 0.110 D_fake_perturbation: 0.100 max_pert: 0.007 pert_constraint_D: 1.400 idt: 0.120 idt_perturbation: 0.007 
+(epoch: 10, iters: 1898, time: 0.074, data: 0.001) D_real: 0.232 D_fake: 0.270 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.017 pert_constraint_D: 1.358 idt: 0.026 idt_perturbation: 0.014 
+(epoch: 10, iters: 3198, time: 0.073, data: 0.002) D_real: 0.317 D_fake: 0.198 D_real_perturbation: 0.100 D_fake_perturbation: 0.103 max_pert: 0.013 pert_constraint_D: 1.330 idt: 0.069 idt_perturbation: 0.010 
+(epoch: 10, iters: 4498, time: 0.074, data: 0.002) D_real: 0.267 D_fake: 0.237 D_real_perturbation: 0.100 D_fake_perturbation: 0.102 max_pert: 0.006 pert_constraint_D: 1.439 idt: 0.077 idt_perturbation: 0.005 
+(epoch: 10, iters: 5798, time: 0.087, data: 0.002) D_real: 0.195 D_fake: 0.319 D_real_perturbation: 0.100 D_fake_perturbation: 0.421 max_pert: 0.005 pert_constraint_D: 1.333 idt: 0.023 idt_perturbation: 0.003 
+saving the latest model (epoch 10, total_iters 416000)
+(epoch: 10, iters: 7098, time: 0.073, data: 0.002) D_real: 0.242 D_fake: 0.234 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.015 pert_constraint_D: 1.339 idt: 0.078 idt_perturbation: 0.009 
+(epoch: 10, iters: 8398, time: 0.074, data: 0.002) D_real: 0.269 D_fake: 0.246 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.016 pert_constraint_D: 1.313 idt: 0.213 idt_perturbation: 0.015 
+(epoch: 10, iters: 9698, time: 0.073, data: 0.002) D_real: 0.300 D_fake: 0.183 D_real_perturbation: 0.100 D_fake_perturbation: 0.163 max_pert: 0.011 pert_constraint_D: 1.373 idt: 0.071 idt_perturbation: 0.006 
+(epoch: 10, iters: 10998, time: 0.079, data: 0.002) D_real: 0.301 D_fake: 0.216 D_real_perturbation: 0.100 D_fake_perturbation: 0.326 max_pert: 0.003 pert_constraint_D: 1.403 idt: 0.076 idt_perturbation: 0.004 
+(epoch: 10, iters: 12298, time: 0.074, data: 0.002) D_real: 0.177 D_fake: 0.300 D_real_perturbation: 0.115 D_fake_perturbation: 0.100 max_pert: 0.007 pert_constraint_D: 1.341 idt: 0.075 idt_perturbation: 0.005 
+saving the latest model (epoch 10, total_iters 422500)
+(epoch: 10, iters: 13598, time: 0.074, data: 0.001) D_real: 0.140 D_fake: 0.368 D_real_perturbation: 0.100 D_fake_perturbation: 0.211 max_pert: 0.007 pert_constraint_D: 1.486 idt: 0.162 idt_perturbation: 0.005 
+(epoch: 10, iters: 14898, time: 0.074, data: 0.001) D_real: 0.195 D_fake: 0.248 D_real_perturbation: 0.100 D_fake_perturbation: 0.152 max_pert: 0.015 pert_constraint_D: 1.390 idt: 0.027 idt_perturbation: 0.009 
+(epoch: 10, iters: 16198, time: 0.079, data: 0.002) D_real: 0.245 D_fake: 0.176 D_real_perturbation: 0.100 D_fake_perturbation: 0.187 max_pert: 0.010 pert_constraint_D: 1.406 idt: 0.066 idt_perturbation: 0.005 
+(epoch: 10, iters: 17498, time: 0.074, data: 0.002) D_real: 0.205 D_fake: 0.229 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.011 pert_constraint_D: 1.369 idt: 0.119 idt_perturbation: 0.008 
+(epoch: 10, iters: 18798, time: 0.074, data: 0.001) D_real: 0.153 D_fake: 0.277 D_real_perturbation: 0.103 D_fake_perturbation: 0.127 max_pert: 0.009 pert_constraint_D: 1.354 idt: 0.067 idt_perturbation: 0.004 
+saving the latest model (epoch 10, total_iters 429000)
+(epoch: 10, iters: 20098, time: 0.074, data: 0.002) D_real: 0.245 D_fake: 0.193 D_real_perturbation: 0.100 D_fake_perturbation: 0.101 max_pert: 0.010 pert_constraint_D: 1.321 idt: 0.114 idt_perturbation: 0.009 
+(epoch: 10, iters: 21398, time: 0.081, data: 0.002) D_real: 0.260 D_fake: 0.228 D_real_perturbation: 0.171 D_fake_perturbation: 0.100 max_pert: 0.006 pert_constraint_D: 1.456 idt: 0.065 idt_perturbation: 0.004 
+(epoch: 10, iters: 22698, time: 0.074, data: 0.002) D_real: 0.193 D_fake: 0.208 D_real_perturbation: 0.100 D_fake_perturbation: 0.164 max_pert: 0.008 pert_constraint_D: 1.344 idt: 0.162 idt_perturbation: 0.004 
+(epoch: 10, iters: 23998, time: 0.073, data: 0.002) D_real: 0.297 D_fake: 0.184 D_real_perturbation: 0.220 D_fake_perturbation: 0.100 max_pert: 0.010 pert_constraint_D: 1.340 idt: 0.079 idt_perturbation: 0.005 
+(epoch: 10, iters: 25298, time: 0.074, data: 0.001) D_real: 0.163 D_fake: 0.235 D_real_perturbation: 0.103 D_fake_perturbation: 0.106 max_pert: 0.010 pert_constraint_D: 1.287 idt: 0.125 idt_perturbation: 0.004 
+saving the latest model (epoch 10, total_iters 435500)
+(epoch: 10, iters: 26598, time: 0.079, data: 0.001) D_real: 0.283 D_fake: 0.181 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.018 pert_constraint_D: 1.344 idt: 0.085 idt_perturbation: 0.013 
+(epoch: 10, iters: 27898, time: 0.074, data: 0.001) D_real: 0.254 D_fake: 0.195 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.006 pert_constraint_D: 1.336 idt: 0.123 idt_perturbation: 0.005 
+(epoch: 10, iters: 29198, time: 0.073, data: 0.001) D_real: 0.163 D_fake: 0.304 D_real_perturbation: 0.101 D_fake_perturbation: 0.100 max_pert: 0.010 pert_constraint_D: 1.297 idt: 0.110 idt_perturbation: 0.006 
+(epoch: 10, iters: 30498, time: 0.074, data: 0.002) D_real: 0.168 D_fake: 0.321 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.011 pert_constraint_D: 1.427 idt: 0.168 idt_perturbation: 0.010 
+(epoch: 10, iters: 31798, time: 0.087, data: 0.002) D_real: 0.232 D_fake: 0.218 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.015 pert_constraint_D: 1.340 idt: 0.112 idt_perturbation: 0.013 
+saving the latest model (epoch 10, total_iters 442000)
+(epoch: 10, iters: 33098, time: 0.074, data: 0.002) D_real: 0.150 D_fake: 0.347 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.008 pert_constraint_D: 1.414 idt: 0.068 idt_perturbation: 0.008 
+(epoch: 10, iters: 34398, time: 0.074, data: 0.002) D_real: 0.279 D_fake: 0.168 D_real_perturbation: 0.100 D_fake_perturbation: 0.119 max_pert: 0.006 pert_constraint_D: 1.273 idt: 0.111 idt_perturbation: 0.006 
+(epoch: 10, iters: 35698, time: 0.074, data: 0.002) D_real: 0.339 D_fake: 0.157 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.015 pert_constraint_D: 1.426 idt: 0.081 idt_perturbation: 0.013 
+(epoch: 10, iters: 36998, time: 0.080, data: 0.002) D_real: 0.166 D_fake: 0.331 D_real_perturbation: 0.104 D_fake_perturbation: 0.112 max_pert: 0.011 pert_constraint_D: 1.381 idt: 0.114 idt_perturbation: 0.008 
+(epoch: 10, iters: 38298, time: 0.074, data: 0.002) D_real: 0.232 D_fake: 0.298 D_real_perturbation: 0.101 D_fake_perturbation: 0.100 max_pert: 0.006 pert_constraint_D: 1.404 idt: 0.088 idt_perturbation: 0.007 
+saving the latest model (epoch 10, total_iters 448500)
+(epoch: 10, iters: 39598, time: 0.073, data: 0.002) D_real: 0.168 D_fake: 0.230 D_real_perturbation: 0.104 D_fake_perturbation: 0.114 max_pert: 0.010 pert_constraint_D: 1.399 idt: 0.062 idt_perturbation: 0.005 
+(epoch: 10, iters: 40898, time: 0.074, data: 0.001) D_real: 0.120 D_fake: 0.405 D_real_perturbation: 0.100 D_fake_perturbation: 0.284 max_pert: 0.005 pert_constraint_D: 1.365 idt: 0.114 idt_perturbation: 0.004 
+(epoch: 10, iters: 42198, time: 0.080, data: 0.002) D_real: 0.294 D_fake: 0.189 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.006 pert_constraint_D: 1.424 idt: 0.071 idt_perturbation: 0.006 
+(epoch: 10, iters: 43498, time: 0.074, data: 0.002) D_real: 0.158 D_fake: 0.307 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.011 pert_constraint_D: 1.467 idt: 0.069 idt_perturbation: 0.008 
+(epoch: 10, iters: 44798, time: 0.074, data: 0.002) D_real: 0.164 D_fake: 0.272 D_real_perturbation: 0.101 D_fake_perturbation: 0.100 max_pert: 0.014 pert_constraint_D: 1.293 idt: 0.068 idt_perturbation: 0.009 
+saving the latest model (epoch 10, total_iters 455000)
+saving the model at the end of epoch 10, iters 455780
+End of epoch 10 / 200 	 Time Taken: 3361 sec
+learning rate 0.0002000 -> 0.0002000
+(epoch: 11, iters: 520, time: 0.074, data: 0.002) D_real: 0.211 D_fake: 0.231 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.022 pert_constraint_D: 1.257 idt: 0.117 idt_perturbation: 0.017 
+(epoch: 11, iters: 1820, time: 0.088, data: 0.001) D_real: 0.217 D_fake: 0.201 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.012 pert_constraint_D: 1.280 idt: 0.070 idt_perturbation: 0.011 
+(epoch: 11, iters: 3120, time: 0.074, data: 0.002) D_real: 0.153 D_fake: 0.339 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.006 pert_constraint_D: 1.331 idt: 0.154 idt_perturbation: 0.006 
+(epoch: 11, iters: 4420, time: 0.074, data: 0.002) D_real: 0.291 D_fake: 0.210 D_real_perturbation: 0.100 D_fake_perturbation: 0.251 max_pert: 0.005 pert_constraint_D: 1.409 idt: 0.085 idt_perturbation: 0.003 
+(epoch: 11, iters: 5720, time: 0.073, data: 0.001) D_real: 0.146 D_fake: 0.371 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.014 pert_constraint_D: 1.250 idt: 0.069 idt_perturbation: 0.011 
+saving the latest model (epoch 11, total_iters 461500)
+(epoch: 11, iters: 7020, time: 0.081, data: 0.002) D_real: 0.231 D_fake: 0.233 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.011 pert_constraint_D: 1.368 idt: 0.027 idt_perturbation: 0.009 
+(epoch: 11, iters: 8320, time: 0.074, data: 0.002) D_real: 0.220 D_fake: 0.263 D_real_perturbation: 0.100 D_fake_perturbation: 0.113 max_pert: 0.009 pert_constraint_D: 1.361 idt: 0.025 idt_perturbation: 0.006 
+(epoch: 11, iters: 9620, time: 0.073, data: 0.001) D_real: 0.281 D_fake: 0.176 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.013 pert_constraint_D: 1.319 idt: 0.125 idt_perturbation: 0.010 
+(epoch: 11, iters: 10920, time: 0.074, data: 0.002) D_real: 0.240 D_fake: 0.238 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.019 pert_constraint_D: 1.427 idt: 0.074 idt_perturbation: 0.013 
+(epoch: 11, iters: 12220, time: 0.088, data: 0.002) D_real: 0.199 D_fake: 0.244 D_real_perturbation: 0.367 D_fake_perturbation: 0.100 max_pert: 0.013 pert_constraint_D: 1.370 idt: 0.119 idt_perturbation: 0.008 
+saving the latest model (epoch 11, total_iters 468000)
+(epoch: 11, iters: 13520, time: 0.074, data: 0.002) D_real: 0.254 D_fake: 0.240 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.012 pert_constraint_D: 1.364 idt: 0.135 idt_perturbation: 0.012 
+(epoch: 11, iters: 14820, time: 0.073, data: 0.002) D_real: 0.196 D_fake: 0.239 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.007 pert_constraint_D: 1.337 idt: 0.253 idt_perturbation: 0.005 
+(epoch: 11, iters: 16120, time: 0.074, data: 0.002) D_real: 0.268 D_fake: 0.164 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.014 pert_constraint_D: 1.333 idt: 0.051 idt_perturbation: 0.010 
+(epoch: 11, iters: 17420, time: 0.081, data: 0.002) D_real: 0.184 D_fake: 0.299 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.015 pert_constraint_D: 1.466 idt: 0.067 idt_perturbation: 0.014 
+(epoch: 11, iters: 18720, time: 0.074, data: 0.002) D_real: 0.185 D_fake: 0.300 D_real_perturbation: 0.101 D_fake_perturbation: 0.100 max_pert: 0.013 pert_constraint_D: 1.300 idt: 0.065 idt_perturbation: 0.011 
+saving the latest model (epoch 11, total_iters 474500)
+(epoch: 11, iters: 20020, time: 0.074, data: 0.002) D_real: 0.233 D_fake: 0.205 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.009 pert_constraint_D: 1.323 idt: 0.070 idt_perturbation: 0.005 
+(epoch: 11, iters: 21320, time: 0.074, data: 0.002) D_real: 0.232 D_fake: 0.158 D_real_perturbation: 0.456 D_fake_perturbation: 0.100 max_pert: 0.009 pert_constraint_D: 1.343 idt: 0.211 idt_perturbation: 0.004 
+(epoch: 11, iters: 22620, time: 0.079, data: 0.002) D_real: 0.227 D_fake: 0.192 D_real_perturbation: 0.104 D_fake_perturbation: 0.100 max_pert: 0.010 pert_constraint_D: 1.357 idt: 0.219 idt_perturbation: 0.006 
+(epoch: 11, iters: 23920, time: 0.074, data: 0.002) D_real: 0.216 D_fake: 0.230 D_real_perturbation: 0.101 D_fake_perturbation: 0.474 max_pert: 0.004 pert_constraint_D: 1.281 idt: 0.077 idt_perturbation: 0.004 
+(epoch: 11, iters: 25220, time: 0.074, data: 0.002) D_real: 0.187 D_fake: 0.240 D_real_perturbation: 0.167 D_fake_perturbation: 0.106 max_pert: 0.007 pert_constraint_D: 1.396 idt: 0.116 idt_perturbation: 0.004 
+saving the latest model (epoch 11, total_iters 481000)
+(epoch: 11, iters: 26520, time: 0.074, data: 0.002) D_real: 0.196 D_fake: 0.266 D_real_perturbation: 0.450 D_fake_perturbation: 0.100 max_pert: 0.005 pert_constraint_D: 1.388 idt: 0.061 idt_perturbation: 0.005 
+(epoch: 11, iters: 27820, time: 0.079, data: 0.002) D_real: 0.248 D_fake: 0.242 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.019 pert_constraint_D: 1.269 idt: 0.030 idt_perturbation: 0.013 
+(epoch: 11, iters: 29120, time: 0.074, data: 0.002) D_real: 0.482 D_fake: 0.106 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.007 pert_constraint_D: 1.370 idt: 0.025 idt_perturbation: 0.007 
+(epoch: 11, iters: 30420, time: 0.074, data: 0.002) D_real: 0.123 D_fake: 0.297 D_real_perturbation: 0.100 D_fake_perturbation: 0.117 max_pert: 0.010 pert_constraint_D: 1.318 idt: 0.066 idt_perturbation: 0.006 
+(epoch: 11, iters: 31720, time: 0.073, data: 0.002) D_real: 0.277 D_fake: 0.181 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.013 pert_constraint_D: 1.336 idt: 0.214 idt_perturbation: 0.008 
+saving the latest model (epoch 11, total_iters 487500)
+(epoch: 11, iters: 33020, time: 0.079, data: 0.002) D_real: 0.210 D_fake: 0.303 D_real_perturbation: 0.100 D_fake_perturbation: 0.378 max_pert: 0.005 pert_constraint_D: 1.322 idt: 0.067 idt_perturbation: 0.003 
+(epoch: 11, iters: 34320, time: 0.074, data: 0.002) D_real: 0.268 D_fake: 0.187 D_real_perturbation: 0.101 D_fake_perturbation: 0.185 max_pert: 0.007 pert_constraint_D: 1.343 idt: 0.070 idt_perturbation: 0.004 
+(epoch: 11, iters: 35620, time: 0.073, data: 0.002) D_real: 0.190 D_fake: 0.256 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.010 pert_constraint_D: 1.294 idt: 0.087 idt_perturbation: 0.007 
+(epoch: 11, iters: 36920, time: 0.073, data: 0.002) D_real: 0.137 D_fake: 0.297 D_real_perturbation: 0.100 D_fake_perturbation: 0.117 max_pert: 0.009 pert_constraint_D: 1.428 idt: 0.072 idt_perturbation: 0.005 
+(epoch: 11, iters: 38220, time: 0.088, data: 0.001) D_real: 0.222 D_fake: 0.271 D_real_perturbation: 0.100 D_fake_perturbation: 0.118 max_pert: 0.015 pert_constraint_D: 1.371 idt: 0.074 idt_perturbation: 0.008 
+saving the latest model (epoch 11, total_iters 494000)
+(epoch: 11, iters: 39520, time: 0.074, data: 0.002) D_real: 0.229 D_fake: 0.247 D_real_perturbation: 0.101 D_fake_perturbation: 0.103 max_pert: 0.010 pert_constraint_D: 1.322 idt: 0.075 idt_perturbation: 0.009 
+(epoch: 11, iters: 40820, time: 0.074, data: 0.002) D_real: 0.289 D_fake: 0.164 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.009 pert_constraint_D: 1.338 idt: 0.026 idt_perturbation: 0.009 
+(epoch: 11, iters: 42120, time: 0.074, data: 0.002) D_real: 0.500 D_fake: 0.114 D_real_perturbation: 0.126 D_fake_perturbation: 0.120 max_pert: 0.006 pert_constraint_D: 1.362 idt: 0.062 idt_perturbation: 0.003 
+(epoch: 11, iters: 43420, time: 0.080, data: 0.001) D_real: 0.325 D_fake: 0.207 D_real_perturbation: 0.316 D_fake_perturbation: 0.104 max_pert: 0.010 pert_constraint_D: 1.361 idt: 0.022 idt_perturbation: 0.006 
+(epoch: 11, iters: 44720, time: 0.074, data: 0.002) D_real: 0.176 D_fake: 0.273 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.012 pert_constraint_D: 1.370 idt: 0.109 idt_perturbation: 0.010 
+saving the latest model (epoch 11, total_iters 500500)
+saving the model at the end of epoch 11, iters 501358
+End of epoch 11 / 200 	 Time Taken: 3360 sec
+learning rate 0.0002000 -> 0.0002000
+(epoch: 12, iters: 442, time: 0.073, data: 0.002) D_real: 0.147 D_fake: 0.284 D_real_perturbation: 0.100 D_fake_perturbation: 0.260 max_pert: 0.004 pert_constraint_D: 1.422 idt: 0.067 idt_perturbation: 0.004 
+(epoch: 12, iters: 1742, time: 0.074, data: 0.001) D_real: 0.269 D_fake: 0.193 D_real_perturbation: 0.213 D_fake_perturbation: 0.100 max_pert: 0.005 pert_constraint_D: 1.494 idt: 0.077 idt_perturbation: 0.004 
+(epoch: 12, iters: 3042, time: 0.086, data: 0.001) D_real: 0.226 D_fake: 0.244 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.011 pert_constraint_D: 1.368 idt: 0.072 idt_perturbation: 0.007 
+(epoch: 12, iters: 4342, time: 0.073, data: 0.002) D_real: 0.181 D_fake: 0.217 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.011 pert_constraint_D: 1.420 idt: 0.173 idt_perturbation: 0.007 
+(epoch: 12, iters: 5642, time: 0.074, data: 0.002) D_real: 0.110 D_fake: 0.412 D_real_perturbation: 0.200 D_fake_perturbation: 0.196 max_pert: 0.003 pert_constraint_D: 1.295 idt: 0.070 idt_perturbation: 0.003 
+saving the latest model (epoch 12, total_iters 507000)
+(epoch: 12, iters: 6942, time: 0.074, data: 0.002) D_real: 0.149 D_fake: 0.298 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.012 pert_constraint_D: 1.345 idt: 0.030 idt_perturbation: 0.010 
+(epoch: 12, iters: 8242, time: 0.080, data: 0.002) D_real: 0.242 D_fake: 0.242 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.007 pert_constraint_D: 1.355 idt: 0.073 idt_perturbation: 0.006 
+(epoch: 12, iters: 9542, time: 0.073, data: 0.002) D_real: 0.193 D_fake: 0.214 D_real_perturbation: 0.100 D_fake_perturbation: 0.201 max_pert: 0.010 pert_constraint_D: 1.376 idt: 0.157 idt_perturbation: 0.004 
+(epoch: 12, iters: 10842, time: 0.074, data: 0.002) D_real: 0.255 D_fake: 0.190 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.009 pert_constraint_D: 1.307 idt: 0.160 idt_perturbation: 0.007 
+(epoch: 12, iters: 12142, time: 0.074, data: 0.002) D_real: 0.321 D_fake: 0.124 D_real_perturbation: 0.115 D_fake_perturbation: 0.100 max_pert: 0.009 pert_constraint_D: 1.306 idt: 0.069 idt_perturbation: 0.006 
+saving the latest model (epoch 12, total_iters 513500)
+(epoch: 12, iters: 13442, time: 0.079, data: 0.002) D_real: 0.197 D_fake: 0.159 D_real_perturbation: 0.272 D_fake_perturbation: 0.224 max_pert: 0.014 pert_constraint_D: 1.253 idt: 0.117 idt_perturbation: 0.007 
+(epoch: 12, iters: 14742, time: 0.074, data: 0.002) D_real: 0.207 D_fake: 0.216 D_real_perturbation: 0.237 D_fake_perturbation: 0.245 max_pert: 0.005 pert_constraint_D: 1.421 idt: 0.077 idt_perturbation: 0.005 
+(epoch: 12, iters: 16042, time: 0.074, data: 0.002) D_real: 0.301 D_fake: 0.178 D_real_perturbation: 0.118 D_fake_perturbation: 0.383 max_pert: 0.010 pert_constraint_D: 1.360 idt: 0.076 idt_perturbation: 0.003 
+(epoch: 12, iters: 17342, time: 0.073, data: 0.002) D_real: 0.148 D_fake: 0.267 D_real_perturbation: 0.322 D_fake_perturbation: 0.131 max_pert: 0.013 pert_constraint_D: 1.373 idt: 0.124 idt_perturbation: 0.003 
+(epoch: 12, iters: 18642, time: 0.088, data: 0.002) D_real: 0.152 D_fake: 0.317 D_real_perturbation: 0.105 D_fake_perturbation: 0.228 max_pert: 0.003 pert_constraint_D: 1.317 idt: 0.025 idt_perturbation: 0.004 
+saving the latest model (epoch 12, total_iters 520000)
+(epoch: 12, iters: 19942, time: 0.074, data: 0.002) D_real: 0.203 D_fake: 0.259 D_real_perturbation: 0.105 D_fake_perturbation: 0.173 max_pert: 0.008 pert_constraint_D: 1.325 idt: 0.087 idt_perturbation: 0.004 
+(epoch: 12, iters: 21242, time: 0.074, data: 0.002) D_real: 0.177 D_fake: 0.252 D_real_perturbation: 0.128 D_fake_perturbation: 0.289 max_pert: 0.005 pert_constraint_D: 1.396 idt: 0.034 idt_perturbation: 0.004 
+(epoch: 12, iters: 22542, time: 0.074, data: 0.002) D_real: 0.103 D_fake: 0.466 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.015 pert_constraint_D: 1.400 idt: 0.032 idt_perturbation: 0.015 
+(epoch: 12, iters: 23842, time: 0.079, data: 0.002) D_real: 0.263 D_fake: 0.157 D_real_perturbation: 0.111 D_fake_perturbation: 0.136 max_pert: 0.012 pert_constraint_D: 1.321 idt: 0.123 idt_perturbation: 0.010 
+(epoch: 12, iters: 25142, time: 0.073, data: 0.002) D_real: 0.111 D_fake: 0.373 D_real_perturbation: 0.107 D_fake_perturbation: 0.100 max_pert: 0.027 pert_constraint_D: 1.374 idt: 0.028 idt_perturbation: 0.021 
+saving the latest model (epoch 12, total_iters 526500)
+(epoch: 12, iters: 26442, time: 0.074, data: 0.002) D_real: 0.178 D_fake: 0.200 D_real_perturbation: 0.101 D_fake_perturbation: 0.112 max_pert: 0.012 pert_constraint_D: 1.346 idt: 0.156 idt_perturbation: 0.012 
+(epoch: 12, iters: 27742, time: 0.074, data: 0.002) D_real: 0.255 D_fake: 0.156 D_real_perturbation: 0.468 D_fake_perturbation: 0.109 max_pert: 0.005 pert_constraint_D: 1.377 idt: 0.112 idt_perturbation: 0.004 
+(epoch: 12, iters: 29042, time: 0.080, data: 0.002) D_real: 0.189 D_fake: 0.253 D_real_perturbation: 0.100 D_fake_perturbation: 0.268 max_pert: 0.009 pert_constraint_D: 1.387 idt: 0.063 idt_perturbation: 0.006 
+(epoch: 12, iters: 30342, time: 0.074, data: 0.002) D_real: 0.245 D_fake: 0.191 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.009 pert_constraint_D: 1.356 idt: 0.107 idt_perturbation: 0.006 
+(epoch: 12, iters: 31642, time: 0.074, data: 0.002) D_real: 0.114 D_fake: 0.434 D_real_perturbation: 0.104 D_fake_perturbation: 0.115 max_pert: 0.006 pert_constraint_D: 1.343 idt: 0.076 idt_perturbation: 0.004 
+saving the latest model (epoch 12, total_iters 533000)
+(epoch: 12, iters: 32942, time: 0.074, data: 0.002) D_real: 0.253 D_fake: 0.219 D_real_perturbation: 0.101 D_fake_perturbation: 0.100 max_pert: 0.007 pert_constraint_D: 1.420 idt: 0.164 idt_perturbation: 0.007 
+(epoch: 12, iters: 34242, time: 0.079, data: 0.002) D_real: 0.288 D_fake: 0.236 D_real_perturbation: 0.132 D_fake_perturbation: 0.274 max_pert: 0.006 pert_constraint_D: 1.317 idt: 0.072 idt_perturbation: 0.003 
+(epoch: 12, iters: 35542, time: 0.074, data: 0.002) D_real: 0.263 D_fake: 0.250 D_real_perturbation: 0.100 D_fake_perturbation: 0.251 max_pert: 0.006 pert_constraint_D: 1.288 idt: 0.025 idt_perturbation: 0.004 
+(epoch: 12, iters: 36842, time: 0.073, data: 0.002) D_real: 0.234 D_fake: 0.237 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.013 pert_constraint_D: 1.420 idt: 0.122 idt_perturbation: 0.009 
+(epoch: 12, iters: 38142, time: 0.073, data: 0.002) D_real: 0.196 D_fake: 0.225 D_real_perturbation: 0.102 D_fake_perturbation: 0.100 max_pert: 0.020 pert_constraint_D: 1.431 idt: 0.108 idt_perturbation: 0.011 
+saving the latest model (epoch 12, total_iters 539500)
+(epoch: 12, iters: 39442, time: 0.080, data: 0.002) D_real: 0.231 D_fake: 0.227 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.014 pert_constraint_D: 1.437 idt: 0.156 idt_perturbation: 0.011 
+(epoch: 12, iters: 40742, time: 0.074, data: 0.002) D_real: 0.222 D_fake: 0.268 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.008 pert_constraint_D: 1.394 idt: 0.070 idt_perturbation: 0.008 
+(epoch: 12, iters: 42042, time: 0.074, data: 0.002) D_real: 0.269 D_fake: 0.224 D_real_perturbation: 0.202 D_fake_perturbation: 0.138 max_pert: 0.008 pert_constraint_D: 1.330 idt: 0.036 idt_perturbation: 0.003 
+(epoch: 12, iters: 43342, time: 0.074, data: 0.002) D_real: 0.219 D_fake: 0.264 D_real_perturbation: 0.100 D_fake_perturbation: 0.214 max_pert: 0.008 pert_constraint_D: 1.426 idt: 0.072 idt_perturbation: 0.005 
+(epoch: 12, iters: 44642, time: 0.087, data: 0.002) D_real: 0.215 D_fake: 0.285 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.012 pert_constraint_D: 1.332 idt: 0.118 idt_perturbation: 0.012 
+saving the latest model (epoch 12, total_iters 546000)
+saving the model at the end of epoch 12, iters 546936
+End of epoch 12 / 200 	 Time Taken: 3360 sec
+learning rate 0.0002000 -> 0.0002000
+(epoch: 13, iters: 364, time: 0.074, data: 0.002) D_real: 0.248 D_fake: 0.236 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.011 pert_constraint_D: 1.363 idt: 0.114 idt_perturbation: 0.007 
+(epoch: 13, iters: 1664, time: 0.073, data: 0.001) D_real: 0.249 D_fake: 0.232 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.011 pert_constraint_D: 1.351 idt: 0.020 idt_perturbation: 0.008 
+(epoch: 13, iters: 2964, time: 0.074, data: 0.002) D_real: 0.208 D_fake: 0.288 D_real_perturbation: 0.100 D_fake_perturbation: 0.387 max_pert: 0.006 pert_constraint_D: 1.369 idt: 0.109 idt_perturbation: 0.003 
+(epoch: 13, iters: 4264, time: 0.086, data: 0.002) D_real: 0.167 D_fake: 0.357 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.014 pert_constraint_D: 1.375 idt: 0.024 idt_perturbation: 0.014 
+(epoch: 13, iters: 5564, time: 0.073, data: 0.002) D_real: 0.226 D_fake: 0.259 D_real_perturbation: 0.100 D_fake_perturbation: 0.315 max_pert: 0.007 pert_constraint_D: 1.375 idt: 0.116 idt_perturbation: 0.003 
+saving the latest model (epoch 13, total_iters 552500)
+(epoch: 13, iters: 6864, time: 0.073, data: 0.002) D_real: 0.253 D_fake: 0.250 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.011 pert_constraint_D: 1.292 idt: 0.170 idt_perturbation: 0.012 
+(epoch: 13, iters: 8164, time: 0.074, data: 0.002) D_real: 0.205 D_fake: 0.286 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.010 pert_constraint_D: 1.383 idt: 0.158 idt_perturbation: 0.008 
+(epoch: 13, iters: 9464, time: 0.080, data: 0.002) D_real: 0.298 D_fake: 0.197 D_real_perturbation: 0.106 D_fake_perturbation: 0.100 max_pert: 0.018 pert_constraint_D: 1.304 idt: 0.034 idt_perturbation: 0.012 
+(epoch: 13, iters: 10764, time: 0.073, data: 0.002) D_real: 0.227 D_fake: 0.245 D_real_perturbation: 0.189 D_fake_perturbation: 0.100 max_pert: 0.007 pert_constraint_D: 1.340 idt: 0.027 idt_perturbation: 0.004 
+(epoch: 13, iters: 12064, time: 0.073, data: 0.002) D_real: 0.228 D_fake: 0.248 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.019 pert_constraint_D: 1.354 idt: 0.079 idt_perturbation: 0.016 
+saving the latest model (epoch 13, total_iters 559000)
+(epoch: 13, iters: 13364, time: 0.073, data: 0.002) D_real: 0.191 D_fake: 0.249 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.015 pert_constraint_D: 1.309 idt: 0.113 idt_perturbation: 0.007 
+(epoch: 13, iters: 14664, time: 0.079, data: 0.002) D_real: 0.212 D_fake: 0.285 D_real_perturbation: 0.154 D_fake_perturbation: 0.130 max_pert: 0.006 pert_constraint_D: 1.322 idt: 0.156 idt_perturbation: 0.004 
+(epoch: 13, iters: 15964, time: 0.073, data: 0.002) D_real: 0.357 D_fake: 0.159 D_real_perturbation: 0.100 D_fake_perturbation: 0.148 max_pert: 0.009 pert_constraint_D: 1.401 idt: 0.013 idt_perturbation: 0.004 
+(epoch: 13, iters: 17264, time: 0.074, data: 0.002) D_real: 0.236 D_fake: 0.249 D_real_perturbation: 0.363 D_fake_perturbation: 0.111 max_pert: 0.011 pert_constraint_D: 1.357 idt: 0.022 idt_perturbation: 0.007 
+(epoch: 13, iters: 18564, time: 0.073, data: 0.002) D_real: 0.187 D_fake: 0.295 D_real_perturbation: 0.111 D_fake_perturbation: 0.100 max_pert: 0.012 pert_constraint_D: 1.288 idt: 0.070 idt_perturbation: 0.006 
+saving the latest model (epoch 13, total_iters 565500)
+(epoch: 13, iters: 19864, time: 0.080, data: 0.002) D_real: 0.317 D_fake: 0.195 D_real_perturbation: 0.100 D_fake_perturbation: 0.124 max_pert: 0.006 pert_constraint_D: 1.303 idt: 0.016 idt_perturbation: 0.004 
+(epoch: 13, iters: 21164, time: 0.073, data: 0.002) D_real: 0.214 D_fake: 0.238 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.014 pert_constraint_D: 1.453 idt: 0.108 idt_perturbation: 0.007 
+(epoch: 13, iters: 22464, time: 0.073, data: 0.002) D_real: 0.154 D_fake: 0.306 D_real_perturbation: 0.101 D_fake_perturbation: 0.111 max_pert: 0.012 pert_constraint_D: 1.342 idt: 0.067 idt_perturbation: 0.008 
+(epoch: 13, iters: 23764, time: 0.074, data: 0.002) D_real: 0.296 D_fake: 0.229 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.009 pert_constraint_D: 1.386 idt: 0.152 idt_perturbation: 0.008 
+(epoch: 13, iters: 25064, time: 0.088, data: 0.002) D_real: 0.249 D_fake: 0.240 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.010 pert_constraint_D: 1.418 idt: 0.062 idt_perturbation: 0.008 
+saving the latest model (epoch 13, total_iters 572000)
+(epoch: 13, iters: 26364, time: 0.074, data: 0.002) D_real: 0.251 D_fake: 0.242 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.016 pert_constraint_D: 1.331 idt: 0.023 idt_perturbation: 0.014 
+(epoch: 13, iters: 27664, time: 0.073, data: 0.001) D_real: 0.401 D_fake: 0.163 D_real_perturbation: 0.100 D_fake_perturbation: 0.107 max_pert: 0.010 pert_constraint_D: 1.360 idt: 0.079 idt_perturbation: 0.006 
+(epoch: 13, iters: 28964, time: 0.073, data: 0.002) D_real: 0.175 D_fake: 0.289 D_real_perturbation: 0.100 D_fake_perturbation: 0.146 max_pert: 0.009 pert_constraint_D: 1.308 idt: 0.118 idt_perturbation: 0.004 
+(epoch: 13, iters: 30264, time: 0.080, data: 0.002) D_real: 0.231 D_fake: 0.200 D_real_perturbation: 0.101 D_fake_perturbation: 0.100 max_pert: 0.010 pert_constraint_D: 1.347 idt: 0.264 idt_perturbation: 0.006 
+(epoch: 13, iters: 31564, time: 0.074, data: 0.002) D_real: 0.231 D_fake: 0.251 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.016 pert_constraint_D: 1.293 idt: 0.036 idt_perturbation: 0.011 
+saving the latest model (epoch 13, total_iters 578500)
+(epoch: 13, iters: 32864, time: 0.074, data: 0.002) D_real: 0.175 D_fake: 0.299 D_real_perturbation: 0.105 D_fake_perturbation: 0.103 max_pert: 0.007 pert_constraint_D: 1.373 idt: 0.062 idt_perturbation: 0.005 
+(epoch: 13, iters: 34164, time: 0.074, data: 0.001) D_real: 0.195 D_fake: 0.312 D_real_perturbation: 0.100 D_fake_perturbation: 0.131 max_pert: 0.005 pert_constraint_D: 1.373 idt: 0.151 idt_perturbation: 0.004 
+(epoch: 13, iters: 35464, time: 0.080, data: 0.002) D_real: 0.311 D_fake: 0.221 D_real_perturbation: 0.100 D_fake_perturbation: 0.161 max_pert: 0.006 pert_constraint_D: 1.292 idt: 0.058 idt_perturbation: 0.003 
+(epoch: 13, iters: 36764, time: 0.074, data: 0.001) D_real: 0.272 D_fake: 0.262 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.009 pert_constraint_D: 1.301 idt: 0.077 idt_perturbation: 0.010 
+(epoch: 13, iters: 38064, time: 0.073, data: 0.002) D_real: 0.215 D_fake: 0.279 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.021 pert_constraint_D: 1.391 idt: 0.115 idt_perturbation: 0.015 
+saving the latest model (epoch 13, total_iters 585000)
+(epoch: 13, iters: 39364, time: 0.073, data: 0.002) D_real: 0.205 D_fake: 0.298 D_real_perturbation: 0.441 D_fake_perturbation: 0.120 max_pert: 0.009 pert_constraint_D: 1.291 idt: 0.115 idt_perturbation: 0.008 
+(epoch: 13, iters: 40664, time: 0.079, data: 0.002) D_real: 0.161 D_fake: 0.314 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.011 pert_constraint_D: 1.340 idt: 0.071 idt_perturbation: 0.007 
+(epoch: 13, iters: 41964, time: 0.073, data: 0.002) D_real: 0.258 D_fake: 0.207 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.013 pert_constraint_D: 1.275 idt: 0.108 idt_perturbation: 0.007 
+(epoch: 13, iters: 43264, time: 0.074, data: 0.002) D_real: 0.216 D_fake: 0.308 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.009 pert_constraint_D: 1.335 idt: 0.110 idt_perturbation: 0.008 
+(epoch: 13, iters: 44564, time: 0.073, data: 0.002) D_real: 0.206 D_fake: 0.265 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.011 pert_constraint_D: 1.310 idt: 0.121 idt_perturbation: 0.011 
+saving the latest model (epoch 13, total_iters 591500)
+saving the model at the end of epoch 13, iters 592514
+End of epoch 13 / 200 	 Time Taken: 3358 sec
+learning rate 0.0002000 -> 0.0002000
+(epoch: 14, iters: 286, time: 0.087, data: 0.002) D_real: 0.218 D_fake: 0.252 D_real_perturbation: 0.228 D_fake_perturbation: 0.186 max_pert: 0.005 pert_constraint_D: 1.348 idt: 0.151 idt_perturbation: 0.003 
+(epoch: 14, iters: 1586, time: 0.074, data: 0.001) D_real: 0.175 D_fake: 0.249 D_real_perturbation: 0.103 D_fake_perturbation: 0.100 max_pert: 0.010 pert_constraint_D: 1.304 idt: 0.026 idt_perturbation: 0.005 
+(epoch: 14, iters: 2886, time: 0.073, data: 0.002) D_real: 0.145 D_fake: 0.280 D_real_perturbation: 0.110 D_fake_perturbation: 0.147 max_pert: 0.018 pert_constraint_D: 1.417 idt: 0.120 idt_perturbation: 0.012 
+(epoch: 14, iters: 4186, time: 0.073, data: 0.002) D_real: 0.281 D_fake: 0.166 D_real_perturbation: 0.171 D_fake_perturbation: 0.100 max_pert: 0.008 pert_constraint_D: 1.323 idt: 0.121 idt_perturbation: 0.008 
+(epoch: 14, iters: 5486, time: 0.085, data: 0.002) D_real: 0.135 D_fake: 0.392 D_real_perturbation: 0.100 D_fake_perturbation: 0.223 max_pert: 0.004 pert_constraint_D: 1.459 idt: 0.113 idt_perturbation: 0.004 
+saving the latest model (epoch 14, total_iters 598000)
+(epoch: 14, iters: 6786, time: 0.073, data: 0.002) D_real: 0.225 D_fake: 0.268 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.011 pert_constraint_D: 1.253 idt: 0.161 idt_perturbation: 0.011 
+(epoch: 14, iters: 8086, time: 0.074, data: 0.002) D_real: 0.289 D_fake: 0.161 D_real_perturbation: 0.100 D_fake_perturbation: 0.146 max_pert: 0.009 pert_constraint_D: 1.313 idt: 0.078 idt_perturbation: 0.006 
+(epoch: 14, iters: 9386, time: 0.073, data: 0.002) D_real: 0.307 D_fake: 0.121 D_real_perturbation: 0.100 D_fake_perturbation: 0.109 max_pert: 0.010 pert_constraint_D: 1.292 idt: 0.060 idt_perturbation: 0.006 
+(epoch: 14, iters: 10686, time: 0.080, data: 0.002) D_real: 0.477 D_fake: 0.100 D_real_perturbation: 0.101 D_fake_perturbation: 0.134 max_pert: 0.009 pert_constraint_D: 1.321 idt: 0.015 idt_perturbation: 0.004 
+(epoch: 14, iters: 11986, time: 0.073, data: 0.001) D_real: 0.228 D_fake: 0.210 D_real_perturbation: 0.100 D_fake_perturbation: 0.126 max_pert: 0.019 pert_constraint_D: 1.472 idt: 0.030 idt_perturbation: 0.012 
+saving the latest model (epoch 14, total_iters 604500)
+(epoch: 14, iters: 13286, time: 0.073, data: 0.002) D_real: 0.177 D_fake: 0.197 D_real_perturbation: 0.100 D_fake_perturbation: 0.102 max_pert: 0.010 pert_constraint_D: 1.339 idt: 0.119 idt_perturbation: 0.007 
+(epoch: 14, iters: 14586, time: 0.074, data: 0.002) D_real: 0.134 D_fake: 0.318 D_real_perturbation: 0.108 D_fake_perturbation: 0.118 max_pert: 0.007 pert_constraint_D: 1.357 idt: 0.067 idt_perturbation: 0.003 
+(epoch: 14, iters: 15886, time: 0.079, data: 0.002) D_real: 0.315 D_fake: 0.530 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.014 pert_constraint_D: 1.277 idt: 0.080 idt_perturbation: 0.013 
+(epoch: 14, iters: 17186, time: 0.074, data: 0.002) D_real: 0.129 D_fake: 0.299 D_real_perturbation: 0.113 D_fake_perturbation: 0.100 max_pert: 0.011 pert_constraint_D: 1.407 idt: 0.072 idt_perturbation: 0.006 
+(epoch: 14, iters: 18486, time: 0.074, data: 0.002) D_real: 0.130 D_fake: 0.249 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.014 pert_constraint_D: 1.332 idt: 0.023 idt_perturbation: 0.012 
+saving the latest model (epoch 14, total_iters 611000)
+(epoch: 14, iters: 19786, time: 0.074, data: 0.002) D_real: 0.158 D_fake: 0.257 D_real_perturbation: 0.100 D_fake_perturbation: 0.103 max_pert: 0.013 pert_constraint_D: 1.349 idt: 0.020 idt_perturbation: 0.010 
+(epoch: 14, iters: 21086, time: 0.080, data: 0.001) D_real: 0.225 D_fake: 0.213 D_real_perturbation: 0.100 D_fake_perturbation: 0.111 max_pert: 0.009 pert_constraint_D: 1.432 idt: 0.217 idt_perturbation: 0.005 
+(epoch: 14, iters: 22386, time: 0.074, data: 0.002) D_real: 0.267 D_fake: 0.296 D_real_perturbation: 0.191 D_fake_perturbation: 0.276 max_pert: 0.006 pert_constraint_D: 1.385 idt: 0.069 idt_perturbation: 0.004 
+(epoch: 14, iters: 23686, time: 0.074, data: 0.002) D_real: 0.207 D_fake: 0.228 D_real_perturbation: 0.111 D_fake_perturbation: 0.100 max_pert: 0.010 pert_constraint_D: 1.302 idt: 0.156 idt_perturbation: 0.005 
+(epoch: 14, iters: 24986, time: 0.074, data: 0.002) D_real: 0.257 D_fake: 0.236 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.010 pert_constraint_D: 1.404 idt: 0.126 idt_perturbation: 0.007 
+saving the latest model (epoch 14, total_iters 617500)
+(epoch: 14, iters: 26286, time: 0.081, data: 0.002) D_real: 0.198 D_fake: 0.298 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.011 pert_constraint_D: 1.417 idt: 0.117 idt_perturbation: 0.011 
+(epoch: 14, iters: 27586, time: 0.074, data: 0.002) D_real: 0.196 D_fake: 0.281 D_real_perturbation: 0.229 D_fake_perturbation: 0.100 max_pert: 0.008 pert_constraint_D: 1.356 idt: 0.126 idt_perturbation: 0.004 
+(epoch: 14, iters: 28886, time: 0.074, data: 0.002) D_real: 0.201 D_fake: 0.293 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.014 pert_constraint_D: 1.415 idt: 0.078 idt_perturbation: 0.012 
+(epoch: 14, iters: 30186, time: 0.074, data: 0.001) D_real: 0.179 D_fake: 0.322 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.016 pert_constraint_D: 1.449 idt: 0.071 idt_perturbation: 0.012 
+(epoch: 14, iters: 31486, time: 0.088, data: 0.001) D_real: 0.234 D_fake: 0.243 D_real_perturbation: 0.102 D_fake_perturbation: 0.224 max_pert: 0.009 pert_constraint_D: 1.369 idt: 0.164 idt_perturbation: 0.003 
+saving the latest model (epoch 14, total_iters 624000)
+(epoch: 14, iters: 32786, time: 0.074, data: 0.002) D_real: 0.201 D_fake: 0.273 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.013 pert_constraint_D: 1.375 idt: 0.086 idt_perturbation: 0.010 
+(epoch: 14, iters: 34086, time: 0.074, data: 0.002) D_real: 0.230 D_fake: 0.276 D_real_perturbation: 0.365 D_fake_perturbation: 0.156 max_pert: 0.003 pert_constraint_D: 1.433 idt: 0.028 idt_perturbation: 0.004 
+(epoch: 14, iters: 35386, time: 0.074, data: 0.002) D_real: 0.253 D_fake: 0.211 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.012 pert_constraint_D: 1.356 idt: 0.032 idt_perturbation: 0.006 
+(epoch: 14, iters: 36686, time: 0.079, data: 0.002) D_real: 0.209 D_fake: 0.265 D_real_perturbation: 0.100 D_fake_perturbation: 0.114 max_pert: 0.008 pert_constraint_D: 1.457 idt: 0.113 idt_perturbation: 0.005 
+(epoch: 14, iters: 37986, time: 0.074, data: 0.002) D_real: 0.248 D_fake: 0.273 D_real_perturbation: 0.383 D_fake_perturbation: 0.100 max_pert: 0.005 pert_constraint_D: 1.362 idt: 0.035 idt_perturbation: 0.005 
+saving the latest model (epoch 14, total_iters 630500)
+(epoch: 14, iters: 39286, time: 0.074, data: 0.002) D_real: 0.212 D_fake: 0.291 D_real_perturbation: 0.100 D_fake_perturbation: 0.247 max_pert: 0.006 pert_constraint_D: 1.350 idt: 0.073 idt_perturbation: 0.003 
+(epoch: 14, iters: 40586, time: 0.073, data: 0.002) D_real: 0.169 D_fake: 0.323 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.013 pert_constraint_D: 1.264 idt: 0.033 idt_perturbation: 0.012 
+(epoch: 14, iters: 41886, time: 0.079, data: 0.002) D_real: 0.241 D_fake: 0.254 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.012 pert_constraint_D: 1.348 idt: 0.155 idt_perturbation: 0.008 
+(epoch: 14, iters: 43186, time: 0.073, data: 0.002) D_real: 0.274 D_fake: 0.243 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.006 pert_constraint_D: 1.367 idt: 0.019 idt_perturbation: 0.007 
+(epoch: 14, iters: 44486, time: 0.074, data: 0.002) D_real: 0.224 D_fake: 0.252 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.014 pert_constraint_D: 1.301 idt: 0.205 idt_perturbation: 0.011 
+saving the latest model (epoch 14, total_iters 637000)
+saving the model at the end of epoch 14, iters 638092
+End of epoch 14 / 200 	 Time Taken: 3361 sec
+learning rate 0.0002000 -> 0.0002000
+(epoch: 15, iters: 208, time: 0.073, data: 0.002) D_real: 0.298 D_fake: 0.226 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.008 pert_constraint_D: 1.349 idt: 0.121 idt_perturbation: 0.007 
+(epoch: 15, iters: 1508, time: 0.086, data: 0.002) D_real: 0.192 D_fake: 0.306 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.015 pert_constraint_D: 1.306 idt: 0.154 idt_perturbation: 0.010 
+(epoch: 15, iters: 2808, time: 0.073, data: 0.002) D_real: 0.200 D_fake: 0.283 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.009 pert_constraint_D: 1.322 idt: 0.115 idt_perturbation: 0.006 
+(epoch: 15, iters: 4108, time: 0.073, data: 0.002) D_real: 0.174 D_fake: 0.292 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.010 pert_constraint_D: 1.340 idt: 0.120 idt_perturbation: 0.010 
+(epoch: 15, iters: 5408, time: 0.073, data: 0.002) D_real: 0.227 D_fake: 0.269 D_real_perturbation: 0.100 D_fake_perturbation: 0.554 max_pert: 0.003 pert_constraint_D: 1.333 idt: 0.059 idt_perturbation: 0.003 
+saving the latest model (epoch 15, total_iters 643500)
+(epoch: 15, iters: 6708, time: 0.080, data: 0.001) D_real: 0.201 D_fake: 0.320 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.010 pert_constraint_D: 1.439 idt: 0.025 idt_perturbation: 0.009 
+(epoch: 15, iters: 8008, time: 0.074, data: 0.002) D_real: 0.225 D_fake: 0.246 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.015 pert_constraint_D: 1.436 idt: 0.023 idt_perturbation: 0.011 
+(epoch: 15, iters: 9308, time: 0.073, data: 0.002) D_real: 0.181 D_fake: 0.284 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.014 pert_constraint_D: 1.369 idt: 0.107 idt_perturbation: 0.012 
+(epoch: 15, iters: 10608, time: 0.073, data: 0.002) D_real: 0.202 D_fake: 0.268 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.012 pert_constraint_D: 1.346 idt: 0.071 idt_perturbation: 0.008 
+(epoch: 15, iters: 11908, time: 0.090, data: 0.002) D_real: 0.249 D_fake: 0.203 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.015 pert_constraint_D: 1.334 idt: 0.117 idt_perturbation: 0.013 
+saving the latest model (epoch 15, total_iters 650000)
+(epoch: 15, iters: 13208, time: 0.074, data: 0.002) D_real: 0.318 D_fake: 0.153 D_real_perturbation: 0.100 D_fake_perturbation: 0.124 max_pert: 0.011 pert_constraint_D: 1.306 idt: 0.030 idt_perturbation: 0.007 
+(epoch: 15, iters: 14508, time: 0.074, data: 0.002) D_real: 0.325 D_fake: 0.183 D_real_perturbation: 0.100 D_fake_perturbation: 0.103 max_pert: 0.018 pert_constraint_D: 1.490 idt: 0.026 idt_perturbation: 0.015 
+(epoch: 15, iters: 15808, time: 0.073, data: 0.002) D_real: 0.382 D_fake: 0.126 D_real_perturbation: 0.100 D_fake_perturbation: 0.232 max_pert: 0.010 pert_constraint_D: 1.308 idt: 0.115 idt_perturbation: 0.007 
+(epoch: 15, iters: 17108, time: 0.080, data: 0.002) D_real: 0.254 D_fake: 0.142 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.014 pert_constraint_D: 1.429 idt: 0.028 idt_perturbation: 0.011 
+(epoch: 15, iters: 18408, time: 0.074, data: 0.002) D_real: 0.116 D_fake: 0.288 D_real_perturbation: 0.108 D_fake_perturbation: 0.100 max_pert: 0.010 pert_constraint_D: 1.324 idt: 0.021 idt_perturbation: 0.008 
+saving the latest model (epoch 15, total_iters 656500)
+(epoch: 15, iters: 19708, time: 0.073, data: 0.002) D_real: 0.278 D_fake: 0.172 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.017 pert_constraint_D: 1.366 idt: 0.076 idt_perturbation: 0.015 
+(epoch: 15, iters: 21008, time: 0.073, data: 0.002) D_real: 0.185 D_fake: 0.247 D_real_perturbation: 0.118 D_fake_perturbation: 0.100 max_pert: 0.010 pert_constraint_D: 1.280 idt: 0.119 idt_perturbation: 0.008 
+(epoch: 15, iters: 22308, time: 0.079, data: 0.002) D_real: 0.320 D_fake: 0.167 D_real_perturbation: 0.165 D_fake_perturbation: 0.272 max_pert: 0.012 pert_constraint_D: 1.289 idt: 0.023 idt_perturbation: 0.009 
+(epoch: 15, iters: 23608, time: 0.074, data: 0.002) D_real: 0.177 D_fake: 0.195 D_real_perturbation: 0.181 D_fake_perturbation: 0.109 max_pert: 0.006 pert_constraint_D: 1.351 idt: 0.134 idt_perturbation: 0.004 
+(epoch: 15, iters: 24908, time: 0.073, data: 0.002) D_real: 0.155 D_fake: 0.289 D_real_perturbation: 0.100 D_fake_perturbation: 0.102 max_pert: 0.008 pert_constraint_D: 1.322 idt: 0.058 idt_perturbation: 0.006 
+saving the latest model (epoch 15, total_iters 663000)
+(epoch: 15, iters: 26208, time: 0.074, data: 0.002) D_real: 0.227 D_fake: 0.204 D_real_perturbation: 0.100 D_fake_perturbation: 0.193 max_pert: 0.004 pert_constraint_D: 1.319 idt: 0.065 idt_perturbation: 0.004 
+(epoch: 15, iters: 27508, time: 0.080, data: 0.002) D_real: 0.227 D_fake: 0.156 D_real_perturbation: 0.108 D_fake_perturbation: 0.223 max_pert: 0.003 pert_constraint_D: 1.280 idt: 0.028 idt_perturbation: 0.004 
+(epoch: 15, iters: 28808, time: 0.074, data: 0.002) D_real: 0.235 D_fake: 0.214 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.007 pert_constraint_D: 1.480 idt: 0.166 idt_perturbation: 0.005 
+(epoch: 15, iters: 30108, time: 0.074, data: 0.002) D_real: 0.212 D_fake: 0.174 D_real_perturbation: 0.207 D_fake_perturbation: 0.101 max_pert: 0.008 pert_constraint_D: 1.372 idt: 0.114 idt_perturbation: 0.005 
+(epoch: 15, iters: 31408, time: 0.073, data: 0.002) D_real: 0.162 D_fake: 0.194 D_real_perturbation: 0.100 D_fake_perturbation: 0.344 max_pert: 0.007 pert_constraint_D: 1.311 idt: 0.030 idt_perturbation: 0.004 
+saving the latest model (epoch 15, total_iters 669500)
+(epoch: 15, iters: 32708, time: 0.078, data: 0.002) D_real: 0.188 D_fake: 0.141 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.018 pert_constraint_D: 1.311 idt: 0.134 idt_perturbation: 0.012 
+(epoch: 15, iters: 34008, time: 0.073, data: 0.002) D_real: 0.374 D_fake: 0.100 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.011 pert_constraint_D: 1.347 idt: 0.070 idt_perturbation: 0.010 
+(epoch: 15, iters: 35308, time: 0.074, data: 0.002) D_real: 0.139 D_fake: 0.273 D_real_perturbation: 0.135 D_fake_perturbation: 0.106 max_pert: 0.009 pert_constraint_D: 1.300 idt: 0.028 idt_perturbation: 0.008 
+(epoch: 15, iters: 36608, time: 0.074, data: 0.002) D_real: 0.288 D_fake: 0.133 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.014 pert_constraint_D: 1.424 idt: 0.029 idt_perturbation: 0.010 
+(epoch: 15, iters: 37908, time: 0.089, data: 0.002) D_real: 0.231 D_fake: 0.101 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.010 pert_constraint_D: 1.382 idt: 0.036 idt_perturbation: 0.007 
+saving the latest model (epoch 15, total_iters 676000)
+(epoch: 15, iters: 39208, time: 0.074, data: 0.002) D_real: 0.361 D_fake: 0.117 D_real_perturbation: 0.100 D_fake_perturbation: 0.105 max_pert: 0.008 pert_constraint_D: 1.304 idt: 0.029 idt_perturbation: 0.007 
+(epoch: 15, iters: 40508, time: 0.073, data: 0.001) D_real: 0.239 D_fake: 0.124 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.016 pert_constraint_D: 1.408 idt: 0.067 idt_perturbation: 0.008 
+(epoch: 15, iters: 41808, time: 0.073, data: 0.002) D_real: 0.244 D_fake: 0.109 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.016 pert_constraint_D: 1.433 idt: 0.116 idt_perturbation: 0.010 
+(epoch: 15, iters: 43108, time: 0.079, data: 0.002) D_real: 0.214 D_fake: 0.131 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.016 pert_constraint_D: 1.369 idt: 0.111 idt_perturbation: 0.015 
+(epoch: 15, iters: 44408, time: 0.074, data: 0.002) D_real: 0.259 D_fake: 0.111 D_real_perturbation: 0.128 D_fake_perturbation: 0.100 max_pert: 0.006 pert_constraint_D: 1.407 idt: 0.026 idt_perturbation: 0.004 
+saving the latest model (epoch 15, total_iters 682500)
+saving the model at the end of epoch 15, iters 683670
+End of epoch 15 / 200 	 Time Taken: 3359 sec
+learning rate 0.0002000 -> 0.0002000
+(epoch: 16, iters: 130, time: 0.074, data: 0.002) D_real: 0.239 D_fake: 0.143 D_real_perturbation: 0.207 D_fake_perturbation: 0.144 max_pert: 0.010 pert_constraint_D: 1.273 idt: 0.073 idt_perturbation: 0.005 
+(epoch: 16, iters: 1430, time: 0.074, data: 0.001) D_real: 0.165 D_fake: 0.222 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.011 pert_constraint_D: 1.312 idt: 0.023 idt_perturbation: 0.010 
+(epoch: 16, iters: 2730, time: 0.087, data: 0.002) D_real: 0.332 D_fake: 0.105 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.017 pert_constraint_D: 1.305 idt: 0.111 idt_perturbation: 0.013 
+(epoch: 16, iters: 4030, time: 0.074, data: 0.002) D_real: 0.261 D_fake: 0.113 D_real_perturbation: 0.101 D_fake_perturbation: 0.103 max_pert: 0.009 pert_constraint_D: 1.362 idt: 0.069 idt_perturbation: 0.005 
+(epoch: 16, iters: 5330, time: 0.074, data: 0.002) D_real: 0.174 D_fake: 0.100 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.012 pert_constraint_D: 1.260 idt: 0.156 idt_perturbation: 0.007 
+saving the latest model (epoch 16, total_iters 689000)
+(epoch: 16, iters: 6630, time: 0.074, data: 0.002) D_real: 0.258 D_fake: 0.267 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.010 pert_constraint_D: 1.353 idt: 0.118 idt_perturbation: 0.006 
+(epoch: 16, iters: 7930, time: 0.081, data: 0.002) D_real: 0.237 D_fake: 0.258 D_real_perturbation: 0.100 D_fake_perturbation: 0.336 max_pert: 0.008 pert_constraint_D: 1.405 idt: 0.081 idt_perturbation: 0.004 
+(epoch: 16, iters: 9230, time: 0.073, data: 0.002) D_real: 0.225 D_fake: 0.271 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.009 pert_constraint_D: 1.298 idt: 0.077 idt_perturbation: 0.007 
+(epoch: 16, iters: 10530, time: 0.073, data: 0.002) D_real: 0.222 D_fake: 0.247 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.012 pert_constraint_D: 1.279 idt: 0.216 idt_perturbation: 0.011 
+(epoch: 16, iters: 11830, time: 0.073, data: 0.002) D_real: 0.229 D_fake: 0.231 D_real_perturbation: 0.103 D_fake_perturbation: 0.107 max_pert: 0.009 pert_constraint_D: 1.324 idt: 0.088 idt_perturbation: 0.007 
+saving the latest model (epoch 16, total_iters 695500)
+(epoch: 16, iters: 13130, time: 0.079, data: 0.002) D_real: 0.213 D_fake: 0.303 D_real_perturbation: 0.100 D_fake_perturbation: 0.160 max_pert: 0.005 pert_constraint_D: 1.378 idt: 0.033 idt_perturbation: 0.004 
+(epoch: 16, iters: 14430, time: 0.074, data: 0.002) D_real: 0.192 D_fake: 0.283 D_real_perturbation: 0.107 D_fake_perturbation: 0.100 max_pert: 0.009 pert_constraint_D: 1.367 idt: 0.081 idt_perturbation: 0.007 
+(epoch: 16, iters: 15730, time: 0.074, data: 0.002) D_real: 0.279 D_fake: 0.200 D_real_perturbation: 0.100 D_fake_perturbation: 0.178 max_pert: 0.010 pert_constraint_D: 1.337 idt: 0.031 idt_perturbation: 0.005 
+(epoch: 16, iters: 17030, time: 0.074, data: 0.002) D_real: 0.178 D_fake: 0.295 D_real_perturbation: 0.102 D_fake_perturbation: 0.100 max_pert: 0.009 pert_constraint_D: 1.349 idt: 0.026 idt_perturbation: 0.006 
+(epoch: 16, iters: 18330, time: 0.087, data: 0.001) D_real: 0.290 D_fake: 0.248 D_real_perturbation: 0.100 D_fake_perturbation: 0.104 max_pert: 0.009 pert_constraint_D: 1.385 idt: 0.070 idt_perturbation: 0.007 
+saving the latest model (epoch 16, total_iters 702000)
+(epoch: 16, iters: 19630, time: 0.074, data: 0.002) D_real: 0.214 D_fake: 0.275 D_real_perturbation: 0.100 D_fake_perturbation: 0.106 max_pert: 0.007 pert_constraint_D: 1.341 idt: 0.073 idt_perturbation: 0.005 
+(epoch: 16, iters: 20930, time: 0.074, data: 0.002) D_real: 0.301 D_fake: 0.188 D_real_perturbation: 0.100 D_fake_perturbation: 0.173 max_pert: 0.006 pert_constraint_D: 1.429 idt: 0.031 idt_perturbation: 0.004 
+(epoch: 16, iters: 22230, time: 0.074, data: 0.002) D_real: 0.226 D_fake: 0.285 D_real_perturbation: 0.101 D_fake_perturbation: 0.159 max_pert: 0.006 pert_constraint_D: 1.409 idt: 0.014 idt_perturbation: 0.004 
+(epoch: 16, iters: 23530, time: 0.080, data: 0.001) D_real: 0.233 D_fake: 0.255 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.016 pert_constraint_D: 1.370 idt: 0.089 idt_perturbation: 0.014 
+(epoch: 16, iters: 24830, time: 0.074, data: 0.002) D_real: 0.218 D_fake: 0.296 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.009 pert_constraint_D: 1.328 idt: 0.117 idt_perturbation: 0.008 
+saving the latest model (epoch 16, total_iters 708500)
+(epoch: 16, iters: 26130, time: 0.074, data: 0.001) D_real: 0.238 D_fake: 0.275 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.014 pert_constraint_D: 1.251 idt: 0.072 idt_perturbation: 0.013 
+(epoch: 16, iters: 27430, time: 0.074, data: 0.002) D_real: 0.286 D_fake: 0.220 D_real_perturbation: 0.118 D_fake_perturbation: 0.127 max_pert: 0.007 pert_constraint_D: 1.319 idt: 0.117 idt_perturbation: 0.004 
+(epoch: 16, iters: 28730, time: 0.080, data: 0.002) D_real: 0.256 D_fake: 0.220 D_real_perturbation: 0.103 D_fake_perturbation: 0.100 max_pert: 0.008 pert_constraint_D: 1.416 idt: 0.153 idt_perturbation: 0.006 
+(epoch: 16, iters: 30030, time: 0.074, data: 0.002) D_real: 0.256 D_fake: 0.214 D_real_perturbation: 0.106 D_fake_perturbation: 0.100 max_pert: 0.011 pert_constraint_D: 1.437 idt: 0.072 idt_perturbation: 0.008 
+(epoch: 16, iters: 31330, time: 0.074, data: 0.002) D_real: 0.236 D_fake: 0.240 D_real_perturbation: 0.100 D_fake_perturbation: 0.105 max_pert: 0.009 pert_constraint_D: 1.314 idt: 0.066 idt_perturbation: 0.006 
+saving the latest model (epoch 16, total_iters 715000)
+(epoch: 16, iters: 32630, time: 0.073, data: 0.002) D_real: 0.186 D_fake: 0.255 D_real_perturbation: 0.306 D_fake_perturbation: 0.102 max_pert: 0.011 pert_constraint_D: 1.310 idt: 0.065 idt_perturbation: 0.007 
+(epoch: 16, iters: 33930, time: 0.080, data: 0.002) D_real: 0.205 D_fake: 0.276 D_real_perturbation: 0.109 D_fake_perturbation: 0.100 max_pert: 0.009 pert_constraint_D: 1.293 idt: 0.067 idt_perturbation: 0.006 
+(epoch: 16, iters: 35230, time: 0.074, data: 0.002) D_real: 0.244 D_fake: 0.240 D_real_perturbation: 0.100 D_fake_perturbation: 0.107 max_pert: 0.008 pert_constraint_D: 1.385 idt: 0.061 idt_perturbation: 0.006 
+(epoch: 16, iters: 36530, time: 0.074, data: 0.002) D_real: 0.177 D_fake: 0.303 D_real_perturbation: 0.107 D_fake_perturbation: 0.112 max_pert: 0.013 pert_constraint_D: 1.293 idt: 0.119 idt_perturbation: 0.009 
+(epoch: 16, iters: 37830, time: 0.074, data: 0.002) D_real: 0.261 D_fake: 0.250 D_real_perturbation: 0.118 D_fake_perturbation: 0.100 max_pert: 0.006 pert_constraint_D: 1.399 idt: 0.066 idt_perturbation: 0.005 
+saving the latest model (epoch 16, total_iters 721500)
+(epoch: 16, iters: 39130, time: 0.080, data: 0.002) D_real: 0.271 D_fake: 0.186 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.013 pert_constraint_D: 1.354 idt: 0.070 idt_perturbation: 0.007 
+(epoch: 16, iters: 40430, time: 0.074, data: 0.002) D_real: 0.210 D_fake: 0.305 D_real_perturbation: 0.101 D_fake_perturbation: 0.100 max_pert: 0.017 pert_constraint_D: 1.326 idt: 0.028 idt_perturbation: 0.014 
+(epoch: 16, iters: 41730, time: 0.073, data: 0.001) D_real: 0.190 D_fake: 0.288 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.010 pert_constraint_D: 1.333 idt: 0.086 idt_perturbation: 0.006 
+(epoch: 16, iters: 43030, time: 0.074, data: 0.002) D_real: 0.243 D_fake: 0.247 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.010 pert_constraint_D: 1.398 idt: 0.072 idt_perturbation: 0.008 
+(epoch: 16, iters: 44330, time: 0.086, data: 0.002) D_real: 0.277 D_fake: 0.201 D_real_perturbation: 0.100 D_fake_perturbation: 0.179 max_pert: 0.007 pert_constraint_D: 1.300 idt: 0.159 idt_perturbation: 0.004 
+saving the latest model (epoch 16, total_iters 728000)
+saving the model at the end of epoch 16, iters 729248
+End of epoch 16 / 200 	 Time Taken: 3360 sec
+learning rate 0.0002000 -> 0.0002000
+(epoch: 17, iters: 52, time: 0.074, data: 0.002) D_real: 0.259 D_fake: 0.228 D_real_perturbation: 0.135 D_fake_perturbation: 0.116 max_pert: 0.014 pert_constraint_D: 1.307 idt: 0.024 idt_perturbation: 0.010 
+(epoch: 17, iters: 1352, time: 0.074, data: 0.001) D_real: 0.205 D_fake: 0.262 D_real_perturbation: 0.110 D_fake_perturbation: 0.100 max_pert: 0.012 pert_constraint_D: 1.289 idt: 0.018 idt_perturbation: 0.008 
+(epoch: 17, iters: 2652, time: 0.074, data: 0.002) D_real: 0.238 D_fake: 0.244 D_real_perturbation: 0.102 D_fake_perturbation: 0.176 max_pert: 0.007 pert_constraint_D: 1.366 idt: 0.075 idt_perturbation: 0.005 
+(epoch: 17, iters: 3952, time: 0.088, data: 0.002) D_real: 0.163 D_fake: 0.340 D_real_perturbation: 0.100 D_fake_perturbation: 0.231 max_pert: 0.006 pert_constraint_D: 1.301 idt: 0.154 idt_perturbation: 0.003 
+(epoch: 17, iters: 5252, time: 0.073, data: 0.002) D_real: 0.254 D_fake: 0.197 D_real_perturbation: 0.102 D_fake_perturbation: 0.100 max_pert: 0.012 pert_constraint_D: 1.313 idt: 0.022 idt_perturbation: 0.006 
+saving the latest model (epoch 17, total_iters 734500)
+(epoch: 17, iters: 6552, time: 0.074, data: 0.002) D_real: 0.215 D_fake: 0.235 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.010 pert_constraint_D: 1.331 idt: 0.062 idt_perturbation: 0.005 
+(epoch: 17, iters: 7852, time: 0.074, data: 0.002) D_real: 0.154 D_fake: 0.325 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.015 pert_constraint_D: 1.294 idt: 0.106 idt_perturbation: 0.013 
+(epoch: 17, iters: 9152, time: 0.079, data: 0.002) D_real: 0.215 D_fake: 0.288 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.005 pert_constraint_D: 1.252 idt: 0.111 idt_perturbation: 0.006 
+(epoch: 17, iters: 10452, time: 0.074, data: 0.002) D_real: 0.128 D_fake: 0.361 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.007 pert_constraint_D: 1.283 idt: 0.072 idt_perturbation: 0.005 
+(epoch: 17, iters: 11752, time: 0.074, data: 0.002) D_real: 0.259 D_fake: 0.210 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.010 pert_constraint_D: 1.357 idt: 0.072 idt_perturbation: 0.007 
+saving the latest model (epoch 17, total_iters 741000)
+(epoch: 17, iters: 13052, time: 0.074, data: 0.002) D_real: 0.233 D_fake: 0.236 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.012 pert_constraint_D: 1.299 idt: 0.082 idt_perturbation: 0.010 
+(epoch: 17, iters: 14352, time: 0.081, data: 0.002) D_real: 0.192 D_fake: 0.298 D_real_perturbation: 0.100 D_fake_perturbation: 0.106 max_pert: 0.008 pert_constraint_D: 1.289 idt: 0.041 idt_perturbation: 0.009 
+(epoch: 17, iters: 15652, time: 0.073, data: 0.002) D_real: 0.194 D_fake: 0.319 D_real_perturbation: 0.351 D_fake_perturbation: 0.103 max_pert: 0.008 pert_constraint_D: 1.364 idt: 0.117 idt_perturbation: 0.007 
+(epoch: 17, iters: 16952, time: 0.073, data: 0.002) D_real: 0.268 D_fake: 0.225 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.011 pert_constraint_D: 1.457 idt: 0.120 idt_perturbation: 0.009 
+(epoch: 17, iters: 18252, time: 0.074, data: 0.002) D_real: 0.263 D_fake: 0.248 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.011 pert_constraint_D: 1.404 idt: 0.036 idt_perturbation: 0.011 
+saving the latest model (epoch 17, total_iters 747500)
+(epoch: 17, iters: 19552, time: 0.079, data: 0.002) D_real: 0.232 D_fake: 0.283 D_real_perturbation: 0.116 D_fake_perturbation: 0.104 max_pert: 0.007 pert_constraint_D: 1.253 idt: 0.020 idt_perturbation: 0.003 
+(epoch: 17, iters: 20852, time: 0.074, data: 0.002) D_real: 0.204 D_fake: 0.275 D_real_perturbation: 0.100 D_fake_perturbation: 0.150 max_pert: 0.010 pert_constraint_D: 1.387 idt: 0.111 idt_perturbation: 0.004 
+(epoch: 17, iters: 22152, time: 0.074, data: 0.002) D_real: 0.225 D_fake: 0.236 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.013 pert_constraint_D: 1.362 idt: 0.158 idt_perturbation: 0.011 
+(epoch: 17, iters: 23452, time: 0.074, data: 0.001) D_real: 0.237 D_fake: 0.226 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.016 pert_constraint_D: 1.420 idt: 0.155 idt_perturbation: 0.010 
+(epoch: 17, iters: 24752, time: 0.088, data: 0.002) D_real: 0.183 D_fake: 0.260 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.019 pert_constraint_D: 1.358 idt: 0.113 idt_perturbation: 0.012 
+saving the latest model (epoch 17, total_iters 754000)
+(epoch: 17, iters: 26052, time: 0.073, data: 0.002) D_real: 0.216 D_fake: 0.267 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.016 pert_constraint_D: 1.332 idt: 0.158 idt_perturbation: 0.012 
+(epoch: 17, iters: 27352, time: 0.073, data: 0.002) D_real: 0.201 D_fake: 0.273 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.014 pert_constraint_D: 1.288 idt: 0.211 idt_perturbation: 0.009 
+(epoch: 17, iters: 28652, time: 0.074, data: 0.002) D_real: 0.285 D_fake: 0.225 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.015 pert_constraint_D: 1.396 idt: 0.034 idt_perturbation: 0.014 
+(epoch: 17, iters: 29952, time: 0.080, data: 0.002) D_real: 0.232 D_fake: 0.253 D_real_perturbation: 0.100 D_fake_perturbation: 0.130 max_pert: 0.012 pert_constraint_D: 1.418 idt: 0.114 idt_perturbation: 0.009 
+(epoch: 17, iters: 31252, time: 0.074, data: 0.002) D_real: 0.213 D_fake: 0.295 D_real_perturbation: 0.482 D_fake_perturbation: 0.100 max_pert: 0.004 pert_constraint_D: 1.332 idt: 0.106 idt_perturbation: 0.004 
+saving the latest model (epoch 17, total_iters 760500)
+(epoch: 17, iters: 32552, time: 0.073, data: 0.002) D_real: 0.188 D_fake: 0.290 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.011 pert_constraint_D: 1.307 idt: 0.164 idt_perturbation: 0.009 
+(epoch: 17, iters: 33852, time: 0.074, data: 0.002) D_real: 0.228 D_fake: 0.261 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.009 pert_constraint_D: 1.296 idt: 0.113 idt_perturbation: 0.008 
+(epoch: 17, iters: 35152, time: 0.079, data: 0.002) D_real: 0.199 D_fake: 0.262 D_real_perturbation: 0.102 D_fake_perturbation: 0.105 max_pert: 0.010 pert_constraint_D: 1.341 idt: 0.067 idt_perturbation: 0.005 
+(epoch: 17, iters: 36452, time: 0.073, data: 0.002) D_real: 0.177 D_fake: 0.300 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.020 pert_constraint_D: 1.399 idt: 0.074 idt_perturbation: 0.018 
+(epoch: 17, iters: 37752, time: 0.074, data: 0.001) D_real: 0.321 D_fake: 0.202 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.008 pert_constraint_D: 1.402 idt: 0.024 idt_perturbation: 0.007 
+saving the latest model (epoch 17, total_iters 767000)
+(epoch: 17, iters: 39052, time: 0.074, data: 0.002) D_real: 0.242 D_fake: 0.245 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.008 pert_constraint_D: 1.295 idt: 0.155 idt_perturbation: 0.007 
+(epoch: 17, iters: 40352, time: 0.082, data: 0.002) D_real: 0.175 D_fake: 0.258 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.011 pert_constraint_D: 1.382 idt: 0.106 idt_perturbation: 0.008 
+(epoch: 17, iters: 41652, time: 0.074, data: 0.002) D_real: 0.238 D_fake: 0.165 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.013 pert_constraint_D: 1.234 idt: 0.110 idt_perturbation: 0.009 
+(epoch: 17, iters: 42952, time: 0.074, data: 0.002) D_real: 0.234 D_fake: 0.199 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.013 pert_constraint_D: 1.350 idt: 0.064 idt_perturbation: 0.009 
+(epoch: 17, iters: 44252, time: 0.074, data: 0.002) D_real: 0.388 D_fake: 0.136 D_real_perturbation: 0.107 D_fake_perturbation: 0.100 max_pert: 0.007 pert_constraint_D: 1.287 idt: 0.039 idt_perturbation: 0.006 
+saving the latest model (epoch 17, total_iters 773500)
+(epoch: 17, iters: 45552, time: 0.079, data: 0.002) D_real: 0.322 D_fake: 0.182 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.019 pert_constraint_D: 1.228 idt: 0.024 idt_perturbation: 0.019 
+saving the model at the end of epoch 17, iters 774826
+End of epoch 17 / 200 	 Time Taken: 3362 sec
+learning rate 0.0002000 -> 0.0002000
+(epoch: 18, iters: 1274, time: 0.073, data: 0.002) D_real: 0.205 D_fake: 0.198 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.019 pert_constraint_D: 1.387 idt: 0.034 idt_perturbation: 0.013 
+(epoch: 18, iters: 2574, time: 0.074, data: 0.002) D_real: 0.201 D_fake: 0.213 D_real_perturbation: 0.111 D_fake_perturbation: 0.101 max_pert: 0.008 pert_constraint_D: 1.420 idt: 0.115 idt_perturbation: 0.007 
+(epoch: 18, iters: 3874, time: 0.073, data: 0.002) D_real: 0.304 D_fake: 0.143 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.007 pert_constraint_D: 1.322 idt: 0.113 idt_perturbation: 0.005 
+(epoch: 18, iters: 5174, time: 0.089, data: 0.002) D_real: 0.193 D_fake: 0.248 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.012 pert_constraint_D: 1.383 idt: 0.079 idt_perturbation: 0.011 
+saving the latest model (epoch 18, total_iters 780000)
+(epoch: 18, iters: 6474, time: 0.074, data: 0.002) D_real: 0.228 D_fake: 0.132 D_real_perturbation: 0.107 D_fake_perturbation: 0.100 max_pert: 0.008 pert_constraint_D: 1.347 idt: 0.074 idt_perturbation: 0.009 
+(epoch: 18, iters: 7774, time: 0.074, data: 0.002) D_real: 0.161 D_fake: 0.239 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.016 pert_constraint_D: 1.407 idt: 0.161 idt_perturbation: 0.014 
+(epoch: 18, iters: 9074, time: 0.074, data: 0.002) D_real: 0.173 D_fake: 0.263 D_real_perturbation: 0.101 D_fake_perturbation: 0.100 max_pert: 0.006 pert_constraint_D: 1.345 idt: 0.028 idt_perturbation: 0.006 
+(epoch: 18, iters: 10374, time: 0.083, data: 0.002) D_real: 0.267 D_fake: 0.111 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.014 pert_constraint_D: 1.361 idt: 0.024 idt_perturbation: 0.008 
+(epoch: 18, iters: 11674, time: 0.074, data: 0.002) D_real: 0.171 D_fake: 0.289 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.007 pert_constraint_D: 1.262 idt: 0.121 idt_perturbation: 0.005 
+saving the latest model (epoch 18, total_iters 786500)
+(epoch: 18, iters: 12974, time: 0.074, data: 0.002) D_real: 0.433 D_fake: 0.107 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.012 pert_constraint_D: 1.220 idt: 0.014 idt_perturbation: 0.008 
+(epoch: 18, iters: 14274, time: 0.074, data: 0.002) D_real: 0.168 D_fake: 0.167 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.009 pert_constraint_D: 1.294 idt: 0.072 idt_perturbation: 0.006 
+(epoch: 18, iters: 15574, time: 0.081, data: 0.002) D_real: 0.370 D_fake: 0.107 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.020 pert_constraint_D: 1.250 idt: 0.072 idt_perturbation: 0.016 
+(epoch: 18, iters: 16874, time: 0.073, data: 0.002) D_real: 0.139 D_fake: 0.210 D_real_perturbation: 0.102 D_fake_perturbation: 0.100 max_pert: 0.008 pert_constraint_D: 1.236 idt: 0.034 idt_perturbation: 0.007 
+(epoch: 18, iters: 18174, time: 0.074, data: 0.002) D_real: 0.208 D_fake: 0.176 D_real_perturbation: 0.109 D_fake_perturbation: 0.104 max_pert: 0.008 pert_constraint_D: 1.394 idt: 0.077 idt_perturbation: 0.006 
+saving the latest model (epoch 18, total_iters 793000)
+(epoch: 18, iters: 19474, time: 0.074, data: 0.002) D_real: 0.216 D_fake: 0.219 D_real_perturbation: 0.103 D_fake_perturbation: 0.100 max_pert: 0.009 pert_constraint_D: 1.251 idt: 0.119 idt_perturbation: 0.006 
+(epoch: 18, iters: 20774, time: 0.079, data: 0.002) D_real: 0.270 D_fake: 0.208 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.013 pert_constraint_D: 1.292 idt: 0.112 idt_perturbation: 0.007 
+(epoch: 18, iters: 22074, time: 0.073, data: 0.002) D_real: 0.186 D_fake: 0.243 D_real_perturbation: 0.103 D_fake_perturbation: 0.100 max_pert: 0.011 pert_constraint_D: 1.363 idt: 0.071 idt_perturbation: 0.007 
+(epoch: 18, iters: 23374, time: 0.074, data: 0.002) D_real: 0.195 D_fake: 0.223 D_real_perturbation: 0.100 D_fake_perturbation: 0.161 max_pert: 0.008 pert_constraint_D: 1.298 idt: 0.111 idt_perturbation: 0.004 
+(epoch: 18, iters: 24674, time: 0.073, data: 0.002) D_real: 0.262 D_fake: 0.158 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.009 pert_constraint_D: 1.297 idt: 0.071 idt_perturbation: 0.006 
+saving the latest model (epoch 18, total_iters 799500)
+(epoch: 18, iters: 25974, time: 0.079, data: 0.002) D_real: 0.155 D_fake: 0.219 D_real_perturbation: 0.134 D_fake_perturbation: 0.140 max_pert: 0.005 pert_constraint_D: 1.304 idt: 0.020 idt_perturbation: 0.004 
+(epoch: 18, iters: 27274, time: 0.073, data: 0.002) D_real: 0.139 D_fake: 0.170 D_real_perturbation: 0.100 D_fake_perturbation: 0.102 max_pert: 0.010 pert_constraint_D: 1.244 idt: 0.064 idt_perturbation: 0.006 
+(epoch: 18, iters: 28574, time: 0.074, data: 0.002) D_real: 0.280 D_fake: 0.103 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.010 pert_constraint_D: 1.437 idt: 0.022 idt_perturbation: 0.007 
+(epoch: 18, iters: 29874, time: 0.074, data: 0.002) D_real: 0.133 D_fake: 0.195 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.018 pert_constraint_D: 1.376 idt: 0.070 idt_perturbation: 0.011 
+(epoch: 18, iters: 31174, time: 0.089, data: 0.002) D_real: 0.268 D_fake: 0.144 D_real_perturbation: 0.100 D_fake_perturbation: 0.101 max_pert: 0.011 pert_constraint_D: 1.446 idt: 0.073 idt_perturbation: 0.005 
+saving the latest model (epoch 18, total_iters 806000)
+(epoch: 18, iters: 32474, time: 0.074, data: 0.002) D_real: 0.195 D_fake: 0.107 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.010 pert_constraint_D: 1.356 idt: 0.066 idt_perturbation: 0.010 
+(epoch: 18, iters: 33774, time: 0.074, data: 0.002) D_real: 0.100 D_fake: 0.327 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.016 pert_constraint_D: 1.347 idt: 0.020 idt_perturbation: 0.009 
+(epoch: 18, iters: 35074, time: 0.073, data: 0.001) D_real: 0.604 D_fake: 0.152 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.008 pert_constraint_D: 1.317 idt: 0.166 idt_perturbation: 0.006 
+(epoch: 18, iters: 36374, time: 0.080, data: 0.002) D_real: 0.172 D_fake: 0.133 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.010 pert_constraint_D: 1.311 idt: 0.064 idt_perturbation: 0.009 
+(epoch: 18, iters: 37674, time: 0.074, data: 0.002) D_real: 0.183 D_fake: 0.167 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.016 pert_constraint_D: 1.269 idt: 0.020 idt_perturbation: 0.015 
+saving the latest model (epoch 18, total_iters 812500)
+(epoch: 18, iters: 38974, time: 0.074, data: 0.002) D_real: 0.118 D_fake: 0.247 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.008 pert_constraint_D: 1.277 idt: 0.019 idt_perturbation: 0.006 
+(epoch: 18, iters: 40274, time: 0.074, data: 0.002) D_real: 0.145 D_fake: 0.137 D_real_perturbation: 0.102 D_fake_perturbation: 0.100 max_pert: 0.011 pert_constraint_D: 1.356 idt: 0.071 idt_perturbation: 0.006 
+(epoch: 18, iters: 41574, time: 0.080, data: 0.002) D_real: 0.123 D_fake: 0.199 D_real_perturbation: 0.128 D_fake_perturbation: 0.102 max_pert: 0.006 pert_constraint_D: 1.362 idt: 0.062 idt_perturbation: 0.004 
+(epoch: 18, iters: 42874, time: 0.074, data: 0.001) D_real: 0.158 D_fake: 0.160 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.012 pert_constraint_D: 1.307 idt: 0.129 idt_perturbation: 0.011 
+(epoch: 18, iters: 44174, time: 0.074, data: 0.001) D_real: 0.193 D_fake: 0.133 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.010 pert_constraint_D: 1.263 idt: 0.114 idt_perturbation: 0.008 
+saving the latest model (epoch 18, total_iters 819000)
+(epoch: 18, iters: 45474, time: 0.074, data: 0.002) D_real: 0.278 D_fake: 0.109 D_real_perturbation: 0.101 D_fake_perturbation: 0.159 max_pert: 0.008 pert_constraint_D: 1.354 idt: 0.075 idt_perturbation: 0.003 
+saving the model at the end of epoch 18, iters 820404
+End of epoch 18 / 200 	 Time Taken: 3363 sec
+learning rate 0.0002000 -> 0.0002000
+(epoch: 19, iters: 1196, time: 0.088, data: 0.001) D_real: 0.268 D_fake: 0.128 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.009 pert_constraint_D: 1.362 idt: 0.114 idt_perturbation: 0.008 
+(epoch: 19, iters: 2496, time: 0.074, data: 0.002) D_real: 0.128 D_fake: 0.216 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.015 pert_constraint_D: 1.393 idt: 0.070 idt_perturbation: 0.013 
+(epoch: 19, iters: 3796, time: 0.074, data: 0.001) D_real: 0.230 D_fake: 0.236 D_real_perturbation: 0.131 D_fake_perturbation: 0.100 max_pert: 0.012 pert_constraint_D: 1.348 idt: 0.068 idt_perturbation: 0.007 
+(epoch: 19, iters: 5096, time: 0.074, data: 0.002) D_real: 0.274 D_fake: 0.216 D_real_perturbation: 0.100 D_fake_perturbation: 0.106 max_pert: 0.006 pert_constraint_D: 1.343 idt: 0.078 idt_perturbation: 0.005 
+saving the latest model (epoch 19, total_iters 825500)
+(epoch: 19, iters: 6396, time: 0.080, data: 0.002) D_real: 0.234 D_fake: 0.221 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.015 pert_constraint_D: 1.254 idt: 0.115 idt_perturbation: 0.010 
+(epoch: 19, iters: 7696, time: 0.074, data: 0.002) D_real: 0.240 D_fake: 0.235 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.029 pert_constraint_D: 1.250 idt: 0.170 idt_perturbation: 0.024 
+(epoch: 19, iters: 8996, time: 0.074, data: 0.002) D_real: 0.211 D_fake: 0.282 D_real_perturbation: 0.100 D_fake_perturbation: 0.165 max_pert: 0.005 pert_constraint_D: 1.328 idt: 0.060 idt_perturbation: 0.004 
+(epoch: 19, iters: 10296, time: 0.073, data: 0.002) D_real: 0.261 D_fake: 0.205 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.018 pert_constraint_D: 1.367 idt: 0.206 idt_perturbation: 0.018 
+(epoch: 19, iters: 11596, time: 0.089, data: 0.002) D_real: 0.165 D_fake: 0.328 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.022 pert_constraint_D: 1.357 idt: 0.116 idt_perturbation: 0.020 
+saving the latest model (epoch 19, total_iters 832000)
+(epoch: 19, iters: 12896, time: 0.074, data: 0.002) D_real: 0.443 D_fake: 0.101 D_real_perturbation: 0.102 D_fake_perturbation: 0.100 max_pert: 0.010 pert_constraint_D: 1.283 idt: 0.119 idt_perturbation: 0.006 
+(epoch: 19, iters: 14196, time: 0.073, data: 0.002) D_real: 0.136 D_fake: 0.265 D_real_perturbation: 0.100 D_fake_perturbation: 0.156 max_pert: 0.007 pert_constraint_D: 1.336 idt: 0.121 idt_perturbation: 0.005 
+(epoch: 19, iters: 15496, time: 0.073, data: 0.002) D_real: 0.249 D_fake: 0.129 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.014 pert_constraint_D: 1.262 idt: 0.069 idt_perturbation: 0.005 
+(epoch: 19, iters: 16796, time: 0.080, data: 0.002) D_real: 0.191 D_fake: 0.206 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.008 pert_constraint_D: 1.293 idt: 0.069 idt_perturbation: 0.009 
+(epoch: 19, iters: 18096, time: 0.074, data: 0.002) D_real: 0.195 D_fake: 0.176 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.017 pert_constraint_D: 1.360 idt: 0.111 idt_perturbation: 0.015 
+saving the latest model (epoch 19, total_iters 838500)
+(epoch: 19, iters: 19396, time: 0.073, data: 0.002) D_real: 0.214 D_fake: 0.201 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.011 pert_constraint_D: 1.299 idt: 0.160 idt_perturbation: 0.009 
+(epoch: 19, iters: 20696, time: 0.074, data: 0.002) D_real: 0.200 D_fake: 0.142 D_real_perturbation: 0.110 D_fake_perturbation: 0.102 max_pert: 0.008 pert_constraint_D: 1.347 idt: 0.092 idt_perturbation: 0.005 
+(epoch: 19, iters: 21996, time: 0.079, data: 0.002) D_real: 0.302 D_fake: 0.138 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.011 pert_constraint_D: 1.293 idt: 0.206 idt_perturbation: 0.008 
+(epoch: 19, iters: 23296, time: 0.074, data: 0.002) D_real: 0.253 D_fake: 0.108 D_real_perturbation: 0.100 D_fake_perturbation: 0.270 max_pert: 0.008 pert_constraint_D: 1.274 idt: 0.112 idt_perturbation: 0.003 
+(epoch: 19, iters: 24596, time: 0.074, data: 0.002) D_real: 0.183 D_fake: 0.146 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.012 pert_constraint_D: 1.267 idt: 0.128 idt_perturbation: 0.008 
+saving the latest model (epoch 19, total_iters 845000)
+(epoch: 19, iters: 25896, time: 0.074, data: 0.002) D_real: 0.204 D_fake: 0.118 D_real_perturbation: 0.103 D_fake_perturbation: 0.100 max_pert: 0.011 pert_constraint_D: 1.347 idt: 0.079 idt_perturbation: 0.007 
+(epoch: 19, iters: 27196, time: 0.080, data: 0.002) D_real: 0.228 D_fake: 0.135 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.010 pert_constraint_D: 1.368 idt: 0.073 idt_perturbation: 0.007 
+(epoch: 19, iters: 28496, time: 0.073, data: 0.002) D_real: 0.221 D_fake: 0.146 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.011 pert_constraint_D: 1.391 idt: 0.062 idt_perturbation: 0.008 
+(epoch: 19, iters: 29796, time: 0.074, data: 0.002) D_real: 0.156 D_fake: 0.162 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.010 pert_constraint_D: 1.250 idt: 0.075 idt_perturbation: 0.010 
+(epoch: 19, iters: 31096, time: 0.074, data: 0.002) D_real: 0.190 D_fake: 0.323 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.022 pert_constraint_D: 1.293 idt: 0.201 idt_perturbation: 0.024 
+saving the latest model (epoch 19, total_iters 851500)
+(epoch: 19, iters: 32396, time: 0.079, data: 0.002) D_real: 0.160 D_fake: 0.255 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.016 pert_constraint_D: 1.288 idt: 0.201 idt_perturbation: 0.013 
+(epoch: 19, iters: 33696, time: 0.073, data: 0.002) D_real: 0.191 D_fake: 0.187 D_real_perturbation: 0.113 D_fake_perturbation: 0.100 max_pert: 0.012 pert_constraint_D: 1.300 idt: 0.066 idt_perturbation: 0.008 
+(epoch: 19, iters: 34996, time: 0.074, data: 0.002) D_real: 0.134 D_fake: 0.152 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.011 pert_constraint_D: 1.287 idt: 0.021 idt_perturbation: 0.007 
+(epoch: 19, iters: 36296, time: 0.073, data: 0.002) D_real: 0.104 D_fake: 0.421 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.016 pert_constraint_D: 1.272 idt: 0.034 idt_perturbation: 0.014 
+(epoch: 19, iters: 37596, time: 0.090, data: 0.002) D_real: 0.179 D_fake: 0.286 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.010 pert_constraint_D: 1.300 idt: 0.112 idt_perturbation: 0.008 
+saving the latest model (epoch 19, total_iters 858000)
+(epoch: 19, iters: 38896, time: 0.074, data: 0.002) D_real: 0.241 D_fake: 0.147 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.011 pert_constraint_D: 1.308 idt: 0.207 idt_perturbation: 0.010 
+(epoch: 19, iters: 40196, time: 0.074, data: 0.002) D_real: 0.117 D_fake: 0.284 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.011 pert_constraint_D: 1.228 idt: 0.024 idt_perturbation: 0.010 
+(epoch: 19, iters: 41496, time: 0.074, data: 0.002) D_real: 0.123 D_fake: 0.130 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.011 pert_constraint_D: 1.302 idt: 0.015 idt_perturbation: 0.007 
+(epoch: 19, iters: 42796, time: 0.080, data: 0.002) D_real: 0.301 D_fake: 0.116 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.010 pert_constraint_D: 1.247 idt: 0.068 idt_perturbation: 0.010 
+(epoch: 19, iters: 44096, time: 0.074, data: 0.002) D_real: 0.271 D_fake: 0.140 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.010 pert_constraint_D: 1.362 idt: 0.160 idt_perturbation: 0.006 
+saving the latest model (epoch 19, total_iters 864500)
+(epoch: 19, iters: 45396, time: 0.073, data: 0.001) D_real: 0.212 D_fake: 0.170 D_real_perturbation: 0.138 D_fake_perturbation: 0.100 max_pert: 0.014 pert_constraint_D: 1.235 idt: 0.151 idt_perturbation: 0.014 
+saving the model at the end of epoch 19, iters 865982
+End of epoch 19 / 200 	 Time Taken: 3362 sec
+learning rate 0.0002000 -> 0.0002000
+(epoch: 20, iters: 1118, time: 0.073, data: 0.002) D_real: 0.171 D_fake: 0.181 D_real_perturbation: 0.101 D_fake_perturbation: 0.100 max_pert: 0.008 pert_constraint_D: 1.371 idt: 0.058 idt_perturbation: 0.006 
+(epoch: 20, iters: 2418, time: 0.090, data: 0.002) D_real: 0.178 D_fake: 0.151 D_real_perturbation: 0.113 D_fake_perturbation: 0.105 max_pert: 0.012 pert_constraint_D: 1.355 idt: 0.121 idt_perturbation: 0.008 
+(epoch: 20, iters: 3718, time: 0.074, data: 0.001) D_real: 0.257 D_fake: 0.151 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.010 pert_constraint_D: 1.288 idt: 0.156 idt_perturbation: 0.006 
+(epoch: 20, iters: 5018, time: 0.073, data: 0.002) D_real: 0.220 D_fake: 0.236 D_real_perturbation: 0.111 D_fake_perturbation: 0.100 max_pert: 0.009 pert_constraint_D: 1.208 idt: 0.109 idt_perturbation: 0.007 
+saving the latest model (epoch 20, total_iters 871000)
+(epoch: 20, iters: 6318, time: 0.074, data: 0.002) D_real: 0.234 D_fake: 0.138 D_real_perturbation: 0.100 D_fake_perturbation: 0.102 max_pert: 0.008 pert_constraint_D: 1.256 idt: 0.114 idt_perturbation: 0.005 
+(epoch: 20, iters: 7618, time: 0.080, data: 0.002) D_real: 0.320 D_fake: 0.116 D_real_perturbation: 0.381 D_fake_perturbation: 0.484 max_pert: 0.010 pert_constraint_D: 1.294 idt: 0.163 idt_perturbation: 0.009 
+(epoch: 20, iters: 8918, time: 0.074, data: 0.002) D_real: 0.260 D_fake: 0.123 D_real_perturbation: 0.101 D_fake_perturbation: 0.100 max_pert: 0.020 pert_constraint_D: 1.253 idt: 0.118 idt_perturbation: 0.012 
+(epoch: 20, iters: 10218, time: 0.074, data: 0.001) D_real: 0.152 D_fake: 0.150 D_real_perturbation: 0.103 D_fake_perturbation: 0.100 max_pert: 0.008 pert_constraint_D: 1.378 idt: 0.024 idt_perturbation: 0.006 
+(epoch: 20, iters: 11518, time: 0.074, data: 0.002) D_real: 0.128 D_fake: 0.291 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.009 pert_constraint_D: 1.338 idt: 0.115 idt_perturbation: 0.006 
+saving the latest model (epoch 20, total_iters 877500)
+(epoch: 20, iters: 12818, time: 0.080, data: 0.002) D_real: 0.162 D_fake: 0.176 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.012 pert_constraint_D: 1.253 idt: 0.074 idt_perturbation: 0.010 
+(epoch: 20, iters: 14118, time: 0.074, data: 0.002) D_real: 0.140 D_fake: 0.187 D_real_perturbation: 0.100 D_fake_perturbation: 0.211 max_pert: 0.006 pert_constraint_D: 1.323 idt: 0.066 idt_perturbation: 0.005 
+(epoch: 20, iters: 15418, time: 0.073, data: 0.002) D_real: 0.237 D_fake: 0.116 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.011 pert_constraint_D: 1.291 idt: 0.021 idt_perturbation: 0.008 
+(epoch: 20, iters: 16718, time: 0.074, data: 0.002) D_real: 0.195 D_fake: 0.126 D_real_perturbation: 0.100 D_fake_perturbation: 0.109 max_pert: 0.009 pert_constraint_D: 1.352 idt: 0.066 idt_perturbation: 0.005 
+(epoch: 20, iters: 18018, time: 0.090, data: 0.002) D_real: 0.278 D_fake: 0.152 D_real_perturbation: 0.100 D_fake_perturbation: 0.221 max_pert: 0.011 pert_constraint_D: 1.287 idt: 0.161 idt_perturbation: 0.003 
+saving the latest model (epoch 20, total_iters 884000)
+(epoch: 20, iters: 19318, time: 0.074, data: 0.002) D_real: 0.239 D_fake: 0.251 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.009 pert_constraint_D: 1.290 idt: 0.019 idt_perturbation: 0.007 
+(epoch: 20, iters: 20618, time: 0.074, data: 0.002) D_real: 0.192 D_fake: 0.311 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.010 pert_constraint_D: 1.276 idt: 0.064 idt_perturbation: 0.007 
+(epoch: 20, iters: 21918, time: 0.073, data: 0.002) D_real: 0.215 D_fake: 0.297 D_real_perturbation: 0.100 D_fake_perturbation: 0.108 max_pert: 0.010 pert_constraint_D: 1.382 idt: 0.113 idt_perturbation: 0.009 
+(epoch: 20, iters: 23218, time: 0.080, data: 0.002) D_real: 0.198 D_fake: 0.323 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.009 pert_constraint_D: 1.358 idt: 0.081 idt_perturbation: 0.009 
+(epoch: 20, iters: 24518, time: 0.074, data: 0.002) D_real: 0.266 D_fake: 0.244 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.005 pert_constraint_D: 1.284 idt: 0.030 idt_perturbation: 0.004 
+saving the latest model (epoch 20, total_iters 890500)
+(epoch: 20, iters: 25818, time: 0.074, data: 0.002) D_real: 0.263 D_fake: 0.214 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.008 pert_constraint_D: 1.252 idt: 0.023 idt_perturbation: 0.005 
+(epoch: 20, iters: 27118, time: 0.073, data: 0.002) D_real: 0.155 D_fake: 0.302 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.010 pert_constraint_D: 1.233 idt: 0.114 idt_perturbation: 0.006 
+(epoch: 20, iters: 28418, time: 0.079, data: 0.002) D_real: 0.218 D_fake: 0.246 D_real_perturbation: 0.100 D_fake_perturbation: 0.142 max_pert: 0.012 pert_constraint_D: 1.301 idt: 0.060 idt_perturbation: 0.005 
+(epoch: 20, iters: 29718, time: 0.073, data: 0.002) D_real: 0.245 D_fake: 0.257 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.009 pert_constraint_D: 1.210 idt: 0.018 idt_perturbation: 0.009 
+(epoch: 20, iters: 31018, time: 0.073, data: 0.002) D_real: 0.202 D_fake: 0.284 D_real_perturbation: 0.100 D_fake_perturbation: 0.105 max_pert: 0.015 pert_constraint_D: 1.245 idt: 0.063 idt_perturbation: 0.012 
+saving the latest model (epoch 20, total_iters 897000)
+(epoch: 20, iters: 32318, time: 0.074, data: 0.002) D_real: 0.233 D_fake: 0.257 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.007 pert_constraint_D: 1.313 idt: 0.077 idt_perturbation: 0.007 
+(epoch: 20, iters: 33618, time: 0.080, data: 0.002) D_real: 0.203 D_fake: 0.279 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.010 pert_constraint_D: 1.294 idt: 0.205 idt_perturbation: 0.009 
+(epoch: 20, iters: 34918, time: 0.074, data: 0.002) D_real: 0.189 D_fake: 0.310 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.008 pert_constraint_D: 1.280 idt: 0.116 idt_perturbation: 0.007 
+(epoch: 20, iters: 36218, time: 0.074, data: 0.002) D_real: 0.247 D_fake: 0.249 D_real_perturbation: 0.104 D_fake_perturbation: 0.100 max_pert: 0.008 pert_constraint_D: 1.362 idt: 0.062 idt_perturbation: 0.006 
+(epoch: 20, iters: 37518, time: 0.073, data: 0.002) D_real: 0.235 D_fake: 0.216 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.020 pert_constraint_D: 1.319 idt: 0.167 idt_perturbation: 0.014 
+saving the latest model (epoch 20, total_iters 903500)
+(epoch: 20, iters: 38818, time: 0.078, data: 0.002) D_real: 0.198 D_fake: 0.269 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.010 pert_constraint_D: 1.269 idt: 0.154 idt_perturbation: 0.005 
+(epoch: 20, iters: 40118, time: 0.074, data: 0.001) D_real: 0.197 D_fake: 0.330 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.009 pert_constraint_D: 1.256 idt: 0.064 idt_perturbation: 0.007 
+(epoch: 20, iters: 41418, time: 0.074, data: 0.002) D_real: 0.290 D_fake: 0.203 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.009 pert_constraint_D: 1.278 idt: 0.114 idt_perturbation: 0.009 
+(epoch: 20, iters: 42718, time: 0.074, data: 0.002) D_real: 0.211 D_fake: 0.275 D_real_perturbation: 0.100 D_fake_perturbation: 0.149 max_pert: 0.024 pert_constraint_D: 1.305 idt: 0.114 idt_perturbation: 0.019 
+(epoch: 20, iters: 44018, time: 0.091, data: 0.002) D_real: 0.229 D_fake: 0.238 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.015 pert_constraint_D: 1.291 idt: 0.152 idt_perturbation: 0.010 
+saving the latest model (epoch 20, total_iters 910000)
+(epoch: 20, iters: 45318, time: 0.074, data: 0.002) D_real: 0.305 D_fake: 0.217 D_real_perturbation: 0.100 D_fake_perturbation: 0.100 max_pert: 0.011 pert_constraint_D: 1.364 idt: 0.118 idt_perturbation: 0.010 
+saving the model at the end of epoch 20, iters 911560
+End of epoch 20 / 200 	 Time Taken: 3361 sec
+learning rate 0.0002000 -> 0.0002000

@@ -27,3 +27,4 @@ python train.py --dataroot $dataroot --model $model --gan_mode lsgan \
 #--direction $direction
 
 python train.py --dataroot './data/face_unaligned/face_unaligned' --model maxgcpert3_gan --gan_mode lsgan --bounded unbounded --pool_size 50 --no_dropout --load_size 128 --crop_size 128 --netG resnet_9blocks --netD basic --batch_size 1 --identity 0.5 --direction 'AtoB'
+python test.py --dataroot './data/face_unaligned/face_unaligned' --model maxgcpert3_gan --eval --bounded unbounded --pool_size 50 --no_dropout --load_size 128 --crop_size 128 --netG resnet_9blocks --netD basic --batch_size 1 --identity 0.5 --direction 'AtoB'

@@ -1,0 +1,11 @@
+outputs/
+.idea/
+.ipynb_checkpoints/
+datasets
+*.tar.gz
+*ipynb
+*.zip
+*.pkl
+*.pyc
+checkpoints
+results

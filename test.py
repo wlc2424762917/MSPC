@@ -108,12 +108,12 @@ if __name__ == '__main__':
                         saved_img = ((((visuals['fake_B'].cpu()[k]) + 1.0) / 2.0))
                         
                         torchvision.utils.save_image(saved_img, os.path.join(save_path_B, name + '.png'))
-                        np.save(os.path.join(save_path_B+'npy', name), saved_img)
+                        np.save(os.path.join(save_path_B+'npy'), saved_img)
                         saved_img = ((((visuals['fake_A'].cpu()[k]) + 1.0) / 2.0))
                         torchvision.utils.save_image(saved_img, os.path.join(save_path_A, name + '.png'))
                         np.save(os.path.join(save_path_B + 'npy', name), saved_img)
                     else:
-                        mkdir(os.path.join(save_path + 'npy', name))
+                        mkdir(os.path.join(save_path + 'npy'))
                         saved_img = ((((visuals['fake_B'].cpu()[k]) + 1.0) / 2.0))
                         # print(saved_img.shape)
                         # print(saved_img.max())
